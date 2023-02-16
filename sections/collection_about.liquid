@@ -1,0 +1,81 @@
+{% comment %}
+  <div class="refrence-section-about">
+
+    <h2>{{ collection.metafields.global.more_about.value }}</h2>
+    <div class="referencelogo page-width">
+       {% assign heading = collection.metafields.global.info_heading.value %}
+  <!--      {% assign subheading = collection.metafields.custom.info_subheading.value %} -->
+      {% for head in heading %}
+        <div class="refdiv {% if forloop.index > 2 %}refdiv_toggle{% endif %}">
+          <strong>{{ head }}</strong>
+  <!--         <p>{{ subheading[forloop.index0] }}</p> -->
+          {% if forloop.last -%}
+            <div class="drop_up-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7" viewBox="0 0 15 7" fill="none">
+                <path d="M1 1L7.5 6L14 1" stroke="#6D6D6D" stroke-width="1.5"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7" viewBox="0 0 15 7" fill="none">
+                <path d="M1 1L7.5 6L14 1" stroke="#6D6D6D" stroke-width="1.5"/>
+              </svg>
+            </div>
+          {%- endif %}
+        </div>
+        {% if forloop.index == 2 -%}
+          <div class="drop_down-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7" viewBox="0 0 15 7" fill="none">
+              <path d="M1 1L7.5 6L14 1" stroke="#6D6D6D" stroke-width="1.5"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7" viewBox="0 0 15 7" fill="none">
+              <path d="M1 1L7.5 6L14 1" stroke="#6D6D6D" stroke-width="1.5"/>
+            </svg>
+          </div>
+        {%- endif %}
+      {% endfor %}
+    </div>
+              </div>
+{% endcomment %}
+
+<!--  -->
+{% if collection.metafields.my_fields.bottom_desc %}
+<div class="main_refrenc_about">
+  <div class="refrence-section-about">
+    <div class="collection_title">
+      <h2>{% if collection.metafields.global.more_about.value %}{{ collection.metafields.global.more_about.value  }}{% else %}More Info About {{ collection.title }}{% endif %}</h2>
+    </div>
+      <div class="collection_descp">
+        {{ collection.metafields.my_fields.bottom_desc }}
+      </div>
+    
+  </div>
+</div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "collection about",
+    "class":"reference",
+    "settings": [
+    {
+     "type":"html",
+     "id":"heading",
+     "label":"Heading"
+    },
+     {
+     "type":"text",
+     "id":"subheading",
+     "label":"Subheading"
+    }
+],
+"presets":[
+ {
+   "name":"collection about"
+ }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

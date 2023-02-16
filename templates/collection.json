@@ -10,37 +10,293 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "5785f2f0-1604-4147-b1bd-0db21421d70b": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 14 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-14"
+          }
+        },
+        "d92b5981-a8bb-44f1-8d32-de9ba95766e9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 13 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-13"
+          }
+        },
+        "3d614e39-fbb2-4476-90dd-8ab513003c45": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 12 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-12"
+          }
+        },
+        "a4a06ff2-7af9-44f6-82b3-517ef3ecc8ab": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 11 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-11"
+          }
+        },
+        "00c10e96-2b4a-4307-931f-05fd4a94ee7d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_4.png",
+            "coltitle": "Legacy iPhone",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-x-series"
+          }
+        },
+        "db86030f-8be9-403b-ad5d-4f2aa963d661": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_5.png",
+            "coltitle": "Samsung Galaxy",
+            "colurl": "shopify:\/\/collections\/samsung-galaxy-leather-cases"
+          }
+        },
+        "064c01e8-c289-42fa-be5e-e0ea1e6e0fbe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_3434507.png",
+            "coltitle": "iPad",
+            "colurl": "shopify:\/\/collections\/leather-ipad-covers"
+          }
+        },
+        "be1fdd0e-c84b-4575-80bc-235a7ba20aa2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_6.png",
+            "coltitle": "Airpod",
+            "colurl": "shopify:\/\/collections\/airpods-all"
+          }
+        },
+        "b480ad53-8dc8-4224-b9bc-608aebe38238": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_7_b5596ec2-aff7-4487-9487-f8b008fae51d.png",
+            "coltitle": "Apple Watch",
+            "colurl": "shopify:\/\/collections\/leather-apple-watch-bands"
+          }
+        },
+        "2ea81737-952f-4176-a9a8-f633b54eb673": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_8.png",
+            "coltitle": "Accessories",
+            "colurl": "shopify:\/\/collections\/leather-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "5785f2f0-1604-4147-b1bd-0db21421d70b",
+        "d92b5981-a8bb-44f1-8d32-de9ba95766e9",
+        "3d614e39-fbb2-4476-90dd-8ab513003c45",
+        "a4a06ff2-7af9-44f6-82b3-517ef3ecc8ab",
+        "00c10e96-2b4a-4307-931f-05fd4a94ee7d",
+        "db86030f-8be9-403b-ad5d-4f2aa963d661",
+        "064c01e8-c289-42fa-be5e-e0ea1e6e0fbe",
+        "be1fdd0e-c84b-4575-80bc-235a7ba20aa2",
+        "b480ad53-8dc8-4224-b9bc-608aebe38238",
+        "2ea81737-952f-4176-a9a8-f633b54eb673"
+      ],
       "settings": {
         "product_breadcrumb": true,
-        "show_collection_description": true,
+        "show_collection_description": false,
         "show_collection_image": true,
         "color_scheme": "background-1",
         "products_per_page": 18,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "image_ratio": "adapt",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "vertical",
+        "filter_type": "drawer",
         "enable_sorting": true,
         "columns_mobile": "2",
         "padding_top": 0,
-        "padding_bottom": 60
+        "padding_bottom": 0
+      }
+    },
+    "f812b891-ad03-41b4-84b1-ff2d471bb489": {
+      "type": "summer-sale",
+      "settings": {
+        "summerimg": "shopify:\/\/shop_images\/newsumer.png",
+        "summerimgmob": "shopify:\/\/shop_images\/Oxa10163.jpg",
+        "heading": "Personalized with Carving",
+        "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam aliquet sem, nec placerat augue efficitur nec.",
+        "btntxt": "Get Yours",
+        "btnlink": ""
+      }
+    },
+    "328ebb7a-12ba-4f3f-9ef9-f244ac407b16": {
+      "type": "collection_logos",
+      "blocks": {
+        "c5d04390-2439-4cc6-bb71-7bf26b04fe52": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_9.png",
+            "star": "Fast Delivery",
+            "label": "Your cargo will reach you in a short time without any problems."
+          }
+        },
+        "62e1baed-6c6c-4297-94de-9069444ea12c": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_10.png",
+            "star": "5 star Reviews",
+            "label": "Stylish and flashy models that customers are satisfied with."
+          }
+        },
+        "d950095d-ffa7-4995-8c30-69ad693dfdf2": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_11.png",
+            "star": "Secure Payments",
+            "label": "No problem during the payment"
+          }
+        },
+        "bd348934-b7e3-4591-a23a-7d874e09dc76": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_12.png",
+            "star": "14-Day Returns",
+            "label": "Refund guarantee in case of any defect in the product."
+          }
+        }
+      },
+      "block_order": [
+        "c5d04390-2439-4cc6-bb71-7bf26b04fe52",
+        "62e1baed-6c6c-4297-94de-9069444ea12c",
+        "d950095d-ffa7-4995-8c30-69ad693dfdf2",
+        "bd348934-b7e3-4591-a23a-7d874e09dc76"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      }
+    },
+    "bb6fb575-bb13-4784-9d30-dda7a9c36a03": {
+      "type": "coll_image_text",
+      "settings": {
+        "headingmain": "Featured accessories",
+        "img": "shopify:\/\/shop_images\/OXA_MAYIS_2496_01_1.png",
+        "rightimg": "firstsection",
+        "heading": "Airpod Case",
+        "desc": "Stylish, beautiful and customizable airpod case models",
+        "linktxt": "Shop Now >",
+        "btnlink": "shopify:\/\/collections\/airpods-all"
+      }
+    },
+    "eef86c13-b555-48c3-a254-a1ae74727942": {
+      "type": "coll_image_text",
+      "settings": {
+        "headingmain": "",
+        "img": "shopify:\/\/shop_images\/Mask_group_2e20f3da-c8ca-45ea-b8e6-7ebe1813f050.png",
+        "rightimg": "secondsection",
+        "heading": "Airtag Ring",
+        "desc": "Watch your back with beautiful airtag models",
+        "linktxt": "Shop Now >",
+        "btnlink": "shopify:\/\/collections\/apple-airtags"
+      }
+    },
+    "3abc3040-ec1e-415c-ad7f-36c5da8460e9": {
+      "type": "collection_about",
+      "blocks": {
+        "920a3f3d-d91d-494b-a6f4-186eaf89b665": {
+          "type": "logos",
+          "settings": {
+            "star": "premium grain leather",
+            "label": "OXA uses 100% full-grain leather that looks and feels good to the touch. It’s the real deal, unlike some cheap cases that use fake leather that can deteriorate over time. You’re guaranteed that your leather case will still be as good as you unboxed it for the first time."
+          }
+        },
+        "9255c5f3-9067-46ae-879c-91a46aeeacba": {
+          "type": "logos",
+          "settings": {
+            "star": "durable and dependable",
+            "label": "We have sourced all the best materials to make one good and sturdy product. We treat our leather to make it scratch and smudge-resistant while ensuring that the magnets connecting your case to the cover are strong enough to hold your phone in place."
+          }
+        },
+        "01bebb7a-065d-4882-bc2b-db004d5ff8e2": {
+          "type": "logos",
+          "settings": {
+            "star": "stores all the things",
+            "label": "Gone are the days that you’re fumbling for your wallet, phone, and keys in your pocket whenever you head out of the door. Our Leather Wallet case has card slots for which you can store your IDs, credit cards and a partition for paper bills."
+          }
+        },
+        "f58521ec-3569-4991-ba01-5413f2d754b5": {
+          "type": "logos",
+          "settings": {
+            "star": "MagSafe compatible",
+            "label": "Now that Apple has continuously perfected its wireless charging capabilities, we’ve ensured that our case will not obstruct your phone from making the most out of iPhone’s MagSafe technology. You’re assured that wireless charging works 100% all the time."
+          }
+        },
+        "c39f5e23-976e-409c-a2ba-3859b22b5a3c": {
+          "type": "logos",
+          "settings": {
+            "star": "versatile",
+            "label": "When you don’t feel like using the entire iPhone 14 Pro leather case, just pop off the attachable wallet, and voila, your leather case can work as a standalone one instead."
+          }
+        },
+        "05115fef-9c8d-4998-a23a-8a9fe88dff76": {
+          "type": "logos",
+          "settings": {
+            "star": "100% customizable",
+            "label": "Wanna make your precious and sparkly iPhone 14 truly yours? There’s an option you can choose to personalize your case with a monogram to add your name or initials."
+          }
+        },
+        "59a1b7e9-2ac9-45ab-bdc9-fad6e65e17f6": {
+          "type": "logos",
+          "settings": {
+            "star": "product warranty",
+            "label": "As OXA’s commitment to quality and excellence, our customers get a 2-year product warranty whenever they purchase a genuine iPhone 14 leather case from our store."
+          }
+        },
+        "af69653f-f438-40e3-aba4-102aa94b0410": {
+          "type": "logos",
+          "settings": {
+            "star": "ship it for free!",
+            "label": "Save even more when you order products from our website with free shipment for orders worth $50 and above."
+          }
+        }
+      },
+      "block_order": [
+        "920a3f3d-d91d-494b-a6f4-186eaf89b665",
+        "9255c5f3-9067-46ae-879c-91a46aeeacba",
+        "01bebb7a-065d-4882-bc2b-db004d5ff8e2",
+        "f58521ec-3569-4991-ba01-5413f2d754b5",
+        "c39f5e23-976e-409c-a2ba-3859b22b5a3c",
+        "05115fef-9c8d-4998-a23a-8a9fe88dff76",
+        "59a1b7e9-2ac9-45ab-bdc9-fad6e65e17f6",
+        "af69653f-f438-40e3-aba4-102aa94b0410"
+      ],
+      "settings": {
+        "heading": "More Info About<span class=\"gray\"> iPhone 14 <\/span>Leather Case",
+        "subheading": ""
       }
     },
     "1653976866b09b0891": {
       "type": "newsletter-form",
       "settings": {
-        "heading": "NEWSLETTER",
-        "text": "Subscribe to our newsletter now and  never miss exclusive offers or news again."
+        "heading": "Keep Yourself Up to date with our new offers",
+        "text": ""
       }
     }
   },
   "order": [
     "banner",
     "product-grid",
+    "f812b891-ad03-41b4-84b1-ff2d471bb489",
+    "328ebb7a-12ba-4f3f-9ef9-f244ac407b16",
+    "bb6fb575-bb13-4784-9d30-dda7a9c36a03",
+    "eef86c13-b555-48c3-a254-a1ae74727942",
+    "3abc3040-ec1e-415c-ad7f-36c5da8460e9",
     "1653976866b09b0891"
   ]
 }

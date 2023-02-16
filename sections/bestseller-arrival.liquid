@@ -1,381 +1,459 @@
- <style>
-	.dot {
-  cursor: pointer;
-    height: 2px;
-    width: 30px;
-  margin: 0 6px;
-  background-color: #bbb;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
- .activee, .dot:hover {
-  background-color: #000!important;
-}
-  .dots {
-  cursor: pointer;
-    height: 2px;
-    width: 30px;
-  margin: 0 6px;
-  background-color: #bbb;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
- .actives, .dots:hover {
-  background-color: #000!important;
-}
-   .cusrt-nav-two,.cusrt-nav{display:none !important}
-   
-
-
-   .bestseller-arrival .slick-dots li button:before {
-    font-size: 0;
-    width: 0;
-    height: 0;
-}
-   .bestseller-arrival .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
+<style>
+  	.dot {
     cursor: pointer;
-}
-      .bestseller-arrival .slick-dots li {
-    margin-right: 15px;
-}
-   .bestseller-arrival .slick-dots li button {
-    width: 30px;
-    height: 4px;
-    padding: 0;
-    background: #EFF2F6!important;
-}   .bestseller-arrival li.slick-active button {
-    width: 30px;
-    height: 4px;
-    padding: 0;
-    background: #000!important;
-}
+      height: 2px;
+      width: 30px;
+    margin: 0 6px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+   .activee, .dot:hover {
+    background-color: #000!important;
+  }
+    .dots {
+    cursor: pointer;
+      height: 2px;
+      width: 30px;
+    margin: 0 6px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+   .actives, .dots:hover {
+    background-color: #000!important;
+  }
+     .cusrt-nav-two,.cusrt-nav{display:none !important}
+
+
+
+     .bestseller-arrival .slick-dots li button:before {
+      font-size: 0;
+      width: 0;
+      height: 0;
+  }
+     .bestseller-arrival .slick-dots li {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+  }
+        .bestseller-arrival .slick-dots li {
+      margin-right: 15px;
+  }
+     .bestseller-arrival .slick-dots li button {
+      width: 30px;
+      height: 4px;
+      padding: 0;
+      background: #EFF2F6!important;
+  }   .bestseller-arrival li.slick-active button {
+      width: 30px;
+      height: 4px;
+      padding: 0;
+      background: #000!important;
+  }
+  div#bestsellertext .best-arrival .color__swatches {
+      z-index: 999999 !important;
+  }
 </style>
-	<script>
-      
-      $(document).on("click",".cusrt-nav span.dot",function(){
-    var dot_active = $('.cusrt-nav span.dot.activee').attr('data-slide');
-    var slick_current = $('.bestseller-products .slick-current.slick-active').attr('data-slick-index');
-    var clicked_dot = $(this).attr('data-slide');
+<script>
+        $(document).on("click",".cusrt-nav span.dot",function(){
+      var dot_active = $('.cusrt-nav span.dot.activee').attr('data-slide');
+      var slick_current = $('.bestseller-products .slick-current.slick-active').attr('data-slick-index');
+      var clicked_dot = $(this).attr('data-slide');
 
-    if(clicked_dot > dot_active){
-        var dots_diff = clicked_dot - dot_active;
-        console.log(dots_diff);
-        ind = parseInt(dots_diff) * 4;
-        goslide = parseInt(slick_current) + ind;
-        goslide = parseInt(goslide)
-        console.log(parseInt(goslide))
-        $('.bestseller-products').slick('slickGoTo', goslide);
-    }else if(clicked_dot < dot_active){
-        var dots_diff = dot_active - clicked_dot;
-        console.log(dots_diff);
-        ind = parseInt(dots_diff) * 4;
-        goslide = parseInt(slick_current) - ind;
-        goslide = parseInt(goslide)
-        console.log(parseInt(goslide))
-        $('.bestseller-products').slick('slickGoTo', goslide);
-    }
-    
-    $('.cusrt-nav span.dot').removeClass('activee')
-    $(this).addClass('activee')
-})
-      
-       $(document).on("click",".cusrt-nav-two span.dots",function(){
-    var dot_active = $('.cusrt-nav-two span.dots.activee').attr('data-slide');
-    var slick_current = $('.arrival-products .slick-current.slick-active').attr('data-slick-index');
-    var clicked_dot = $(this).attr('data-slide');
+      if(clicked_dot > dot_active){
+          var dots_diff = clicked_dot - dot_active;
+          console.log(dots_diff);
+          ind = parseInt(dots_diff) * 4;
+          goslide = parseInt(slick_current) + ind;
+          goslide = parseInt(goslide)
+          console.log(parseInt(goslide))
+          $('.bestseller-products').slick('slickGoTo', goslide);
+      }else if(clicked_dot < dot_active){
+          var dots_diff = dot_active - clicked_dot;
+          console.log(dots_diff);
+          ind = parseInt(dots_diff) * 4;
+          goslide = parseInt(slick_current) - ind;
+          goslide = parseInt(goslide)
+          console.log(parseInt(goslide))
+          $('.bestseller-products').slick('slickGoTo', goslide);
+      }
 
-    if(clicked_dot > dot_active){
-        var dots_diff = clicked_dot - dot_active;
-        console.log(dots_diff);
-        ind = parseInt(dots_diff) * 4;
-        goslide = parseInt(slick_current) + ind;
-        goslide = parseInt(goslide)
-        console.log(parseInt(goslide))
-        $('.arrival-products').slick('slickGoTo', goslide);
-    }else if(clicked_dot < dot_active){
-        var dots_diff = dot_active - clicked_dot;
-        console.log(dots_diff);
-        ind = parseInt(dots_diff) * 4;
-        goslide = parseInt(slick_current) - ind;
-        goslide = parseInt(goslide)
-        console.log(parseInt(goslide))
-        $('.arrival-products').slick('slickGoTo', goslide);
-    }
-    
-    $('.cusrt-nav-two span.dots').removeClass('actives')
-    $(this).addClass('actives')
-})
-       
-      
-      $(document).ready(function(){
-        $('span.dot:nth-child(1)').addClass('activee');
-       $('#bestsellertext button.prev_arrow.slick-arrow').attr('onclick','plusSlides(-1)');
-        $('#bestsellertext button.next_arrow.slick-arrow').attr('onclick','plusSlides(1)');
-        
-        
-       $('#arrivaltext button.prev_arrow.slick-arrow').attr('onclick','plusSlides(-1)');
-        $('#arrivaltext button.next_arrow.slick-arrow').attr('onclick','plusSlides(1)');
-      
-          });
-          let slideIndex = 1;
-          showSlides(slideIndex);
+      $('.cusrt-nav span.dot').removeClass('activee')
+      $(this).addClass('activee')
+  })
 
-          function plusSlides(n) {
-            var dot_actives = $('.cusrt-nav span.dot.activee').attr('data-slide');
-            showSlides(slideIndex += dot_actives);
+         $(document).on("click",".cusrt-nav-two span.dots",function(){
+      var dot_active = $('.cusrt-nav-two span.dots.activee').attr('data-slide');
+      var slick_current = $('.arrival-products .slick-current.slick-active').attr('data-slick-index');
+      var clicked_dot = $(this).attr('data-slide');
+
+      if(clicked_dot > dot_active){
+          var dots_diff = clicked_dot - dot_active;
+          console.log(dots_diff);
+          ind = parseInt(dots_diff) * 4;
+          goslide = parseInt(slick_current) + ind;
+          goslide = parseInt(goslide)
+          console.log(parseInt(goslide))
+          $('.arrival-products').slick('slickGoTo', goslide);
+      }else if(clicked_dot < dot_active){
+          var dots_diff = dot_active - clicked_dot;
+          console.log(dots_diff);
+          ind = parseInt(dots_diff) * 4;
+          goslide = parseInt(slick_current) - ind;
+          goslide = parseInt(goslide)
+          console.log(parseInt(goslide))
+          $('.arrival-products').slick('slickGoTo', goslide);
+      }
+
+      $('.cusrt-nav-two span.dots').removeClass('actives')
+      $(this).addClass('actives')
+  })
+
+
+        $(document).ready(function(){
+          $('span.dot:nth-child(1)').addClass('activee');
+         $('#bestsellertext button.prev_arrow.slick-arrow').attr('onclick','plusSlides(-1)');
+          $('#bestsellertext button.next_arrow.slick-arrow').attr('onclick','plusSlides(1)');
+
+
+         $('#arrivaltext button.prev_arrow.slick-arrow').attr('onclick','plusSlides(-1)');
+          $('#arrivaltext button.next_arrow.slick-arrow').attr('onclick','plusSlides(1)');
+
+            });
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              var dot_actives = $('.cusrt-nav span.dot.activee').attr('data-slide');
+              showSlides(slideIndex += dot_actives);
+            }
+
+            function currentSlide(n) {
+              if(n == 0){
+
+              }else{
+                var ind = n * 4;
+                var slick_current = $('.bestseller-products .slick-current.slick-active').attr('data-slick-index');
+                var goslide = slick_current + ind
+                $('.bestseller-products').slick('slickGoTo', goslide);
+
+                var slick_currents = $('.arrival-products .slick-current.slick-active').attr('data-slick-index');
+                var goslides = slick_currents + ind
+                $('.arrival-products').slick('slickGoTo', goslides);
+              }
+  //             showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = $(".cols.slick-slide.slick-active");
+              var dots = $(".dot");
+               var dotse = $(".dots");
+              if (n > 4) {slideIndex = 1}
+              if (n < 1) {slideIndex = 4}
+              for (i = 0; i <= 4; i++) {
+                //slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" activee", "");
+              }
+              for (i = 0; i < dotse.length; i++) {
+                dotse[i].className = dotse[i].className.replace(" actives", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+            	dots[slideIndex-1].className += " activee";
+              dotse[slideIndex-1].className += " actives";
+
           }
-      
-          function currentSlide(n) {
-            if(n == 0){
-              
-            }else{
-              var ind = n * 4;
-              var slick_current = $('.bestseller-products .slick-current.slick-active').attr('data-slick-index');
-              var goslide = slick_current + ind
-              $('.bestseller-products').slick('slickGoTo', goslide);
-
-              var slick_currents = $('.arrival-products .slick-current.slick-active').attr('data-slick-index');
-              var goslides = slick_currents + ind
-              $('.arrival-products').slick('slickGoTo', goslides);
-            }
-//             showSlides(slideIndex = n);
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = $(".cols.slick-slide.slick-active");
-            var dots = $(".dot");
-             var dotse = $(".dots");
-            if (n > 4) {slideIndex = 1}    
-            if (n < 1) {slideIndex = 4}
-            for (i = 0; i <= 4; i++) {
-              //slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" activee", "");
-            }
-            for (i = 0; i < dotse.length; i++) {
-              dotse[i].className = dotse[i].className.replace(" actives", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-          	dots[slideIndex-1].className += " activee";
-            dotse[slideIndex-1].className += " actives";
-
-        }
-    
-       
 </script>
-<!-- <script>
-	  var slideInd = 1;
-          showSlid(slideInd);
+<!--
+  <script>
+  	  var slideInd = 1;
+            showSlid(slideInd);
 
-          function plusSlides(n) {
-            showSlid(slideInd += n);
-          }
-
-          function currentSlides(n) {
-            showSlid(slideInd = n);
-          }
-
-          function showSlid(n) {
-            var i;
-            var slides = $(".cols.slick-slide.slick-active");
-            var dots = $(".dots");
-            if (n > 4) {slideInd = 1}    
-            if (n < 1) {slideInd = 4}
-            for (i = 0; i <= 4; i++) {
-              slides[i].style.display = "none";  
+            function plusSlides(n) {
+              showSlid(slideInd += n);
             }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" actives", "");
-            }
-            slides[slideInd-1].style.display = "block";  
-          	dots[slideInd-1].className += " actives";
 
-        }
-</script> -->
+            function currentSlides(n) {
+              showSlid(slideInd = n);
+            }
+
+            function showSlid(n) {
+              var i;
+              var slides = $(".cols.slick-slide.slick-active");
+              var dots = $(".dots");
+              if (n > 4) {slideInd = 1}
+              if (n < 1) {slideInd = 4}
+              for (i = 0; i <= 4; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" actives", "");
+              }
+              slides[slideInd-1].style.display = "block";
+            	dots[slideInd-1].className += " actives";
+
+          }
+  </script>
+-->
 <div class="bestseller-arrival">
   <div class="seller-arrival-heading page-width">
     <div id="bestseller" class="best bestseller collection-active">Best Sellers</div>
     <div id="newarrival" class="best newarrival">New Arrivals</div>
   </div>
   <div id="bestsellertext" class="bestseller-products page-width" style="visibility:hidden;">
-    {% assign featured_Collection = collections[section.settings.collects]%}
-    {% for product in featured_Collection.products limit:8 %}
-    
-    {% assign selected_v = "" %}
-    {% for variant in product.variants %}
-     {% assign v_variant = variant %}
-      {% if variant.metafields.my_fields.is_selected %}   
-    	{% assign selected_v = variant %}
-      {% endif %}
-    {% endfor %} 
-    
-    <div class="cols">
-      {% if selected_v != blank %}
-      	{% assign featured_image = selected_v.featured_image | default: product.featured_image %}
-      	{% assign img_index = featured_image.position  %}
-        {% assign second_img = product.media[img_index] | img_url: 'master' %}
-      {% else %}
-      	{% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
-      	{% assign second_img =product.images[1] | img_url: '350x' %}
-      {% endif %}
-       <span ure="{{ product.url }}">
-      <div class="cols-setting" {{ featured_image.position  }}>
-        <img class="front-image lazyload" loading="lazy" varientid= "" src="{{ featured_image | img_url: '1x1' }}" data-src="{{ featured_image | img_url: '350x' }}"/>
-        <img class="hover-image lazyload" loading="lazy" data-src="{{ second_img }}">
-         </div>
-      </span>
-      <div class="best-arrival">
-      <div class="color__swatches">  
+    {% assign featured_Collection = collections[section.settings.collects] %}
+    {% for product in featured_Collection.products limit: 8 %}
+      {% assign selected_v = '' %}
+      {% for variant in product.variants %}
+        {% assign v_variant = variant %}
+        {% if variant.metafields.my_fields.is_selected %}
+          {% assign selected_v = variant %}
+        {% endif %}
+      {% endfor %}
 
-          {% assign values = null %}
-          {% if product.options contains 'Color' %}
-            {% assign values = product.variants | map: "option1" | uniq %}
-          {% endif %}
-          {% if values %}
-            {% for value in values %}
-         {% assign value_variants = product.variants | where: "option1", value %}  
-        
-       {% assign img_index = value_variants[0].image.position %}
-            {% assign second_img_swatchs = product.media[img_index] %}
-        
-       {% if values.size == 6 %}
-            <div ure="{{ card_product.url }}" class="{{ forloop.index }} text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}" var-id="{{ value_variants[0].id }}" data-img="{{ value_variants[0].image | img_url:'master'}}" data-imghovers="{{ second_img_swatchs | img_url:'master'}}" data-title="{{ value }}" style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')">
+      <div class="cols">
+        {% if selected_v != blank %}
+          {% assign featured_image = selected_v.featured_image | default: product.featured_image %}
+          {% assign img_index = featured_image.position %}
+          {% assign second_img = product.media[img_index] | img_url: 'master' %}
+        {% else %}
+          {% assign featured_image = product.selected_or_first_available_variant.featured_image
+            | default: product.featured_image
+          %}
+          {% assign second_img = product.images[1] | img_url: '350x' %}
+        {% endif %}
+        <span ure="{{ product.url }}">
+          <div class="cols-setting" {{ featured_image.position }}>
+            <div class="probadge" style="background:{{ product.metafields.custom.product_tag_color }};">
+              <p>{{ product.metafields.custom.product_tag_name.value }}</p>
             </div>
-            {% elsif forloop.index0 < 5 %}
-            
-            <div ure="{{ card_product.url }}" class="{{ forloop.index }} text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}" var-id="{{ value_variants[0].id }}" data-img="{{ value_variants[0].image | img_url:'master'}}" data-imghovers="{{ second_img_swatchs | img_url:'master'}}" data-title="{{ value }}" style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')">
+            <img
+              class="front-image lazyload"
+              loading="lazy"
+              varientid=""
+              src="{{ featured_image | img_url: '1x1' }}"
+              data-src="{{ featured_image | img_url: '350x' }}"
+            >
+            <img class="hover-image lazyload" loading="lazy" data-src="{{ second_img }}">
+          </div>
+        </span>
+        <div class="best-arrival">
+          <div class="color__swatches">
+            {% assign values = null %}
+            {% if product.options contains 'Color' %}
+              {% assign values = product.variants | map: 'option1' | uniq %}
+            {% endif %}
+            {% if values %}
+              {% for value in values %}
+                {% assign value_variants = product.variants | where: 'option1', value %}
 
-            </div>
-            {% else %}
-            <div class="more-swatches text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}" data-img="{{ value_variants[0].image | img_url:'master'}}" data-imghovers="{{ second_img_swatchs | img_url:'master'}}" data-title="{{ value }}" style="width:12px; height:12px; display:none; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')">
+                {% assign img_index = value_variants[0].image.position %}
+                {% assign second_img_swatchs = product.media[img_index] %}
 
-            </div>
-            {% endif %} 
-            {% endfor %}
-        {% if values.size > 6 %}<div data-plus_count="{{ values.size | minus:5 }}" class="show-swatches">+{{ values.size | minus:5 }}</div>{% endif %}
-          {% endif %}
+                {% if values.size == 6 %}
+                  <div
+                    ure="{{ card_product.url }}"
+                    class="{{ forloop.index }} text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}"
+                    var-id="{{ value_variants[0].id }}"
+                    data-img="{{ value_variants[0].image | img_url:'master'}}"
+                    data-imghovers="{{ second_img_swatchs | img_url:'master'}}"
+                    data-title="{{ value }}"
+                    style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')"
+                  ></div>
+                {% elsif forloop.index0 < 5 %}
+                  <div
+                    ure="{{ card_product.url }}"
+                    class="{{ forloop.index }} text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}"
+                    var-id="{{ value_variants[0].id }}"
+                    data-img="{{ value_variants[0].image | img_url:'master'}}"
+                    data-imghovers="{{ second_img_swatchs | img_url:'master'}}"
+                    data-title="{{ value }}"
+                    style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')"
+                  ></div>
+                {% else %}
+                  <div
+                    class="more-swatches text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}"
+                    data-img="{{ value_variants[0].image | img_url:'master'}}"
+                    data-imghovers="{{ second_img_swatchs | img_url:'master'}}"
+                    data-title="{{ value }}"
+                    style="width:12px; height:12px; display:none; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')"
+                  ></div>
+                {% endif %}
+              {% endfor %}
+              {% if values.size > 6 -%}
+                <div data-plus_count="{{ values.size | minus:5 }}" class="show-swatches">
+                  +{{ values.size | minus: 5 }}
+                </div>
+              {%- endif %}
+            {% endif %}
+          </div>
+          <a href="{{ product.url }}?variant={{ selected_v.id | default: product.selected_or_first_available_variant.id }}">
+            <h3>
+              <span class="product-name aa">
+                {% if product.metafields.custom.product_modal.value != blank -%}
+                  <p class="bestprotitle">{{ product.metafields.custom.product_modal.value }}</p>
+                  <p class="bestprotitlebottom">{{ product.metafields.custom.device_series.value }}</p>
+                {%- else -%}
+                  {{- product.title | escape -}}
+                {%- endif -%}
+              </span>
+            </h3>
+          </a>
+          <div class="product-price">
+            <span>{{ product.price | money | remove: 'USD' | remove: '.00' }}</span>
+            <span class="compare-price">{{ product.compare_at_price | money | remove: 'USD' | remove: '.00' }}</span>
+          </div>
+        </div>
       </div>
-        <a href="{{ product.url }}?variant={{ selected_v.id | default: product.selected_or_first_available_variant.id }}"><h3><span class="product-name">{{product.title}}</span></h3></a>
-      <div class="product-price">
-        <span>{{ product.price | money | remove: 'USD' | remove: '.00' }}</span>
-        <del><span class="compare-price">{{ product.compare_at_price | money | remove: 'USD' | remove: '.00' }}</span></del>
-      </div>
-      </div>
-    </div>
     {% endfor %}
   </div>
-  
-   <div id="bestsellertext" class="nav-dots page-width" >
-    {% assign featured_Collection = collections[section.settings.collects]%}
+  <div class="bestbtn">
+    <a href="{{ section.settings.btynlink }}">{{ section.settings.btntxt }}</a>
+  </div>
+  <div id="bestsellertext" class="nav-dots page-width">
+    {% assign featured_Collection = collections[section.settings.collects] %}
     {% for product in featured_Collection.products %}
-    
-    {% assign selected_v = "" %}
-    {% for variant in product.variants %}
-     {% assign v_variant = variant %}
-      {% if variant.metafields.my_fields.is_selected %}   
-    	{% assign selected_v = variant %}
-      {% endif %}
-    {% endfor %} 
+      {% assign selected_v = '' %}
+      {% for variant in product.variants %}
+        {% assign v_variant = variant %}
+        {% if variant.metafields.my_fields.is_selected %}
+          {% assign selected_v = variant %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
-  
+
   <div style="" class="cusrt-nav" style="text-align:center">
-   
-    <span class="dot" data-slide="0"></span> 
-    <span class="dot" data-slide="1"></span>  
+    <span class="dot" data-slide="0"></span>
+    <span class="dot" data-slide="1"></span>
   </div>
 
   <div id="arrivaltext" class="arrival-products page-width" style="visibility:hidden;">
-    {% assign featured_Collection = collections[section.settings.collectss]%}
+    {% assign featured_Collection = collections[section.settings.collectss] %}
     {% for product in featured_Collection.products limit: 8 %}
-    
-       {% assign selected_v = "" %}
-    {% for variant in product.variants %}
-      {% if variant.metafields.my_fields.is_selected %}   
-    	{% assign selected_v = variant %}
-      {% endif %}
-    {% endfor %} 
-    
-    <div class="cols">
-      {% if selected_v != blank %}
-      	{% assign featured_image = selected_v.featured_image | default: product.featured_image %}
-      	{% assign img_index = featured_image.position  %}
-        {% assign second_img = product.media[img_index] | img_url: 'master' %}
-      {% else %}
-      	{% assign featured_image = product.selected_or_first_available_variant.featured_image | default: product.featured_image %}
-      	{% assign second_img =product.images[1] | img_url: 'master' %}
-      {% endif %}
-        <span ure="{{ product.url }}">
-        <div class="cols-setting" {{ featured_image.position  }}>
-        <img class="front-image" loading="lazy" varientid= "" src="{{ featured_image | img_url: 'master' }}"/>
-        <img class="hover-image" loading="lazy" src="{{ second_img }}">
-         </div>
-      </span>
-      <div class="best-arrival">
-      <div class="color__swatches">  
+      {% assign selected_v = '' %}
+      {% for variant in product.variants %}
+        {% if variant.metafields.my_fields.is_selected %}
+          {% assign selected_v = variant %}
+        {% endif %}
+      {% endfor %}
 
-          {% assign values = null %}
-          {% if product.options contains 'Color' %}
-            {% assign values = product.variants | map: "option1" | uniq %}
-          {% endif %}
-          {% if values %}
-            {% for value in values %}
-         {% assign value_variants = product.variants | where: "option1", value %}     
-        
-        {% assign img_index = value_variants[0].image.position %}
-            {% assign second_img_swatchs = product.media[img_index] %}
-        
-        {% if values.size == 6 %}
-        <div ure="{{ card_product.url }}" class="text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}" var-id="{{ value_variants[0].id }}" data-img="{{ value_variants[0].image | img_url:'master'}}" data-imghovers="{{ second_img_swatchs | img_url:'master'}}" data-title="{{ value }}" style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')">
-        </div>
-        {% elsif forloop.index0 < 5 %}
-
-        <div ure="{{ card_product.url }}" class="text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}" var-id="{{ value_variants[0].id }}" data-img="{{ value_variants[0].image | img_url:'master'}}" data-imghovers="{{ second_img_swatchs | img_url:'master'}}" data-title="{{ value }}" style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')">
-
-        </div>
+      <div class="cols">
+        {% if selected_v != blank %}
+          {% assign featured_image = selected_v.featured_image | default: product.featured_image %}
+          {% assign img_index = featured_image.position %}
+          {% assign second_img = product.media[img_index] | img_url: 'master' %}
         {% else %}
-        <div class="more-swatches text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}" data-img="{{ value_variants[0].image | img_url:'master'}}" data-imghovers="{{ second_img_swatchs | img_url:'master'}}" data-title="{{ value }}" style="width:12px; height:12px; display:none; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')">
+          {% assign featured_image = product.selected_or_first_available_variant.featured_image
+            | default: product.featured_image
+          %}
+          {% assign second_img = product.images[1] | img_url: 'master' %}
+        {% endif %}
+        <span ure="{{ product.url }}">
+          <div class="cols-setting" {{ featured_image.position }}>
+            <div class="probadge" style="background:{{ product.metafields.custom.product_tag_color }};">
+              <p>{{ product.metafields.custom.product_tag_name.value }}</p>
+            </div>
+            <img class="front-image" loading="lazy" varientid="" src="{{ featured_image | img_url: 'master' }}">
+            <img class="hover-image" loading="lazy" src="{{ second_img }}">
+          </div>
+        </span>
+        <div class="best-arrival">
+          <div class="color__swatches">
+            {% assign values = null %}
+            {% if product.options contains 'Color' %}
+              {% assign values = product.variants | map: 'option1' | uniq %}
+            {% endif %}
+            {% if values %}
+              {% for value in values %}
+                {% assign value_variants = product.variants | where: 'option1', value %}
 
+                {% assign img_index = value_variants[0].image.position %}
+                {% assign second_img_swatchs = product.media[img_index] %}
+
+                {% if values.size == 6 %}
+                  <div
+                    ure="{{ card_product.url }}"
+                    class="text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}"
+                    var-id="{{ value_variants[0].id }}"
+                    data-img="{{ value_variants[0].image | img_url:'master'}}"
+                    data-imghovers="{{ second_img_swatchs | img_url:'master'}}"
+                    data-title="{{ value }}"
+                    style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')"
+                  ></div>
+                {% elsif forloop.index0 < 5 %}
+                  <div
+                    ure="{{ card_product.url }}"
+                    class="text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}"
+                    var-id="{{ value_variants[0].id }}"
+                    data-img="{{ value_variants[0].image | img_url:'master'}}"
+                    data-imghovers="{{ second_img_swatchs | img_url:'master'}}"
+                    data-title="{{ value }}"
+                    style="width:12px; height:12px; display:block; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')"
+                  ></div>
+                {% else %}
+                  <div
+                    class="more-swatches text swatches-pro {% if selected_v != blank and selected_v.option1 == value %}active-swatch {% elsif selected_v == blank and forloop.first %}active-swatch{% endif %}"
+                    data-img="{{ value_variants[0].image | img_url:'master'}}"
+                    data-imghovers="{{ second_img_swatchs | img_url:'master'}}"
+                    data-title="{{ value }}"
+                    style="width:12px; height:12px; display:none; background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')"
+                  ></div>
+                {% endif %}
+              {% endfor %}
+              {% if values.size > 5 -%}
+                <div data-plus_count="{{ values.size | minus:4 }}" class="show-swatches">
+                  +{{ values.size | minus: 4 }}
+                </div>
+              {%- endif %}
+            {% endif %}
+          </div>
+          <a href="{{ product.url }}?variant={{ selected_v.id | default: product.selected_or_first_available_variant.id }}">
+            <h3>
+              <span class="product-name">
+                {% if product.metafields.custom.product_modal.value != blank -%}
+                  <p class="bestprotitle">{{ product.metafields.custom.product_modal.value }}</p>
+                  <p class="bestprotitlebottom">{{ product.metafields.custom.device_series.value }}</p>
+                {%- else -%}
+                  {{- product.title | escape -}}
+                {%- endif -%}
+              </span>
+            </h3>
+          </a>
+          <div class="product-price">
+            <span>{{ product.price | money | remove: 'USD' | remove: '.00' }}</span>
+            <del
+              ><span class="compare-price">
+                {{- product.compare_at_price | money | remove: 'USD' | remove: '.00' -}}
+              </span></del
+            >
+          </div>
         </div>
-        {% endif %} 
-            {% endfor %}
-        {% if values.size > 6 %}<div data-plus_count="{{ values.size | minus:5 }}" class="show-swatches">+{{ values.size | minus:5 }}</div>{% endif %}
-          {% endif %}
       </div>
-      <a href="{{ product.url }}?variant={{ selected_v.id | default: product.selected_or_first_available_variant.id }}"><h3><span class="product-name">{{product.title}}</span></h3></a>
-      <div class="product-price">
-        <span>{{ product.price | money | remove: 'USD' | remove: '.00' }}</span>
-        <del><span class="compare-price">{{ product.compare_at_price | money | remove: 'USD' | remove: '.00' }}</span></del>
-      </div>
-      </div>
-    </div>
     {% endfor %}
   </div>
-  
-    <div id="arrivaltext" class="nav-dots-two page-width">
-    {% assign featured_Collection = collections[section.settings.collectss]%}
+
+  <div id="arrivaltext" class="nav-dots-two page-width">
+    {% assign featured_Collection = collections[section.settings.collectss] %}
     {% for product in featured_Collection.products %}
-    
-       {% assign selected_v = "" %}
-    {% for variant in product.variants %}
-      {% if variant.metafields.my_fields.is_selected %}   
-    	{% assign selected_v = variant %}
-      {% endif %}
-    {% endfor %}
+      {% assign selected_v = '' %}
+      {% for variant in product.variants %}
+        {% if variant.metafields.my_fields.is_selected %}
+          {% assign selected_v = variant %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
   </div>
- <div class="cusrt-nav-two" style="text-align:center">
-   
-    <span class="dots" data-slide="0"></span> 
-    <span class="dots" data-slide="1"></span>  
+  <div class="cusrt-nav-two" style="text-align:center">
+    <span class="dots" data-slide="0"></span>
+    <span class="dots" data-slide="1"></span>
   </div>
 </div>
 {% schema %}
@@ -391,7 +469,17 @@
 "type":"collection",
 "id":"collectss",
 "label":"Best Seller"
-}
+},
+  {
+    "type":"text",
+    "id":"btntxt",
+    "label":"Button"
+  },
+  {
+    "type":"url",
+    "id":"btynlink",
+    "label":"btn link"
+  }
 ],
 "presets":[
 {
@@ -400,4 +488,3 @@
 ]
 }
 {% endschema %}
-
