@@ -1,0 +1,16 @@
+{%- if full_product == null -%}
+  {{ product.title }}
+{%- else -%}
+  <span data-behavior="variable-product_title" data-variant_id='{{product.id}}'>
+    {%- assign downcase_title = product.title | downcase -%}
+    {%- if full_product.id == product.id or downcase_title == 'default title' -%}
+      {{ full_product.title }}
+    {%- else -%}
+      
+                    {% if full_product.title and full_product.title != '' %}{% assign var1 = "" | append: full_product.title | append: "" %}{% endif %}
+                  
+                    {% if product.option1 and product.option1 != '' %}{% assign var2 = " - " | append: product.option1 | replace: " ", "&nbsp;" | append: "" %}{% endif %}
+                  {{ var1 }}{{ var2 }}
+    {%- endif -%}
+  </span>
+{%- endif -%}

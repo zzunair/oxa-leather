@@ -1,0 +1,244 @@
+{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+{{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  @media screen and (max-width: 749px) {
+    .collection-hero--with-image .collection-hero__inner {
+      padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
+    }
+  }
+{%- endstyle -%}
+
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
+  <div class="collection-hero__inner page-width">
+    <div class="collection-hero__text-wrapper">
+      <div class="collection-hero__title">
+        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+        {{- collection.title | escape -}}
+      </div>
+
+      {%- if section.settings.show_collection_description -%}
+        <div class="collection-hero__description rte">{{ collection.description }}</div>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.show_collection_image and collection.image -%}
+      <div class="collection-hero__image-container media gradient">
+        <img
+          srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
+            {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+            {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+            {{ collection.image | image_url }} {{ collection.image.width }}w"
+          src="{{ collection.image | image_url: width: 750 }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
+          alt="{{ collection.title | escape }}"
+          width="{{ collection.image.width }}"
+          height="{{ collection.image.height }}"
+        >
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% if collection.handle == "airpods-all" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What Are the Color Options For Leather Airpods Cases?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Whether it’s an AirPods 1 case, Airpods 2 case, or Airpods Pro case that you’re eyeing, you’ll definitely find the right color that will make your AirPods stand out from the crowd. Oxa Leather has 11 exciting colors and prints to choose from which gives you that needed edge, elevating the look your beloved wireless audio gadget even further."
+    }
+  },{
+    "@type": "Question",
+    "name": "Advantages of Leather Airpods Cases",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nothing screams premium than the sophisticated look and feel of high-grade leather. There’s a reason why it’s been a highly-regarded material for years. It’s been used as the preferred make of clothing and accessories, which includes bags, belts, and shoes."
+    }
+  }]
+}
+</script>
+{% elsif collection.handle == "samsung-galaxy-leather-cases" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Samsung Galaxy Leather Case Color Options",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "We’ve chosen the best colorways that would compliment every style and look without taking the spotlight from the real star—you! From rustic, black, and brown, you can surely find the best color that would make your true personality shine."
+    }
+  },{
+    "@type": "Question",
+    "name": "Samsung Galaxy Leather Wallet Case Prices",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Save US$36.00 off your Galaxy Smartphone case and enjoy a premium leather phone and cardholder in one for only US$59.00! Oxa Leather’s secure payments and easy return policy make it more convenient for you to process your order."
+    }
+  }]
+}
+</script>
+{% elsif collection.handle == "fitbit" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Where to Buy Fitbit Bands?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Buying a Fitbit Versa leather band has never been so easy! Just go directly to the Oxa Leather online store and within seconds, you’ll find a wide selection of leather accessories.
+Choose the Fitbit model of your choice, where you’ll easily be connected to our Fitbit strap collection. Clicking the photo of your preferred Oxa Leather Fitbit strap would directly bring you to the product page.
+From there, just choose your preferred color, Fitbit model, and adapter color. Click add to cart and you’ll be presented with more payment options such as Amazon Pay, Shop Pay, or PayPal."
+    }
+  },{
+    "@type": "Question",
+    "name": "How to Change Fitbit Bands (Straps)",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Changing your Fitbit bands is a relatively breezy affair—and literally, anyone can do it in just a few minutes! However, to ensure that your Fitbit strap has the perfect fit, you must check the right model and size of your Fitbit. 
+Here are a few quick steps you can follow when changing your straps:
+Turn your Fitbit onto its front and locate the two metal release levels. You can find them at the edge of each end part of your band latched onto the watch’s casing. 
+Slide the pin on the lever inwards, after which pull the band away from your Fitbit. This will trigger the release of the band.
+Slide the pin into the small notch of the watch then line it up with the other end, then release the pin to lock it into place. You should hear a small locking noise to ensure that both pins are latched into place."
+    }
+  }]
+}
+</script>
+{% elsif collection.handle == "all-phone-cases" %}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Why Should You Buy an iPhone Leather Wallet Case?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Oxa Leather’s iPhone Wallet Cases provide every customer the right fit, color, design, and feature they would want for their smartphone. Here are just some of the reasons why our iPhone leather wallet case should be the next accessory for your Apple smartphone."
+    }
+  },{
+    "@type": "Question",
+    "name": "What Are the Color Options for Leather iPhone Wallet Cases?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Let your Oxa Leather iPhone case stand out among the crowd with these six gorgeous colorways:
+·         Rustic
+
+·         Black
+
+·         Brown
+
+·         Purple
+
+·         Pink"
+    }
+  }]
+}
+</script>
+{% elsif collection.handle == "leather-apple-watch-bands" %}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How to Choose Best Apple Watch Leather Band & Strap",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Choosing the best Apple Watch Leather band and strap shouldn’t be a chore. Oxa Leather has the right dimensions for your strap to ensure a secure yet comfy fit. But before buying a leather watch strap, here are some tips for you to remember to make the most out of your purchase."
+    }
+  },{
+    "@type": "Question",
+    "name": "What are the Color Options for Leather Apple Watch Bands",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Make your Apple Watch truly your own by choosing the right color that reflects your brand. With over 17 colors to choose from such as
+
+·         Aqua
+
+·         Black
+
+·         Brown
+
+·         Burgundy
+
+·         Cappuccino
+
+·         Cream
+
+·         Espresso
+
+·         Gray
+
+·         Jaguar"
+    }
+  }]
+}
+</script>
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "t:sections.main-collection-banner.name",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:sections.main-collection-banner.settings.paragraph.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_description",
+      "default": true,
+      "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "default": false,
+      "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
+      "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
+    },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.all.colors.accent_1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.all.colors.accent_2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.all.colors.background_1.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.all.colors.background_2.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.all.colors.inverse.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.all.colors.label"
+    }
+  ]
+}
+{% endschema %}

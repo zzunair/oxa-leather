@@ -1,0 +1,46 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "product_breadcrumb": false,
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1",
+        "products_per_page": 18,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "1653976866b09b0891": {
+      "type": "newsletter-form",
+      "settings": {
+        "heading": "NEWSLETTER",
+        "text": "Subscribe to our newsletter now and  never miss exclusive offers or news again."
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "1653976866b09b0891"
+  ]
+}

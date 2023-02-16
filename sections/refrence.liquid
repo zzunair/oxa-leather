@@ -1,0 +1,52 @@
+
+<div class="refrence-section page-width">
+  <div class="reference-heading">{{ section.settings.heading }}</div>
+  <p>{{ section.settings.subheading }}</p>
+
+  <div class="referencelogo">
+    {% for block in section.blocks %} 
+    <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.logo | img_url: '250x250' }}">
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Refrence Section",
+    "class":"reference",
+    "settings": [
+    {
+     "type":"text",
+     "id":"heading",
+     "label":"Heading"
+    },
+     {
+     "type":"text",
+     "id":"subheading",
+     "label":"Subheading"
+    }
+],
+"blocks":[{
+	"name": "logo",
+	"type": "logos",
+	"settings":[
+      {
+       "type": "image_picker",
+       "id": "logo",
+       "label": "Add image"
+        }
+]
+}],
+"presets":[
+ {
+   "name":"Reference"
+ }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

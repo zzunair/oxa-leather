@@ -1,0 +1,132 @@
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>  -->
+<style>
+ 
+</style>
+    {%- for tag in product.tags -%}
+        {%- if tag contains 'linked' -%}{%- assign text_tag = tag -%}{%- endif -%}
+        {% endfor %}
+
+{% assign editions = product.metafields.info.linkedproducts | split: "," %}
+
+{% if editions[0] %}
+<section class="linkedDevices" >
+  <select name="DeviceOptions" id="DeviceOptions">
+    {% for pid in editions %}
+    	 {% assign p_id = pid | strip | plus: 0  %}
+    	 {% paginate collections.all.products by 1000 %}
+    		{% for link_product in collections.all.products %}
+    			{% if link_product.id == p_id %}
+    				<option {% if link_product.id == product.id %}selected="selected" {% endif %} value="{{ link_product.handle }}">{{ link_product.metafields.my_fields.product_model}}</option>
+    			{% endif %}
+    		{% endfor %}
+    	 {% endpaginate %}
+    {% endfor %}
+  </select>
+</section>
+{% endif %}
+
+{% comment %}
+<script>
+$( document ).ready(function() {
+  //7404022431942,7421451075782,7432631025862,7433887613126
+  var q = "{{ product.metafields.info.linkedproducts | replace: ',',' OR id:' | prepend: 'id:'}}";
+  var ajax_url = "https://oxaleather.com/search?view=json&type=product&q="+q;
+  $.get(ajax_url, function(result){
+  	
+    const items = JSON.parse(result);
+    console.log(items);
+    $('#DeviceOptions').empty();
+    $.each(items.products, function (i, item) {
+        var txt = item.name != "" ? item.name : item.title;
+        txt = escapeHtmlEntities(txt);
+        $('#DeviceOptions').append($('<option>', { 
+            value: item.handle,
+          	text : txt,
+            selected: item.id == "{{ product.id }}" ? true : false
+        }));
+    });
+  })
+});
+  
+function escapeHtmlEntities (str) {
+  // No jQuery, so use string replace.
+  return str
+    .replace('&amp;', '&' )
+    .replace('&gt;' , '>' )
+    .replace('&lt;' , '<' )
+    .replace('&quot;' , '"')
+    .replace('&apos;', "'");
+}
+</script>
+
+
+<section class="linkedDevices" >  
+{% if editions[0] %} 
+
+<!-- <label style="text-transform: none;" for="DeviceOptions">Select Your Device</label> -->
+   
+<select name="DeviceOptions" onchange="linkedOption(this.value)" id="DeviceOptions">
+
+{% for i in (0..30) %} 
+  
+  {% if editions[i] %}
+  
+   <option id="option-{{i}}" value="">
+     {{text_tag | remove: '_linked' }}
+   </option>
+  
+      <script>
+    $( document ).ready(function() {       
+jQuery(function($) { 
+ 
+  var productUrl = "https://sarawell.myshopify.com/pages/api?id={{editions[i]}}&cache=false";
+   
+    
+  var xhttp = new XMLHttpRequest(); 
+    xhttp.open("GET", productUrl, true)
+   xhttp.onload = function() {
+     const json = xhttp.responseText;
+   // console.log(json);
+     
+     
+const obj = JSON.parse(json);
+   
+     var id = obj.products[0].id;
+     var name =   obj.products[0].tag;
+     var handle = obj.products[0].handle;  
+       
+     $('#option-{{i}}').text(name);
+     $('#option-{{i}}').val(handle)
+     
+       if(id == {{product.id}})
+     {
+     $("#DeviceOptions").val(handle);
+     }
+};
+    xhttp.send();
+      
+});
+});  
+   
+        
+</script> 
+   
+ 
+  {% endif %}
+    {% endfor %} 
+</select>  
+
+{% endif %}
+</section>
+
+{% endcomment %}
+<script>
+  jQuery("#DeviceOptions").change(function(e){
+    if(e.originalEvent.isTrusted){
+		var value = $(this).val();
+    	window.location.href="https://sarawell.myshopify.com/products/"+value;
+    }
+  });
+</script>

@@ -1,0 +1,140 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<div class="testimonial_slider">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="text-center page-width headings">
+      <div class="theme-block">
+        {% if section.settings.top_heading != blank %}<div class="happy-customer">{{ section.settings.top_heading }}</div>{% endif %}
+      </div>
+      
+      <div class="theme-block">
+        <div class="rte">
+          <div class="enlarge-text">
+      		{% if section.settings.top_subheading != blank %}<p>{{ section.settings.top_subheading }}</p>{% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-inner page-width" role="listbox">
+      
+      {% for block in section.blocks %}
+        <div class="item active ">
+          <div class="container">
+            <div class="images">
+              <img class="watch-images lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.product-image | img_url: 'master' }}"/>
+              <img class="watch-images-for-mob lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.product-image-mob | img_url: 'master' }}"/>
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.profile-image | img_url: 'master' }}" class="profile_img lazyload"/>
+            </div>
+            
+            <div class="review">
+              <ul class="rating rate-{{ block.settings.client-review-rate }}">
+                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
+                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
+                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
+                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
+                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
+              </ul>
+              <h4 class="customer_name">{{ block.settings.customer-name }}</h4>
+              <p class="comment">{{ block.settings.comment }}</p>
+              <h4 class="customer_name review-cutomr-name">{{ block.settings.customer-name }}</h4>
+              <div class="purchased_product">
+              	<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.purchased_product.featured_media | img_url: '1x1' | replace: '_1x1.', '_64x.'}}"/>
+                
+                <ul>
+                  <li>{{ block.settings.purchased_product.title | escape }}</li>
+                  <li class="prices">
+                    <b>{{ block.settings.purchased_product.selected_or_first_available_variant.price | money |  remove: '.00'}}</b>
+                    <span><del>{{ block.settings.purchased_product.selected_or_first_available_variant.compare_at_price | money |  remove: '.00' }}</del></span>
+                    <a class="m-btnn" href="{{ block.settings.purchased_product.url | within: collection}}">
+                      Shop Now
+                    </a>
+                  </li>
+                </ul>
+                <a class="shop_now" href="{{ block.settings.purchased_product.url | within: collection}}">
+                  Shop Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+  
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Testimonial Slider",
+    "class": "index-section--hero",
+    "max_blocks": 5,
+    "settings": [
+          {
+            "type": "text",
+            "id": "top_heading",
+            "label": "Heading"
+          },
+          {
+            "type": "text",
+            "id": "top_subheading",
+            "label": "Subheading"
+          }
+	],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Testimonial Slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "product-image",
+            "label": "Customers review image for desktop"
+          },
+			{
+            "type": "image_picker",
+            "id": "product-image-mob",
+            "label": "Customers review image for mob"
+          },
+          {
+            "type": "image_picker",
+            "id": "profile-image",
+            "label": "Customer Profile Image"
+          },
+          {
+            "type": "range",
+            "id": "client-review-rate",
+            "label": "Client's Review",
+            "default": 4,
+            "min": 0,
+            "max": 5,
+			"step": 1
+          },
+          {
+            "type": "text",
+            "id": "customer-name",
+            "label": "Customer Name"
+          },
+          {
+            "type": "textarea",
+            "id": "comment",
+            "label": "Comment",
+            "default": "Here comes the customer comment..."
+          },
+          {
+            "type": "product",
+            "id": "purchased_product",
+            "label": "Product"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Testimonial Slider",
+      "settings": {},
+      "blocks": []
+    }]
+  }
+{% endschema %}

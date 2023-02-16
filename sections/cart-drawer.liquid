@@ -1,0 +1,225 @@
+<style>
+    #cart-drawer {
+        z-index: 99999;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: -4px 0 10px -5px rgb(0 0 0 / 10%);
+        touch-action: none;
+    }
+    #cart-drawer:not(.active){
+        pointer-events: none;
+    }
+    #cart-drawer:not(.active) .cart{
+        transform: translate3d(100%, 0, 0);
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 480px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        transition: transform 0.75s cubic-bezier(0.075, 0.8, 0.175, 1);
+    }
+    #cart-drawer .cart{
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 480px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        transition: transform 0.75s cubic-bezier(0.075, 0.8, 0.175, 1);
+        color: #000;
+    }
+    #cart-drawer:not(.active) .cart-mask{
+        opacity: 0;
+    }
+    .cart-mask {
+        cursor: pointer;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        transition: opacity .3s;
+    }
+  a.cart-mask {
+    display: block;
+}
+    .cart-body-empty{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 30.34px); 
+    }
+  .emptycart-close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+    @media(min-width: 991px){
+        #cart-drawer .cart{
+            width: 515px;
+        }
+    }
+</style>
+<div id="cart-drawer" class="cart-drawer" :class="cart_open ? 'active' : ''">
+  	<a class="cart-mask" @click="cart_open = false"></a>
+    <form action="/cart" method="post" novalidate="novalidate" class="cart container">
+        <div class="cart-body">
+            <div v-if="cart_items.length <= 0" class="cart-body-empty">
+              <div class="emptycart-close" @click="cart_open = false">{%- render 'icon-close' -%} </div>
+                <div class="text-center">
+                    <p class="cta-text">Your cart is empty</p>
+                    <a href="/collections/all" class="cta">SHOP ALL</a>
+                </div>
+            </div>
+            <div v-else class="cart-items">
+                <div class='cart-items__header'>
+                    <div class="mycart">MY CART</div>
+                    <span class="cursor-pointer" @click="cart_open = false">
+                               {%- render 'icon-close' -%} 
+                              </span>
+
+                    
+                  	
+                </div>
+              
+              
+              <div class="cart-scroll">
+                {% if section.settings.alert_text != blank %}
+                <div class="alert">
+                  {{ section.settings.alert_text }}
+                  </div>
+                  {% endif %}
+                <div class="cart-item-container">
+                  <div v-for="item in cart_items" class="cart-item">
+                    <div class="item-img">
+                      <a class="cart-item_img" :href="item.url">
+                        <img :src="item.image">
+                      </a>
+                    </div>
+                    <div class="cart-item_desc">
+                      <div class="cart-item_desc-text" v-bind:class="(item.variant_options[0] != 'Default Title')?'':'default_v'">
+                        <p class="cart-item_title">
+                          <a :href="item.url">${ item.product_title.replace(" - " + item.variant_options[0], "") }<span v-if="item.variant_options[1]">- ${ item.variant_options[1] }</span></a>
+                        </p>
+                        <p class="cart-item_color" v-if="item.variant_options[0] != 'Default Title'" >Color:${ item.variant_options[0] }</p>
+                       
+                      <div class="personalised">
+                        <div class="product-option" v-for="(item, key) in item.properties">
+                          <dt>${ key } : <span>${ item }</span></dt>
+                        </div>
+                      </div>
+                      <div class="cart-item_qty desktop" v-if="!item.handle.includes('gift-box')">
+                        <button class="minus" @click.prevent="qty_selector('minus', item.id, item.quantity)">-</button>
+                        <input :value="item.quantity" @change="ajax_call(item.id, $event.target.value)">
+                        <button class="plus" @click.prevent="qty_selector('plus', item.id, item.quantity)">+</button>
+                      </div>
+
+                    </div>
+                    <div class="cart-item_desc-remove">
+                      <p class="cart-item_price">${ item.final_price | money }</p>
+                      <span :data-id="item.id" class="cursor-pointer" @click="cart_open = false">
+                        {% comment %} {%- render 'icon-close' -%} {% endcomment %}
+                        Remove
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-if="cart_items.length > 0" class="cart-bottom">
+                <div v-if="upsells.length > 0" class="cart-upsell">
+                  <a class="cart-upsell-title cursor-pointer" @click="toggle_dropdown('upsell')">
+                    <span> frequently bought With</span>
+                    {% comment %}{%- render 'icon-chevron' -%}{% endcomment %}
+                  </a>
+                  <div class="collapse-cart-upsell" style="display:none;">
+                    <div class="upsell-item" v-for="upsell in upsells">
+                      <!--                         <p class="title">${ upsell.title.replace(' - '+upsell.variants[0].option1, '') }</p>
+<p class="color" >${ upsell.variants[0].option1 }</p>
+<p class="price">${ upsell.variants[0].price | money }</p> -->
+                      <div class="container-img">
+                        <img class="w-100" :src="upsell.featured_image">
+                        <div class="price-title">
+                          <p class="title">${ upsell.title.replace(' - '+upsell.variants[0].option1, '') }</p>
+                          <p class="price">${ upsell.variants[0].price | money }</p>
+                        </div>
+                      </div>
+                      <div class="upsell-btn-container">
+                        <select :id="'select-id-'+upsell.id" :data-id="upsell.id" class="upsell-btn-select" @change="upsell_change($event)">
+                          <option v-for="variant in upsell.variants" :value="variant.id">${ variant.option1 }</option>
+                        </select>
+                        <a :id="'btn-id-'+upsell.id" class="upsell-btn" @click.prevent="upsell_atc(upsell.variants[0].id)" :data-atc="upsell.variants[0].id">
+                          Add
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+          </div>
+          <div class="cart-checkout">
+                 <div class="drawer-bottom">
+                   <div class="cart-checkout-price desktop">
+                     <p>Subtotal</p>
+                     <p>${ cart_total_price | money }</p>
+                   </div>
+                   <div class="ship-return-wranty">
+                     <div class="minicar-freeshipping">{{ settings.cartfreeshipping }}</div>  
+                     <div class="minicar-returns">{{ settings.cartreturn }}</div>
+                     <div class="minicar-warranty">{{ settings.cartwarranty }}</div>
+                   </div>
+                   <a class="cursor-pointer" href="/checkout">Checkout Securely</a>
+                 </div>
+               </div>
+            </div>
+            
+      </div>
+    </form>
+</div>
+{%- render 'cart-vue' -%}
+{% schema %}
+{
+    "name": "Cart",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "cart_announcement_text",
+            "label": "Cart Announcement Text"
+        },
+        {
+            "type": "text",
+            "id": "cart_empty_text",
+            "label": "Cart Empty Text"
+        },
+        {
+            "type": "url",
+            "id": "cart_empty_url",
+            "label": "Cart Empty URL"
+        },
+      {
+            "type": "text",
+            "id": "alert_text",
+            "label": "Alert Text"
+        }
+        
+    ]
+}
+{% endschema %}

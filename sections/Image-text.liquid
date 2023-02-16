@@ -1,0 +1,90 @@
+{% assign sections = product.metafields.section %}
+{% assign sec_count = sections.size |  divided_by: 3 %}
+{% for i in (1..10)%}
+{% assign imgs = "img_" | append: i %}
+{% assign titles = "title_" | append: i %}
+{% assign descr = "desc_" | append: i %}
+{% assign video = "video_" | append: i %}
+{% assign videos = "ytube_" | append: i %}
+{% if product.metafields.section[imgs] or product.metafields.section[video] or  product.metafields.section[videos] or product.metafields.section[imgs] %}
+<div class="Image-text">
+<div class="first-section {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %} {% if thecycle == 'odd' %}fade-right{% else %}fade-left{% endif %}">
+  <div class="img-content">
+    <div data-aos="{% if thecycle == 'odd' %}fade-right{% else %}fade-left{% endif %}" data-aos-duration="1000" class="contents">
+      <div class="image-text-heading">{{ product.metafields.section[titles] }}</div>
+      <p>{{ product.metafields.section[descr] }}</p>
+    </div>        
+  </div>
+      {% if product.metafields.section[video] %}
+
+<video  id="casemagvid" preload="auto" muted="" autoplay="" loop="" playsinline="" src="{{ product.metafields.section[video] }}" width="50%" height="50%"  class="lazyloading" src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/images.png?v=1659095959"></video>
+  
+{% elsif  product.metafields.section[videos]   %} 
+{% assign videoId =  product.metafields.section[videos]  | split: '?v=' %}
+  <iframe  width="50%" height="350px" src="https://www.youtube.com/embed/{{ videoId[1] }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     
+  {% else  product.metafields.section[imgs] %}
+  <div class="Img" style="background-image:url({{ product.metafields.section[imgs] | file_url | replace: '.jpg', '_700x.jpg' }})">
+    <img src="{{ product.metafields.section[imgs] | file_url | replace: '.jpg', '_700x.jpg' }}" />
+  </div>
+    {% endif %}
+</div>
+</div>
+{% endif %}
+{% endfor %}
+
+{% schema %}
+{
+"name": "Image-with-text",
+"class":"text-scroll page-width",
+"settings": [],
+"presets": [
+{
+"name": "image-with-text"
+}
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<style>
+ video::-webkit-media-controls-panel {
+    display: none;
+}
+.video_making{
+  pointer-events: none;
+}
+@media only screen and (max-width:768px) and (max-width:1024px){
+.Image-text iframe {
+  width: 100% !important;
+  max-width: 100%;
+  height: 420px!important;
+}
+.Image-text video{
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.Image-text:first-child video{
+  margin-top: 22px;
+}
+}
+@media only screen and (max-width:767px){
+.Image-text iframe {
+  width: 100% !important;
+  max-width: 100%;
+  height: 225px !important;
+}
+.Image-text video {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.Image-text:first-child video{
+  margin-top: 22px;
+}
+}
+</style>
+

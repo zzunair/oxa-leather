@@ -1,0 +1,70 @@
+
+<div class="all__products">
+  <div class="all-products-content page-width">
+    <div class="all-products-heading">{{ section.settings.text }}</div>
+    <p>{{ section.settings.text2 }}</p>    
+    <div class="product-img-title" style="visibility:hidden;">    
+      {% for block in section.blocks %}    
+      <div class="product-images">
+        <a href="{{ block.settings.prolink }}">
+          <img class="lazyload" src="{{ block.settings.collectsimg | img_url: '150x' }}" data-src="{{ block.settings.collectsimg | img_url: '200x' }}" />
+          <div class="all_pro_title">{{ block.settings.title }}</div>
+        </a>
+
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "All products",
+    "class":"all-products",
+    "settings": [
+      {
+       "type": "text",
+       "id": "text",
+       "label": "Add Heading Here"
+        },
+        {
+        "type": "text",
+        "id": "text2",
+        "label": "Add Para"
+        }
+       
+   ],
+"blocks":[{
+	"name": "Collections",
+	"type": "collection",
+	"settings":[
+      {
+       "type": "image_picker",
+       "id": "collectsimg",
+       "label": "Add Image"
+        },
+       {
+       "type": "text",
+       "id": "title",
+       "label": "Tilte"
+        },
+        {
+       "type": "url",
+       "id": "prolink",
+       "label": "LINK"
+        }
+]
+}],
+"presets":[
+ {
+   "name":"all_products"
+ }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

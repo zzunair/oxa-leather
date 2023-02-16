@@ -1,0 +1,59 @@
+<script>
+  function setBreadcrumbForCollections(f_m){
+        var breadC = `<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+    <a href="https://oxaleather.com" title="Oxa Leather" itemprop="item" class="breadcrumb_link">
+    <span itemprop="name">Home</span>
+      </a>
+    <meta itemprop="position" content="1">
+      </span>`;
+        var br = `<span class="breadcrumb-divider"> <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 6L0.8816 12L0 11.1362L5.27614 5.98637L0.0139685 0.850202L0.8816 0L7 6Z" fill="#555555"></path>
+      </svg> </span>`;
+        
+      breadC += br;
+      var mid_m = '<a class="breadcrumb_link" href="'+f_m.parent_link+'"><span itemprop="name">'+f_m.parent+'</span></a><meta itemprop="position" content="2">';
+      
+      breadC += `<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">`+mid_m+`</span>`;
+
+     
+		
+      if(f_m.parent_link != "{{ collection.url }}"){
+          breadC += br;
+        var last_m = '<a class="breadcrumb_link" itemprop="item" href="'+f_m.link+'"><span itemprop="name">'+f_m.name+'</span></a><meta itemprop="position" content="3">';
+        breadC += `<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">`+last_m+`</span>`;
+      }
+
+
+      $(".breadcrumb_text").html(breadC);
+       
+  }    
+  function setBreadcrumb(f_m){
+        var breadC = `<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+    <a href="https://oxaleather.com" title="Oxa Leather" itemprop="item" class="breadcrumb_link">
+    <span itemprop="name">Home</span>
+      </a>
+    <meta itemprop="position" content="1">
+      </span>`;
+        var br = `<span class="breadcrumb-divider"> <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 6L0.8816 12L0 11.1362L5.27614 5.98637L0.0139685 0.850202L0.8816 0L7 6Z" fill="#555555"></path>
+      </svg> </span>`;
+        
+      breadC += br;
+      var mid_m = '<a class="breadcrumb_link" itemprop="item" href="'+f_m.parent_link+'"><span itemprop="name">'+f_m.parent+'</span></a> <meta itemprop="position" content="2">';
+      
+      breadC += `<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">`+mid_m+`</span>`;
+
+      breadC += br;
+		
+      if(f_m.link != "{{ product.url }}"){
+        var last_m = '<a class="breadcrumb_link" itemprop="item" href="'+f_m.link+'"><span itemprop="name">'+f_m.name+'</span></a> <meta itemprop="position" content="3">';
+        breadC += `<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">`+last_m+`</span>`;
+        breadC += br;
+      }
+
+      breadC += `<span itemprop="name">{{ product.title }}</span><meta itemprop="position" content="4">`;
+
+      $(".breadcrumb_text").html(breadC);
+       
+  }    
+</script>

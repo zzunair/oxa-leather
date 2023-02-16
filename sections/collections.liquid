@@ -1,0 +1,52 @@
+<div class="homepage-collection">
+  {% for block in section.blocks %}
+    <div class="collectionss">
+      <a href="{{ block.settings.collink }}">
+      <img class="lazyload" src="{{ block.settings.colimg | img_url: '1x1' }}" data-src="{{ block.settings.colimg | img_url: '500x' }}" />
+          </a>
+      <div class="col-title-btn">
+      <div class="home-col-tilte">{{ block.settings.coltitle }}</div>
+        <a class="fill_summer" href="{{ block.settings.collink }}">SHOP NOW</a>
+      </div>
+    </div> 
+   {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "Homepage-collection",
+    "class":"collections--homepage",
+    "settings": [],
+"blocks":[{
+	"name": "Collections",
+	"type": "collection",
+	"settings":[
+      {
+       "type": "image_picker",
+       "id": "colimg",
+       "label": "collection img"
+      },
+     {
+       "type": "text",
+       "id": "coltitle",
+       "label": "collection title"
+      },
+        {
+       "type": "url",
+       "id": "collink",
+       "label": "Add link"
+        }
+]
+}],
+"presets":[
+ {
+   "name":"Homepage-collection"
+ }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
