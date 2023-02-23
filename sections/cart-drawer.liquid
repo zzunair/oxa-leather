@@ -69,6 +69,11 @@
     top: 20px;
     right: 20px;
 }
+ div#cart-drawer .cart-checkout img.secure-img {
+    display: flex;
+    margin: auto;
+    padding-top: 10px;
+}
     @media(min-width: 991px){
         #cart-drawer .cart{
             width: 515px;
@@ -105,7 +110,7 @@
                   </div>
                   {% endif %}
                 <div class="cart-item-container">
-                  <div v-for="item in cart_items" class="cart-item">
+                  <div v-for="item in cart_items" class="cart-item" :data-item_id="item.id" :data-proid="item.product_id" :data-sku="item.sku">
                     <div class="item-img">
                       <a class="cart-item_img" :href="item.url">
                         <img :src="item.image">
@@ -116,10 +121,10 @@
                         <p class="cart-item_title">
                           <a :href="item.url">${ item.product_title.replace(" - " + item.variant_options[0], "") }<span v-if="item.variant_options[1]">- ${ item.variant_options[1] }</span></a>
                         </p>
-                        <p class="cart-item_color" v-if="item.variant_options[0] != 'Default Title'" >Color:${ item.variant_options[0] }</p>
+                        <p class="cart-item_color"  v-if="item.variant_options[0] != 'Default Title'" :data-clr="item.variant_options[0]">Color:${ item.variant_options[0] }</p>
                        
                       <div class="personalised">
-                        <div class="product-option" v-for="(item, key) in item.properties">
+                        <div class="product-option" v-for="(item, key) in item.properties" v-if="!key.includes('_tags')">
                           <dt>${ key } : <span>${ item }</span></dt>
                         </div>
                       </div>
@@ -128,10 +133,14 @@
                         <input :value="item.quantity" @change="ajax_call(item.id, $event.target.value)">
                         <button class="plus" @click.prevent="qty_selector('plus', item.id, item.quantity)">+</button>
                       </div>
-
+                         <div class="monogram_check" v-if="checkMono(item.properties, item.sku)" >
+                            <input type="checkbox" name="monogram_text" value="">
+                            <label for="monogram_text"> <span>Add monogram</span></label><br>
+                         </div>
                     </div>
                     <div class="cart-item_desc-remove">
-                      <p class="cart-item_price">${ item.final_price | money }</p>
+                       <p class="cart-item_price_compare" v-if="item.compare_price" :cmp="item.compare_price">${ item.compare_price | money }</p>
+                      <p class="cart-item_price" >${ item.final_price | money }</p>
                       <span :data-id="item.id" class="cursor-pointer" @click="cart_open = false">
                         {% comment %} {%- render 'icon-close' -%} {% endcomment %}
                         Remove
@@ -178,14 +187,32 @@
                  <div class="drawer-bottom">
                    <div class="cart-checkout-price desktop">
                      <p>Subtotal</p>
-                     <p>${ cart_total_price | money }</p>
+                     <p>${ cart_total_price | money }<span class="compprice" v-if="cmp_price">${ cmp_price | money }</span></p>
                    </div>
-                   <div class="ship-return-wranty">
+  {% comment %}    <div class="ship-return-wranty">
                      <div class="minicar-freeshipping">{{ settings.cartfreeshipping }}</div>  
                      <div class="minicar-returns">{{ settings.cartreturn }}</div>
                      <div class="minicar-warranty">{{ settings.cartwarranty }}</div>
-                   </div>
-                   <a class="cursor-pointer" href="/checkout">Checkout Securely</a>
+                   </div> {% endcomment %}
+                   <a class="cursor-pointer" href="/checkout">Proceed to Checkout</a>
+<!--                    <img class="secure-img" src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/image_121.png?v=1672298927">         -->
+                    <div class="three_icons three_icons_desktop">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img src="{{ settings.image_fl1 | img_url:'35x35'}}">
+                          <p class="warranty">{{ settings.cartwarranty }}</p>
+                        </div>
+                        <div class="col-md-4">
+                          <img src="{{ settings.image_fl2 | img_url:'35x35'}}">
+                          <p class="shipping">{{ settings.cartfreeshipping }}</p>
+    
+                        </div>
+                        <div class="col-md-4">
+                          <img src="{{ settings.image_fl3 | img_url:'35x35'}}">
+                          <p class="returns">{{ settings.cartreturn }}</p>
+                        </div>
+                      </div>
+                    </div> 
                  </div>
                </div>
             </div>

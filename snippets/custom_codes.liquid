@@ -1,4 +1,12 @@
 <script>
+  
+  
+  
+  
+  
+  
+  
+  
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
@@ -94,6 +102,7 @@
         slidesToScroll: 4,
         dots:true,
         asNavFor: '.nav-dots',
+        focusOnSelect: false,
          prevArrow: "<button class='prev_arrow'><svg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.37489 6.55557L0.974895 10.9556L2.23178 12.2125L7.88867 6.55557L2.23178 0.898682L0.974895 2.15557L5.37489 6.55557Z' fill='white'/></svg></button>",
 		  nextArrow: "<button class='next_arrow'><svg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.37489 6.55557L0.974895 10.9556L2.23178 12.2125L7.88867 6.55557L2.23178 0.898682L0.974895 2.15557L5.37489 6.55557Z' fill='white'/></svg></button>",
             responsive: [
@@ -171,7 +180,7 @@
       
        $('.carousel-inner').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots:false,
          prevArrow: "<button class='prev_arrow'><svg width='8' height='13' viewBox='0 0 8 13' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.37489 6.55557L0.974895 10.9556L2.23178 12.2125L7.88867 6.55557L2.23178 0.898682L0.974895 2.15557L5.37489 6.55557Z' fill='white'/></svg></button>",
@@ -180,7 +189,8 @@
     {
       breakpoint: 989,
       settings: {
-        settings: "unslick"
+        slidesToShow: 1,
+        slidesToScroll: 1
       },
     }
     
@@ -577,7 +587,6 @@
         imageObj.src = monoimgg;
       });
       
-      
       $(".monogram-zoomin").on("click",function(){
           if($(this).hasClass("active")){
             var newScale =1.0;
@@ -614,6 +623,41 @@
         }
       );
       
+   // $(".main-img-monogram_pop .monogram-zoomin").on("click",function(){
+   //        if($(this).hasClass("active")){
+   //          var newScale =1.0;
+   //          $(this).removeClass("active");
+   //        }else{
+   //          var newScale =1.2;
+   //          $(this).addClass("active");
+   //        }
+        
+   //        var oldScale = stage.scaleX();
+
+   //        var center = {
+   //          x: stage.width() / 2,
+   //          y: stage.height() / 2,
+   //        };
+
+   //        var relatedTo = {
+   //          x: (center.x - stage.x()) / oldScale,
+   //          y: (center.y - stage.y()) / oldScale,
+   //        };
+        
+   //        stage.scale({
+   //          x: newScale,
+   //          y: newScale
+   //        });
+
+   //        var newPos = {
+   //          x: center.x - relatedTo.x * newScale,
+   //          y: center.y - relatedTo.y * newScale,
+   //        };
+
+   //        stage.position(newPos);
+   //        stage.batchDraw(); 
+   //      }
+   //    );
       
       $(".modal-header .btn-close").click(function(){
         $("#overlay").css("display","none");
@@ -641,16 +685,23 @@
       
       $("#name").on("input", function(){
           var tx = window.stage.findOne("#mono_text");
-         tx.setFontFamily("Times");
           var string = $(this).val();
           var maxSize = $('.main-img-monogram').data("size");
          tx.text($(this).val());
+         tx.setFontFamily("Arial");        
         });
-
       
+      $(".fonts-select .times").find(".right-click").addClass('righticon');
       $(".fonts-select .times").click(function(){
         var txt = window.stage.findOne("#mono_text");
         txt.setFontFamily("Arial");
+        $(this).siblings().find(".right-click").removeClass("righticon");
+        $(this).find(".right-click").addClass('righticon');
+      });
+  
+     $(document).on("click",".custommodal .fonts-select .times",function(){
+        var txts = window.pop_stage.findOne("#mono_text");
+        txts.setFontFamily("Arial");
         $(this).siblings().find(".right-click").removeClass("righticon");
         $(this).find(".right-click").addClass('righticon');
       });
@@ -661,7 +712,13 @@
         $(this).siblings().find(".right-click").removeClass("righticon");
         $(this).find(".right-click").addClass('righticon');
       });
-      
+  
+       $(document).on("click",".custommodal .fonts-select .handwriting",function(){
+        var txts = window.pop_stage.findOne("#mono_text");
+        txts.setFontFamily("bernadette");
+        $(this).siblings().find(".right-click").removeClass("righticon");
+        $(this).find(".right-click").addClass('righticon');
+      });
       
       $(".monogram-thumb img").click(function(){
         var thumb = $(this).attr("data-img");
@@ -741,13 +798,29 @@
        $(document).on("click", ".cart-body .cart-item .cart-item_desc .cart-item_desc-remove .cursor-pointer", function(event){
         event.preventDefault();
           var removeitem = $(this).attr("data-id");
-          console.log(removeitem);
-           cart_drawer.$data.cart_open = true;
-         jQuery.post('/cart/update.js', 'updates['+removeitem+']=0', function(response) {
-          jQuery.getJSON("/cart.js", function(cart){
-            cart_drawer.$data.cart_items = cart.items;
-           });          
+          var p_sku = $(this).parents('.cart-item').attr('data-sku');
+          var find_mono = cart_drawer.$data.cart_items.find(itm => itm.properties["SKU"] == p_sku);
+          var remove_item = {};
+          remove_item[removeitem] = 0;
+          if(find_mono){
+            remove_item[find_mono.id]=0;
+          }
+        
+          cart_drawer.$data.cart_open = true;
+          $.ajax({
+            type: "POST",
+            url: "/cart/update.js",
+            dataType: "json",
+            data: {updates: remove_item},
+            success:function(){
+              jQuery.getJSON("/cart.js", function(cart){
+                cart_drawer.$data.cart_items = cart.items;
+              }); 
+            }
           })
+         // jQuery.post('/cart/update.js', 'updates['+removeitem+']=0', function(response) {
+                   
+         //  })
       });
       
       $("button.search-modal__close-button").click(function(){
@@ -810,11 +883,11 @@
           $(".color__swatches").each(function(){
               var swtch_length = $(this).find(".swatches-pro").length;
               if(window.innerWidth <= 320){
-                  if(swtch_length == 5 || swtch_length == 6){
+                  if(swtch_length == 5 || swtch_length == 5){
                       $(this).find(".show-swatches").remove(); 
                      $(this).append('<div data-plus_count="2" class="show-swatches">+2</div> '); 
                   }
-                  if(swtch_length>4){
+                  if(swtch_length>3){
                       $(this).find(".swatches-pro").hide().slice(0, 3).show();
                       $(this).find(".show-swatches").html("+"+(swtch_length-3));
                   }
@@ -871,7 +944,8 @@
                         properties:{"Font":fnt,"Text":name,"SKU":sku_product}
                       },{
                         id: parent_product,
-                        quantity: 1
+                        quantity: 1,
+                        properties:{"_tags": window.GPOConfigs.product.tags.join(',')}
                       }]
                     },
                     success: function (data) {
@@ -886,6 +960,40 @@
                   });
        });
 
+       $(document).on("click",".custommodal .modal-dialog .popup-right .add-to-cart button",function(){        
+       		var ID = $(this).attr("data-id");
+            var sku_product = $(this).attr('sku')
+         	var name =  $(this).parents(".popup-right").find(".name-initial input").val();
+            $(this).parents(".popup-right").find(".error").remove();
+            if(name.trim() == ""){
+			  $(this).parents(".popup-right").find(".name-initial input").css("border-color", "red");
+              $(this).parents(".popup-right").find(".name-initial input").after(`<p class="error">This is required.</p>`);
+              return  false;
+            }
+        	var fnt =  $(this).parents(".popup-right").find(".righticon").parent().text();
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data:{
+                      items:[{
+                        id:ID,
+                        quantity: 1,
+                        properties:{"Font":fnt,"Text":name,"SKU":sku_product}
+                      }]
+                    },
+                    success: function (data) {
+                      
+                      jQuery.getJSON("/cart.js", function(cart) { 
+                        $("#overlay").css("display","none");                        
+                        $("#exmpModalToggleone").hide();
+                        cart_drawer.$data.cart_items = cart.items;
+                      	cart_drawer.$data.cart_open = true;
+                      });
+                    }
+                  });
+       });
+  
 
       $(".popup-right .buy-it-now button").click(function(){
         var ID = $(this).attr("data-id");
@@ -965,5 +1073,69 @@
         $('summary.header__icon.header__icon--menu.header__icon--summary.link.focus-inset').removeAttr('aria-expanded');
         $('.menus-none.megamenu1').addClass('menus-none-block')
       });
-      
+
+  
+
+  addEventListener('DOMContentLoaded', (event) => {
+     $('#product-grid li.grid__item').each(function(){
+    var number = $(this).data('active');
+    $(this).find('.color__swatches .swatches-pro:nth-of-type('+number+')').click();
+  })
+  });
+
+// monogram_code
+
+
+    $('.product-form__buttons button.product-form__submit').click(function(){
+        $('.popup_view').show();
+    });
+    $('.close').click(function(){
+          $('.popup_view').hide();
+    });
+  $('.product-form__buttons button.product-form__submit').click(function(){
+    $('body.gradient').addClass('show_popup')   
+  });
+  $('div#popup1 a.close').click(function(){
+   $('body.gradient').removeClass('show_popup')
+  });
+
+// $(window).resize(function(){
+//     if (window.matchMedia("(max-width: 767px)").matches) {
+//     $('.logocont').slick({
+//       infinite: true,
+//       slidesToShow: 4,
+//       slidesToScroll:4,
+//       speed:500,
+//       easing:'ease-in-out',
+//       draggable: true,
+//       swipeToSlide: true,
+//       loop:true,
+//        nextArrow: '<div class="nav_left"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="17" viewBox="0 0 11 17" fill="none"><path d="M1.61816 0.863525L8.715 8.25717L1.61816 16.2196" stroke="#212121" stroke-width="2"/></svg></div>',
+//        prevArrow: '<div class="nav_right"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="17" viewBox="0 0 11 17" fill="none"><path d="M1.61816 0.863525L8.715 8.25717L1.61816 16.2196" stroke="#212121" stroke-width="2"/></svg></div>',
+//      responsive: [
+//     {
+//       breakpoint: 767,
+//       settings: {
+//       slidesToShow: 4,
+//       slidesToScroll: 1,    
+//       },
+//     },
+//   ],
+//     });    
+//     }
+//    else{
+//     $('.logocont').slick('unslick');
+//    }
+// });
+    $('.refrence-section-about').click(function(){
+    $(this).toggleClass('Showdesc')
+  })
+
+
+
+
+
+
+
+
 </script>

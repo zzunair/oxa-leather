@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 <div class="testimonial_slider">
@@ -6,135 +5,203 @@
     <!-- Wrapper for slides -->
     <div class="text-center page-width headings">
       <div class="theme-block">
-        {% if section.settings.top_heading != blank %}<div class="happy-customer">{{ section.settings.top_heading }}</div>{% endif %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="155" height="32" viewBox="0 0 155 32" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0516 25.4803L6.07077 30.4L7.78596 19.98L0.520325 12.6006L10.5612 11.0803L15.0516 1.59998L19.5419 11.0803L29.5829 12.6006L22.3173 19.98L24.0324 30.4L15.0516 25.4803Z" fill="#FCB244"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M44.9214 25.4803L35.4416 30.4L37.2522 19.98L29.5829 12.6006L40.1815 11.0803L44.9214 1.59998L49.6612 11.0803L60.26 12.6006L52.5907 19.98L54.4011 30.4L44.9214 25.4803Z" fill="#FCB244"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M75.5985 25.4803L66.1186 30.4L67.9292 19.98L60.26 12.6006L70.8586 11.0803L75.5985 1.59998L80.3383 11.0803L90.937 12.6006L83.2678 19.98L85.0782 30.4L75.5985 25.4803Z" fill="#FCB244"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M106.276 25.4803L96.7957 30.4L98.6063 19.98L90.937 12.6006L101.536 11.0803L106.276 1.59998L111.015 11.0803L121.614 12.6006L113.945 19.98L115.755 30.4L106.276 25.4803Z" fill="#FCB244"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M127.265 13.9126L134.606 12.7883L137.757 6.08008L140.909 12.7883L148.255 13.9126L142.928 19.3818L144.145 26.88L137.757 23.3654L131.371 26.88L132.589 19.3818L127.265 13.9126Z" fill="#FCB244"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M137.76 25.4803L128.779 30.4L130.494 19.98L123.229 12.6006L133.269 11.0803L137.76 1.59998L142.25 11.0803L152.291 12.6006L145.026 19.98L146.741 30.4L137.76 25.4803ZM128.268 14.272L133.084 19.1725L131.982 25.891L137.76 22.7417L143.539 25.891L142.438 19.1725L147.257 14.272L140.611 13.2646L137.76 7.25401L134.909 13.2646L128.268 14.272Z" fill="#FCB244"/>
+        </svg>
+        {% if section.settings.top_heading != blank -%}
+          <div class="happy-customer">{{ section.settings.top_heading }}</div>
+        {%- endif %}
       </div>
-      
+
       <div class="theme-block">
         <div class="rte">
           <div class="enlarge-text">
-      		{% if section.settings.top_subheading != blank %}<p>{{ section.settings.top_subheading }}</p>{% endif %}
+            {% if section.settings.top_subheading != blank -%}
+              <p>{{ section.settings.top_subheading }}</p>
+            {%- endif %}
           </div>
         </div>
       </div>
     </div>
 
-    <div class="carousel-inner page-width" role="listbox">
-      
+    <div class="carousel-inner test page-width" role="listbox">
       {% for block in section.blocks %}
         <div class="item active ">
           <div class="container">
             <div class="images">
-              <img class="watch-images lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.product-image | img_url: 'master' }}"/>
-              <img class="watch-images-for-mob lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.product-image-mob | img_url: 'master' }}"/>
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.profile-image | img_url: 'master' }}" class="profile_img lazyload"/>
+              <img
+                class="watch-images lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="{{ block.settings.product-image | img_url: 'master' }}"
+              >
+              <img
+                class="watch-images-for-mob lazyload"
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="{{ block.settings.product-image-mob | img_url: 'master' }}"
+              >
+              <img
+                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                data-src="{{ block.settings.profile-image | img_url: 'master' }}"
+                class="profile_img lazyload"
+              >
             </div>
-            
+
             <div class="review">
               <ul class="rating rate-{{ block.settings.client-review-rate }}">
-                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
-                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
-                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
-                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
-                <li><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"/></li>
+                <li>
+                  <img
+                    class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/Frame_cf2c8373-684e-4a7a-a42e-da762fdca2aa.png?v=1670853997"
+                  >
+                </li>
+<!--                 <li>
+                  <img
+                    class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"
+                  >
+                </li>
+                <li>
+                  <img
+                    class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"
+                  >
+                </li>
+                <li>
+                  <img
+                    class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"
+                  >
+                </li>
+                <li>
+                  <img
+                    class="lazyload"
+                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                    data-src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/star.png?v=1650744020"
+                  >
+                </li> -->
               </ul>
-              <h4 class="customer_name">{{ block.settings.customer-name }}</h4>
+              <h4 class="customer_name">{{ block.settings['customer-name'] }}</h4>
               <p class="comment">{{ block.settings.comment }}</p>
-              <h4 class="customer_name review-cutomr-name">{{ block.settings.customer-name }}</h4>
+              <h4 class="customer_name review-cutomr-name">{{ block.settings['customer-name'] }}</h4>
               <div class="purchased_product">
-              	<img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.purchased_product.featured_media | img_url: '1x1' | replace: '_1x1.', '_64x.'}}"/>
-                
+                <img
+                  class="lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="{{ block.settings.purchased_product.featured_media | img_url: '1x1' | replace: '_1x1.', '_64x.'}}"
+                >
+
                 <ul>
                   <li>{{ block.settings.purchased_product.title | escape }}</li>
                   <li class="prices">
-                    <b>{{ block.settings.purchased_product.selected_or_first_available_variant.price | money |  remove: '.00'}}</b>
-                    <span><del>{{ block.settings.purchased_product.selected_or_first_available_variant.compare_at_price | money |  remove: '.00' }}</del></span>
+                    <b>
+                      {{-
+                        block.settings.purchased_product.selected_or_first_available_variant.price
+                        | money
+                        | remove: '.00'
+                      -}}
+                    </b>
+                    <span
+                      ><del>
+                        {{-
+                          block.settings.purchased_product.selected_or_first_available_variant.compare_at_price
+                          | money
+                          | remove: '.00'
+                        -}}
+                      </del></span
+                    >
                     <a class="m-btnn" href="{{ block.settings.purchased_product.url | within: collection}}">
                       Shop Now
                     </a>
                   </li>
                 </ul>
-                <a class="shop_now" href="{{ block.settings.purchased_product.url | within: collection}}">
-                  Shop Now
-                </a>
+                <a class="shop_now" href="{{ block.settings.purchased_product.url | within: collection}}"> Shop Now </a>
               </div>
             </div>
           </div>
         </div>
       {% endfor %}
-  
     </div>
   </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Testimonial Slider",
-    "class": "index-section--hero",
-    "max_blocks": 5,
-    "settings": [
-          {
-            "type": "text",
-            "id": "top_heading",
-            "label": "Heading"
-          },
-          {
-            "type": "text",
-            "id": "top_subheading",
-            "label": "Subheading"
-          }
-	],
-    "blocks": [
-      {
-        "type": "image",
-        "name": "Testimonial Slide",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "product-image",
-            "label": "Customers review image for desktop"
-          },
-			{
-            "type": "image_picker",
-            "id": "product-image-mob",
-            "label": "Customers review image for mob"
-          },
-          {
-            "type": "image_picker",
-            "id": "profile-image",
-            "label": "Customer Profile Image"
-          },
-          {
-            "type": "range",
-            "id": "client-review-rate",
-            "label": "Client's Review",
-            "default": 4,
-            "min": 0,
-            "max": 5,
-			"step": 1
-          },
-          {
-            "type": "text",
-            "id": "customer-name",
-            "label": "Customer Name"
-          },
-          {
-            "type": "textarea",
-            "id": "comment",
-            "label": "Comment",
-            "default": "Here comes the customer comment..."
-          },
-          {
-            "type": "product",
-            "id": "purchased_product",
-            "label": "Product"
-          }
-        ]
-      }
-    ],
-    "presets": [{
-      "name": "Testimonial Slider",
-      "settings": {},
-      "blocks": []
-    }]
-  }
+ {
+   "name": "Testimonial Slider",
+   "class": "index-section--hero",
+   "max_blocks": 5,
+   "settings": [
+         {
+           "type": "text",
+           "id": "top_heading",
+           "label": "Heading"
+         },
+         {
+           "type": "text",
+           "id": "top_subheading",
+           "label": "Subheading"
+         }
+],
+   "blocks": [
+     {
+       "type": "image",
+       "name": "Testimonial Slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "product-image",
+           "label": "Customers review image for desktop"
+         },
+		{
+           "type": "image_picker",
+           "id": "product-image-mob",
+           "label": "Customers review image for mob"
+         },
+         {
+           "type": "image_picker",
+           "id": "profile-image",
+           "label": "Customer Profile Image"
+         },
+         {
+           "type": "range",
+           "id": "client-review-rate",
+           "label": "Client's Review",
+           "default": 4,
+           "min": 0,
+           "max": 5,
+		"step": 1
+         },
+         {
+           "type": "text",
+           "id": "customer-name",
+           "label": "Customer Name"
+         },
+         {
+           "type": "textarea",
+           "id": "comment",
+           "label": "Comment",
+           "default": "Here comes the customer comment..."
+         },
+         {
+           "type": "product",
+           "id": "purchased_product",
+           "label": "Product"
+         }
+       ]
+     }
+   ],
+   "presets": [{
+     "name": "Testimonial Slider",
+     "settings": {},
+     "blocks": []
+   }]
+ }
 {% endschema %}

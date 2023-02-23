@@ -1,12 +1,20 @@
-<div class="summer-sale">
+<div class="summer-sale page-width">
   <div class="summerimg">
-    <img class="summerimg-desktop lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ section.settings.summerimg | img_url:'master' }}">
-    <img class="summerimg-mobile lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ section.settings.summerimgmob | img_url:'master' }}">
+    <img
+      class="summerimg-desktop lazyload"
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      data-src="{{ section.settings.summerimg | img_url:'master' }}"
+    >
+    <img
+      class="summerimg-mobile lazyload"
+      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+      data-src="{{ section.settings.summerimgmob | img_url:'master' }}"
+    >
   </div>
   <div class="summer-content">
-    <div class="summer-sale-subtitle">{{ section.settings.heading }}</div>
-    <div class="summer-sale-heading">{{ section.settings.subheading }}</div>
-    <a class="fill_summer" href="{{ section.settings.btnlink }}">{{ section.settings.btntxt }}</a>
+    <div class="summer-sale-heading">{{ section.settings.heading }}</div>
+    <div class="summer-sale-subtitle">{{ section.settings.subheading }}</div>
+     <div class="fill_summer_anchor"><a class="fill_summer" href="{{ section.settings.btnlink }}">{{ section.settings.btntxt }}</a></div>
   </div>
 </div>
 
@@ -26,7 +34,7 @@
      "label":"Add image for mobile"
   },
   {
-    "type":"text",
+    "type":"html",
     "id":"heading",
     "label":"Add heading"
   },
