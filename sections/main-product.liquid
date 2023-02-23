@@ -565,7 +565,7 @@
            {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
               <div class="pro-title-heading aa" >
-            {% if product.metafields.custom.product_modal.value != blank %}<p class="prometatitle">{{ product.metafields.custom.product_modal.value }}</p>{% comment %}<p>{{ product.metafields.custom.device_series.value }}</p>{% endcomment %}{% else %}{{ product.title | escape }}{% endif %}</div>
+            {% if product.metafields.custom.product_modal.value != blank %}<p class="prometatitle">{{ product.title }}</p>{% comment %}<p>{{ product.metafields.custom.device_series.value }}</p>{% endcomment %}{% else %}{{ product.title | escape }}{% endif %}</div>
               <!--Yotpo Star Rating on Product Page-->
             <div class="series_review">
             <div class="review_price">
