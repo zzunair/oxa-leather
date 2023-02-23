@@ -549,10 +549,10 @@
             <div class="yotpo bottomLine"
               data-product-id="{{ product.id }}">
             </div>
-            <div class="price_for_mob">{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}</div>
-            </div>
             <!--End of Yotpo Star Rating on Product Page-->
             </div>
+            <div class="price_for_mob">{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}</div>
+          </div>
             <div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
           {%- when 'price' -%}
             <div class="no-js-hidden product-page-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
