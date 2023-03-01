@@ -535,7 +535,7 @@ body.index .testimonial_slider button.slick-arrow svg path {
     fill: #fff
 }
 
-.collectionss.odd .col-title-btn .fill_summer,
+/* .collectionss.odd .col-title-btn .fill_summer, */
 .collectionss.odd .home-col-tilte,
 .refdiv p {
     color: #fff !important
@@ -1018,8 +1018,13 @@ p.optionbuttons {
     font-size: 14px;
     cursor: pointer;
     border-radius: 3px;
-    width: 170px;
+
     text-align: left;
+}
+@media all and (max-width: 768px){
+  p.optionbuttons {
+    width: 170px;
+  }
 }
 
 footer.footer,
@@ -1416,9 +1421,23 @@ img.hover-image {
     color: #1b1b1b;
     text-decoration: none;
     border-radius: 5px;
-    padding: 9px 0
+    /* padding: 9px 0; */
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 12px 40px;
+    
 }
-
+.collectionss .col-title-btn .fill_summer:hover {
+    border-color: var(--hover)!important;
+    text-decoration: none!important;
+    background: #fff;
+    color: #000;
+    transition: .3s;
+}
+.contents.aos-init {
+    max-width: 480px;
+}
 .col-title-btn {
     position: absolute;
     bottom: 40px;
@@ -4828,7 +4847,11 @@ p.oxinstagram {
 }
 
 @media only screen and (min-width:1600px) {
-
+    .product-page-banner .page-width{
+        /* max-width: 90% !important; */
+        width: 100%;
+        /* margin: 0 auto; */
+    }
     .bancontent,
     .blackcontent,
     .homepage-collection,
@@ -4856,9 +4879,9 @@ p.oxinstagram {
         padding-right: 50px
     }
 
-    .page-width {
+    /* .page-width {
         width: 100% !important
-    }
+    } */
 
     .testimonial_slider .carousel-inner .item .container {
         max-width: 1530px !important;
@@ -7892,7 +7915,7 @@ main#MainContent {
     letter-spacing: .04rem
 }
 
-.homepage-collection .collectionss:hover .fill_summer,
+/* .homepage-collection .collectionss:hover .fill_summer, */
 .homepage-collection .collectionss:hover .home-col-tilte {
     color: #fff !important
 }
@@ -8079,6 +8102,7 @@ li.grid__item.display_none {
     .shopify-section .m_left_image-inner {
         top: 44%
     }
+    
 
     .testimonial_slider svg {
         width: 100px
@@ -8394,7 +8418,31 @@ ul#product-grid .banner img {
     width: 100%;
     text-align: center
 }
+.m_left_image-inner a{
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 12px 40px;
+}
 
+.m_left_image-inner p{
+    margin-bottom: 0;
+}
+.m_right_image-inner a{
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 12px 40px;
+}
+.m_right_image-inner p{
+    margin: 0;
+}
+.m_left_image-inner a:hover, .m_right_image-inner a:hover{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    transition: .3s;
+}  
 .m_cont_image h3 {
     font-family: 'Manrope 700';
     text-transform: capitalize;
@@ -8406,16 +8454,16 @@ ul#product-grid .banner img {
     font-family: 'Manrope 700'
 }
 
-.m_left_image a,
-.m_left_image a:hover,
+/* .m_left_image a,
+.m_left_image a:hover, */
 .m_left_image h3,
 .m_left_image h3:hover {
     color: #1b1b1b !important;
     text-decoration: none !important
 }
 
-.m_right_image-inner a,
-.m_right_image-inner a:hover,
+/* .m_right_image-inner a,
+.m_right_image-inner a:hover, */
 .m_right_image-inner h3,
 .m_right_image-inner h3:hover {
     color: #fff !important;

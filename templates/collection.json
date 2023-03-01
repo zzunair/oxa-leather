@@ -206,76 +206,8 @@
         "btnlink": "shopify:\/\/collections\/apple-airtags"
       }
     },
-    "3abc3040-ec1e-415c-ad7f-36c5da8460e9": {
+    "496eaa4e-0b4c-4e9e-bbde-b4bb536f62da": {
       "type": "collection_about",
-      "blocks": {
-        "920a3f3d-d91d-494b-a6f4-186eaf89b665": {
-          "type": "logos",
-          "settings": {
-            "star": "premium grain leather",
-            "label": "OXA uses 100% full-grain leather that looks and feels good to the touch. It’s the real deal, unlike some cheap cases that use fake leather that can deteriorate over time. You’re guaranteed that your leather case will still be as good as you unboxed it for the first time."
-          }
-        },
-        "9255c5f3-9067-46ae-879c-91a46aeeacba": {
-          "type": "logos",
-          "settings": {
-            "star": "durable and dependable",
-            "label": "We have sourced all the best materials to make one good and sturdy product. We treat our leather to make it scratch and smudge-resistant while ensuring that the magnets connecting your case to the cover are strong enough to hold your phone in place."
-          }
-        },
-        "01bebb7a-065d-4882-bc2b-db004d5ff8e2": {
-          "type": "logos",
-          "settings": {
-            "star": "stores all the things",
-            "label": "Gone are the days that you’re fumbling for your wallet, phone, and keys in your pocket whenever you head out of the door. Our Leather Wallet case has card slots for which you can store your IDs, credit cards and a partition for paper bills."
-          }
-        },
-        "f58521ec-3569-4991-ba01-5413f2d754b5": {
-          "type": "logos",
-          "settings": {
-            "star": "MagSafe compatible",
-            "label": "Now that Apple has continuously perfected its wireless charging capabilities, we’ve ensured that our case will not obstruct your phone from making the most out of iPhone’s MagSafe technology. You’re assured that wireless charging works 100% all the time."
-          }
-        },
-        "c39f5e23-976e-409c-a2ba-3859b22b5a3c": {
-          "type": "logos",
-          "settings": {
-            "star": "versatile",
-            "label": "When you don’t feel like using the entire iPhone 14 Pro leather case, just pop off the attachable wallet, and voila, your leather case can work as a standalone one instead."
-          }
-        },
-        "05115fef-9c8d-4998-a23a-8a9fe88dff76": {
-          "type": "logos",
-          "settings": {
-            "star": "100% customizable",
-            "label": "Wanna make your precious and sparkly iPhone 14 truly yours? There’s an option you can choose to personalize your case with a monogram to add your name or initials."
-          }
-        },
-        "59a1b7e9-2ac9-45ab-bdc9-fad6e65e17f6": {
-          "type": "logos",
-          "settings": {
-            "star": "product warranty",
-            "label": "As OXA’s commitment to quality and excellence, our customers get a 2-year product warranty whenever they purchase a genuine iPhone 14 leather case from our store."
-          }
-        },
-        "af69653f-f438-40e3-aba4-102aa94b0410": {
-          "type": "logos",
-          "settings": {
-            "star": "ship it for free!",
-            "label": "Save even more when you order products from our website with free shipment for orders worth $50 and above."
-          }
-        }
-      },
-      "block_order": [
-        "920a3f3d-d91d-494b-a6f4-186eaf89b665",
-        "9255c5f3-9067-46ae-879c-91a46aeeacba",
-        "01bebb7a-065d-4882-bc2b-db004d5ff8e2",
-        "f58521ec-3569-4991-ba01-5413f2d754b5",
-        "c39f5e23-976e-409c-a2ba-3859b22b5a3c",
-        "05115fef-9c8d-4998-a23a-8a9fe88dff76",
-        "59a1b7e9-2ac9-45ab-bdc9-fad6e65e17f6",
-        "af69653f-f438-40e3-aba4-102aa94b0410"
-      ],
       "settings": {
         "heading": "More Info About<span class=\"gray\"> iPhone 14 <\/span>Leather Case",
         "subheading": ""
@@ -296,7 +228,7 @@
     "328ebb7a-12ba-4f3f-9ef9-f244ac407b16",
     "bb6fb575-bb13-4784-9d30-dda7a9c36a03",
     "eef86c13-b555-48c3-a254-a1ae74727942",
-    "3abc3040-ec1e-415c-ad7f-36c5da8460e9",
+    "496eaa4e-0b4c-4e9e-bbde-b4bb536f62da",
     "1653976866b09b0891"
   ]
 }
