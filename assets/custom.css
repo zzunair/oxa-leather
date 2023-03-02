@@ -1049,7 +1049,7 @@ footer.footer .footer__content-bottom {
 }
 
 ul.list-menu a.header__menu-item {
-    font-family: "Manrope 700";
+    font-family: "Manrope 800";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1068,7 +1068,7 @@ ul.list-menu a.header__menu-item {
 
 .menus ul li a.header_menu_custom.menu_item_custom:hover,
 ul.list-menu a.header__menu-item:hover {
-    font-weight: 700
+    font-weight: 800
 }
 
 .slider-homepage .slideshow-content {
@@ -4463,7 +4463,10 @@ p.oxinstagram {
     }
 }
 
-.mob-slide:after {
+/* .mob-slide:after {
+    background: linear-gradient(107.51deg, rgba(0, 0, 0, .89) 28.03%, rgba(0, 0, 0, .48) 55.15%);     
+} */
+.enableOverlay:after{
     background: linear-gradient(107.51deg, rgba(0, 0, 0, .89) 28.03%, rgba(0, 0, 0, .48) 55.15%);
     position: absolute;
     content: "";
@@ -4472,7 +4475,6 @@ p.oxinstagram {
     height: 100%;
     width: 100%
 }
-
 @media only screen and (max-width:767px) {
 
     .allcont p br,
@@ -4871,7 +4873,9 @@ p.oxinstagram {
     }
 
     .mega-menus .menus-none {
-        max-width: 1500px !important
+        max-width: 1500px !important;
+        /* margin-top: 7px; */
+        border-radius: 5px;
     }
 
     .mega-menus .menus.page-width {
