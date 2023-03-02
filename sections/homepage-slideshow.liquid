@@ -5,7 +5,7 @@
         <div class="desktop-slide">
           <img class="slider-desktop lazyload" data-srcset="{{ block.settings.slideimg | img_url:'master' }}">
         </div>
-        <div class="mob-slide">
+        <div class="mob-slide {% if block.settings.enableOverlay %} enableOverlay {% endif %}">
           <img class="slider-mobile" src="{{ block.settings.slidemob | img_url:'700x' }}">
         </div>
         <!--
@@ -44,7 +44,12 @@
                   "type": "image_picker",
                   "label": "Image for mobile"
                 },
-                 {
+                {
+                  "id": "enableOverlay",
+                  "type": "checkbox",
+                  "label": "Enable Overlay"
+                },
+                {
                   "id": "heading",
                   "type": "text",
                   "label": "Add text"
