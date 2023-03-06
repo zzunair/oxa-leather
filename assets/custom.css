@@ -282,6 +282,9 @@ body.collection .card__information {
     height: 100%;
     object-fit: cover
 }
+.navimg img {
+    border-radius: 5px;
+}
 
 .m_left,
 .m_right {
@@ -3972,17 +3975,17 @@ p.oxinstagram {
         font-family: "Manrope 700";
         font-style: normal;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 27px;
         line-height: 100%;
         letter-spacing: 0;
         color: #1b1b1b;
         margin: unset;
         padding-bottom: 15px;
-        text-transform: capitalize
+        /* text-transform: capitalize */
     }
 
     .mega-menus nav.nav_menu_custom ul.mega-list-menu {
-        padding-left: unset;
+        padding-left: 15px;
         list-style: none;
         margin-top: 30px
     }
@@ -3991,7 +3994,7 @@ p.oxinstagram {
         font-family: "Manrope 500";
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 28px;
         letter-spacing: .04em;
         color: #2f2f2f;
@@ -4873,11 +4876,39 @@ p.oxinstagram {
     }
 
     .mega-menus .menus-none {
-        max-width: 1500px !important;
+        max-width: 1360px !important;
         /* margin-top: 7px; */
         border-radius: 5px;
     }
-
+    .menus-none.twocol{
+        /* width: 36%; */
+        width: 775px;
+    }
+    .menus-none.twocol .menus {
+        display: grid;
+        grid-template-columns: repeat(2, 265px);
+        grid-gap: 40px;
+        justify-content: center;
+    }
+    .menus-none.threecol{
+        width: 1078px;
+    }
+    .menus-none.threecol .menus {
+        display: grid;
+        grid-template-columns: repeat(3, 265px);
+        grid-gap: 40px;
+        justify-content: center;
+    }
+    .menus-none.fourcol{
+        width: 100%;
+    }
+    .menus-none.fourcol .menus {
+        display: grid;
+        grid-template-columns: repeat(4, 265px);
+        grid-gap: 40px;
+        justify-content: center;
+    }
+    
     .mega-menus .menus.page-width {
         padding-left: 50px;
         padding-right: 50px
@@ -8618,7 +8649,9 @@ body.collection .summer-sale {
     }
 
     .mega-menus .menus.page-width {
-        padding-bottom: 20px !important
+        /* padding-bottom: 20px !important */
+        padding: 52px 90px 36px;
+        max-width: 100% !important;
     }
 
     .mega-menus .mega-list-menu .mega-menu-heading {
