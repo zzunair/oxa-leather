@@ -155,6 +155,7 @@
     },
     "31f28649-564f-4af5-b316-8fbc6d09025f": {
       "type": "blacksection",
+      "disabled": true,
       "blocks": {
         "56dc3902-7206-421e-a38d-8bd4188a5db8": {
           "type": "line",
