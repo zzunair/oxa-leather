@@ -447,6 +447,16 @@
         "heading": "Keep Yourself Up to date with our new offers",
         "text": ""
       }
+    },
+    "821faca3-d633-4f7c-8d21-68a794f71edc": {
+      "type": "hp-cases",
+      "settings": {
+        "heading": "Shop iPhone Cases",
+        "image": "shopify:\/\/shop_images\/download_82fb662f-e6a0-455b-9d48-fc848a3d1011.jpg",
+        "image-heading": "iPhone 14 Series",
+        "btn-text": "SHOP NOW",
+        "btn-url": ""
+      }
     }
   },
   "order": [
@@ -463,6 +473,7 @@
     "16523258986295531a",
     "91a279e4-4b4e-40b4-9b60-2314a41e464d",
     "79b82c23-8b21-4914-b35b-e411dcf023f8",
-    "1652177403c5493a30"
+    "1652177403c5493a30",
+    "821faca3-d633-4f7c-8d21-68a794f71edc"
   ]
 }
