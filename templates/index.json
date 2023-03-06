@@ -348,6 +348,44 @@
         "subheading": ""
       }
     },
+    "821faca3-d633-4f7c-8d21-68a794f71edc": {
+      "type": "hp-cases",
+      "blocks": {
+        "54f6135d-ba60-4bee-a767-da8d809931c7": {
+          "type": "product",
+          "settings": {
+            "title": "iPhone 13 Series",
+            "image": "shopify:\/\/shop_images\/download_1.jpg"
+          }
+        },
+        "1ef8976b-3512-431a-9601-b8525e50d661": {
+          "type": "product",
+          "settings": {
+            "title": "iPhone 12 Series",
+            "image": "shopify:\/\/shop_images\/download_2.jpg"
+          }
+        },
+        "02f0df83-d761-49e5-bf23-2a4266d66181": {
+          "type": "product",
+          "settings": {
+            "title": "iPhone 11 Series",
+            "image": "shopify:\/\/shop_images\/download_001630fd-f597-40c0-b64e-fffb9b14980f.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "54f6135d-ba60-4bee-a767-da8d809931c7",
+        "1ef8976b-3512-431a-9601-b8525e50d661",
+        "02f0df83-d761-49e5-bf23-2a4266d66181"
+      ],
+      "settings": {
+        "heading": "Shop iPhone Cases",
+        "image": "shopify:\/\/shop_images\/download_82fb662f-e6a0-455b-9d48-fc848a3d1011.jpg",
+        "image-heading": "iPhone 14 Series",
+        "btn-text": "SHOP NOW",
+        "btn-url": ""
+      }
+    },
     "16523258986295531a": {
       "type": "testimonial-slider",
       "blocks": {
@@ -447,16 +485,6 @@
         "heading": "Keep Yourself Up to date with our new offers",
         "text": ""
       }
-    },
-    "821faca3-d633-4f7c-8d21-68a794f71edc": {
-      "type": "hp-cases",
-      "settings": {
-        "heading": "Shop iPhone Cases",
-        "image": "shopify:\/\/shop_images\/download_82fb662f-e6a0-455b-9d48-fc848a3d1011.jpg",
-        "image-heading": "iPhone 14 Series",
-        "btn-text": "SHOP NOW",
-        "btn-url": ""
-      }
     }
   },
   "order": [
@@ -470,10 +498,10 @@
     "165215959574bcb5a2",
     "771b419b-9373-44ba-8557-be191c8a0a9d",
     "1652166873f253677f",
+    "821faca3-d633-4f7c-8d21-68a794f71edc",
     "16523258986295531a",
     "91a279e4-4b4e-40b4-9b60-2314a41e464d",
     "79b82c23-8b21-4914-b35b-e411dcf023f8",
-    "1652177403c5493a30",
-    "821faca3-d633-4f7c-8d21-68a794f71edc"
+    "1652177403c5493a30"
   ]
 }
