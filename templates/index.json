@@ -9,6 +9,7 @@
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/winter-banner.jpg",
             "slidemob": "shopify:\/\/shop_images\/winter-banner-mobile.png",
+            "enableOverlay": false,
             "heading": "PREMIUM QUALİTY <br> LEATHER IPHONE CASES",
             "subheading": "Leather accessories committed to the feeling <br>that transcends experience and style.",
             "btntxt": "SHOP NOW",
@@ -18,8 +19,9 @@
         "0fa7ccbb-9d1d-421d-aae4-585a15cf974a": {
           "type": "Slideshow-imges",
           "settings": {
-            "slideimg": "shopify:\/\/shop_images\/main-photo.jpg",
-            "slidemob": "shopify:\/\/shop_images\/Mask_group_332dec35-ee60-4f87-90ef-eef47b4c2b9f.jpg",
+            "slideimg": "shopify:\/\/shop_images\/download.jpg",
+            "slidemob": "shopify:\/\/shop_images\/download.jpg",
+            "enableOverlay": false,
             "heading": "PREMIUM QUALITY LEATHER CASE",
             "subheading": "%30 Discounts on Leather iPhone Cases and Accessories",
             "btntxt": "Shop Now",
@@ -32,6 +34,7 @@
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/monogram-cover.png",
             "slidemob": "shopify:\/\/shop_images\/monogram-cover_mobile.png",
+            "enableOverlay": false,
             "heading": "",
             "subheading": "",
             "btntxt": "",
