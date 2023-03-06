@@ -485,6 +485,17 @@
         "heading": "Keep Yourself Up to date with our new offers",
         "text": ""
       }
+    },
+    "50d706d4-648a-4974-b1c5-8020b0379153": {
+      "type": "hp-environment",
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4e6ebfe962a1439f973b3acaf51cf4b0.mp4",
+        "sub-heading": "test",
+        "heading": "Carbon Footsteps",
+        "desc": "Description",
+        "btn-text": "asdasda",
+        "btn-url": ""
+      }
     }
   },
   "order": [
@@ -502,6 +513,7 @@
     "16523258986295531a",
     "91a279e4-4b4e-40b4-9b60-2314a41e464d",
     "79b82c23-8b21-4914-b35b-e411dcf023f8",
-    "1652177403c5493a30"
+    "1652177403c5493a30",
+    "50d706d4-648a-4974-b1c5-8020b0379153"
   ]
 }
