@@ -5,30 +5,28 @@
       "blocks": {
         "e199dced-cede-462e-b2a8-c2f031d99445": {
           "type": "Slideshow-imges",
-          "disabled": true,
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/winter-banner.jpg",
             "slidemob": "shopify:\/\/shop_images\/winter-banner-mobile.png",
-            "heading": "PREMIUM QUALİTY <br> LEATHER IPHONE CASES",
-            "subheading": "Leather accessories committed to the feeling <br>that transcends experience and style.",
+            "heading": "SITEWIDE DISCOUNTS <br> FOR THE HOLIDAY SEASON!",
+            "subheading": "UP TO 30%",
             "btntxt": "SHOP NOW",
-            "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
+            "btntxtlink": "shopify:\/\/collections\/all"
           }
         },
         "0fa7ccbb-9d1d-421d-aae4-585a15cf974a": {
           "type": "Slideshow-imges",
           "settings": {
-            "slideimg": "shopify:\/\/shop_images\/main-photo.jpg",
-            "slidemob": "shopify:\/\/shop_images\/Mask_group_332dec35-ee60-4f87-90ef-eef47b4c2b9f.jpg",
-            "heading": "PREMIUM QUALITY LEATHER CASE",
-            "subheading": "%30 Discounts on Leather iPhone Cases and Accessories",
-            "btntxt": "Shop Now",
-            "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
+            "slideimg": "shopify:\/\/shop_images\/Holidays-Cover_Desktop.png",
+            "slidemob": "shopify:\/\/shop_images\/Holidays-Cover_Mobile.png",
+            "heading": "",
+            "subheading": "",
+            "btntxt": "",
+            "btntxtlink": ""
           }
         },
         "5c67aca3-493a-4afe-bd5e-25a4029a7e71": {
           "type": "Slideshow-imges",
-          "disabled": true,
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/monogram-cover.png",
             "slidemob": "shopify:\/\/shop_images\/monogram-cover_mobile.png",
@@ -47,45 +45,69 @@
       "settings": {
       }
     },
-    "0ad550dc-de7d-4c60-803e-a2546fd7fdcb": {
-      "type": "black_banner_bottom",
-      "disabled": true,
+    "1652080653d0b60c93": {
+      "type": "all_products",
       "blocks": {
-        "df13ee76-398c-41cf-aaf1-1cfc494787cc": {
-          "type": "banimg",
+        "4b5503de-d1f6-4ee2-942c-3d1cb9cabc71": {
+          "type": "collection",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_2.png"
+            "collectsimg": "shopify:\/\/shop_images\/iphone_1_89187474-5b6b-4ef3-ad88-b550a385e752.jpg",
+            "title": "iPhone Cases",
+            "prolink": "shopify:\/\/collections\/leather-iphone-cases"
           }
         },
-        "720ef555-b690-4950-81f8-2b9d82929fe0": {
-          "type": "banimg",
+        "9d7c0493-d6c2-4527-9213-ca0af9cbcdaf": {
+          "type": "collection",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_3.png"
+            "collectsimg": "shopify:\/\/shop_images\/dtour_rustic.jpg",
+            "title": "Apple Watch Band",
+            "prolink": "shopify:\/\/collections\/leather-apple-watch-bands"
           }
         },
-        "c7d820f0-dca4-4c67-b207-1d8a9fe08112": {
-          "type": "banimg",
+        "7b554f09-62eb-47f4-ae6c-d888f5c61dfe": {
+          "type": "collection",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_4.png"
+            "collectsimg": "shopify:\/\/shop_images\/ipad2.jpg",
+            "title": "iPad Cases",
+            "prolink": "shopify:\/\/collections\/leather-ipad-covers"
           }
         },
-        "eb968fb3-23b4-40ed-ba3d-70e527b782ac": {
-          "type": "banimg",
+        "d98cc964-d262-4556-9ce8-c263595272b0": {
+          "type": "collection",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_5.png"
+            "collectsimg": "shopify:\/\/shop_images\/airpods.jpg",
+            "title": "Airpod Cases",
+            "prolink": "shopify:\/\/collections\/airpods-all"
+          }
+        },
+        "65742e31-814e-4cae-9073-04a518b4d124": {
+          "type": "collection",
+          "settings": {
+            "collectsimg": "shopify:\/\/shop_images\/samsung_cases.jpg",
+            "title": "Samsung Galaxy Cases",
+            "prolink": "shopify:\/\/collections\/samsung-galaxy-leather-cases"
+          }
+        },
+        "fd4dda06-1272-4d61-98c7-abb028c59535": {
+          "type": "collection",
+          "settings": {
+            "collectsimg": "shopify:\/\/shop_images\/deskmat.jpg",
+            "title": "Office Essentials",
+            "prolink": "shopify:\/\/collections\/leather-accessories"
           }
         }
       },
       "block_order": [
-        "df13ee76-398c-41cf-aaf1-1cfc494787cc",
-        "720ef555-b690-4950-81f8-2b9d82929fe0",
-        "c7d820f0-dca4-4c67-b207-1d8a9fe08112",
-        "eb968fb3-23b4-40ed-ba3d-70e527b782ac"
+        "4b5503de-d1f6-4ee2-942c-3d1cb9cabc71",
+        "9d7c0493-d6c2-4527-9213-ca0af9cbcdaf",
+        "7b554f09-62eb-47f4-ae6c-d888f5c61dfe",
+        "d98cc964-d262-4556-9ce8-c263595272b0",
+        "65742e31-814e-4cae-9073-04a518b4d124",
+        "fd4dda06-1272-4d61-98c7-abb028c59535"
       ],
       "settings": {
-        "heading": "",
-        "heading2": "Rated #1 leather accessory",
-        "link": ""
+        "text": "ALL PRODUCTS",
+        "text2": "Browse all our premium leather products according to collections."
       }
     },
     "1652098478e13e339b": {
@@ -94,49 +116,32 @@
         "654a92da-848d-4743-9113-e716283cffae": {
           "type": "collection",
           "settings": {
-            "colimg": "shopify:\/\/shop_images\/Mask_group.png",
-            "colimg1": "shopify:\/\/shop_images\/Property_1_Default.png",
-            "tag": "Award Winning",
-            "coltitle": "Leather  Wallet Case",
-            "collink": "shopify:\/\/collections\/leather-cases-for-iphone-14"
-          }
-        },
-        "8f375e0c-763c-4bfe-b8ca-b6389bec05b2": {
-          "type": "collection",
-          "settings": {
-            "colimg": "shopify:\/\/shop_images\/case1.jpg",
-            "colimg1": "shopify:\/\/shop_images\/case1.jpg",
-            "tag": "",
-            "coltitle": "Airpod Case",
-            "collink": "shopify:\/\/collections\/airpods-1-2"
+            "colimg": "shopify:\/\/shop_images\/OXA_nisan_9832_31718a4f-2ae6-4abf-8332-18acb3bca522.jpg",
+            "coltitle": "AIRPOD CASES",
+            "collink": "shopify:\/\/collections\/airpods-all"
           }
         },
         "ddec89b5-4544-4032-8bb1-ee16c19ca418": {
           "type": "collection",
           "settings": {
-            "colimg": "shopify:\/\/shop_images\/watchbands.jpg",
-            "colimg1": "shopify:\/\/shop_images\/watchbands.jpg",
-            "tag": "",
-            "coltitle": "Watch Band",
+            "colimg": "shopify:\/\/shop_images\/OXA_nisan_9454_6439b446-5055-4198-bbd7-829d5c96f016.jpg",
+            "coltitle": "APPLE WATCH BANDS",
             "collink": "shopify:\/\/collections\/leather-apple-watch-bands"
           }
         },
-        "1ffeefdf-d714-4349-b49c-a8b7854a79de": {
+        "8f375e0c-763c-4bfe-b8ca-b6389bec05b2": {
           "type": "collection",
           "settings": {
-            "colimg": "shopify:\/\/shop_images\/Property_1_Variant2_3.png",
-            "colimg1": "shopify:\/\/shop_images\/Property_1_Variant2_3.png",
-            "tag": "",
-            "coltitle": "Accessories",
-            "collink": "shopify:\/\/collections\/leather-accessories"
+            "colimg": "shopify:\/\/shop_images\/OXA_mart_4498_91bbaed6-8452-4384-ac0e-d199b74df536.jpg",
+            "coltitle": "IPHONE cases",
+            "collink": "shopify:\/\/collections\/leather-iphone-cases"
           }
         }
       },
       "block_order": [
         "654a92da-848d-4743-9113-e716283cffae",
-        "8f375e0c-763c-4bfe-b8ca-b6389bec05b2",
         "ddec89b5-4544-4032-8bb1-ee16c19ca418",
-        "1ffeefdf-d714-4349-b49c-a8b7854a79de"
+        "8f375e0c-763c-4bfe-b8ca-b6389bec05b2"
       ],
       "settings": {
       }
@@ -144,204 +149,109 @@
     "16520888013a8f76a5": {
       "type": "bestseller-arrival",
       "settings": {
-        "collects": "all-phone-cases",
-        "collectss": "leather-apple-watch-bands",
-        "btntxt": "View All",
-        "btynlink": "shopify:\/\/collections\/best-seller"
+        "collects": "best-seller",
+        "collectss": "leather-accessories"
       }
     },
-    "31f28649-564f-4af5-b316-8fbc6d09025f": {
-      "type": "blacksection",
-      "blocks": {
-        "56dc3902-7206-421e-a38d-8bd4188a5db8": {
-          "type": "line",
-          "settings": {
-            "limg": "shopify:\/\/shop_images\/Frame_9dd959e5-0a98-4d5f-b857-a7691291b209.png",
-            "ltxt": "Best Leather iPhone Cases"
-          }
-        },
-        "88595d9c-0b3a-4cd1-9415-b19f79b1a848": {
-          "type": "line",
-          "settings": {
-            "limg": "shopify:\/\/shop_images\/Frame_1.png",
-            "ltxt": "Customizable Phone Cases"
-          }
-        },
-        "86fd1594-fca5-4d6a-9b6c-ebeee59e2f03": {
-          "type": "line",
-          "settings": {
-            "limg": "shopify:\/\/shop_images\/Frame_2.png",
-            "ltxt": "+10000 happy users"
-          }
-        }
-      },
-      "block_order": [
-        "56dc3902-7206-421e-a38d-8bd4188a5db8",
-        "88595d9c-0b3a-4cd1-9415-b19f79b1a848",
-        "86fd1594-fca5-4d6a-9b6c-ebeee59e2f03"
-      ],
+    "featured_collection": {
+      "type": "featured-collection",
       "settings": {
-        "heading": "Unique Leather Designs",
-        "desc": "Adding extra quality and style to long-lasting products like smartphones, tablets, iPods, laptops, and more is our goal. The cases and products we make are all handcrafted from high quality, 100 percent full grain genuine leather, and they are done with both precision and elegance.  Providing a standard of excellence is our commitment, and we understand that it's a lifestyle and a conscious choice for our customers.",
-        "btntxt": "Shop Now",
-        "btnlink": "shopify:\/\/collections\/newest-products",
-        "firstimg": "shopify:\/\/shop_images\/Asset_3_3x_1.png",
-        "secimg": "shopify:\/\/shop_images\/Oxa10163.png"
-      }
-    },
-    "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e": {
-      "type": "home_banner_bottom",
-      "blocks": {
-        "ca802db9-7faf-4bd6-9f55-c7b11cf3fe7b": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_2.png"
-          }
-        },
-        "fd636869-a532-4019-85c2-b962a4c0c944": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_3.png"
-          }
-        },
-        "dacf610a-685d-45f5-9fe7-eabc4b3dd42b": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_4.png"
-          }
-        },
-        "de8dd1eb-3c34-4011-ae43-348c1cd4874f": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_5.png"
-          }
-        }
-      },
-      "block_order": [
-        "ca802db9-7faf-4bd6-9f55-c7b11cf3fe7b",
-        "fd636869-a532-4019-85c2-b962a4c0c944",
-        "dacf610a-685d-45f5-9fe7-eabc4b3dd42b",
-        "de8dd1eb-3c34-4011-ae43-348c1cd4874f"
-      ],
-      "settings": {
-        "heading": "",
-        "heading2": "Rated #1 leather accessory",
-        "link": "#"
-      }
-    },
-    "c5ae0244-b762-40f6-b80d-dd61584d2c0c": {
-      "type": "collection_logos",
-      "blocks": {
-        "0ba0acb1-4c43-4695-a388-219927ee70a8": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_9.png",
-            "star": "Fast Delivery",
-            "label": "Your cargo will reach you in a short time without any problems."
-          }
-        },
-        "f404b191-1e9b-47fb-b441-39fd4036cd6e": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_10.png",
-            "star": "5 star Reviews",
-            "label": "Stylish and flashy models that customers are satisfied with."
-          }
-        },
-        "98fe3433-8e81-4813-a3e0-7490e1b17495": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_11.png",
-            "star": "Secure Payments",
-            "label": "No problem during the payment"
-          }
-        },
-        "966f5d78-db84-4c4a-95d5-209c92981b22": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_12.png",
-            "star": "14-Day Returns",
-            "label": "Refund guarantee in case of any defect in the product."
-          }
-        }
-      },
-      "block_order": [
-        "0ba0acb1-4c43-4695-a388-219927ee70a8",
-        "f404b191-1e9b-47fb-b441-39fd4036cd6e",
-        "98fe3433-8e81-4813-a3e0-7490e1b17495",
-        "966f5d78-db84-4c4a-95d5-209c92981b22"
-      ],
-      "settings": {
-        "heading": "",
-        "subheading": ""
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "leather-iphone-cases",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "linkpro": "shopify:\/\/collections\/all",
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "products_to_show_mob": 4,
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "165215959574bcb5a2": {
       "type": "summer-sale",
       "settings": {
-        "summerimg": "shopify:\/\/shop_images\/zilli.jpg",
-        "summerimgmob": "shopify:\/\/shop_images\/zilli.jpg",
-        "heading": "<span class=\"grey\">8 years<\/span>of crafting the perfect leather.",
-        "subheading": "",
-        "btntxt": "Learn More",
-        "btnlink": "shopify:\/\/pages\/about-us"
+        "summerimg": "shopify:\/\/shop_images\/iphone14ishere.jpg",
+        "summerimgmob": "shopify:\/\/shop_images\/iphone14ishere-mobile.jpg",
+        "heading": "iPhone 14 is Here",
+        "subheading": "iPhone 14 Collection",
+        "btntxt": "SHOP NOW",
+        "btnlink": "shopify:\/\/collections\/case-for-iphone-14"
       }
     },
-    "771b419b-9373-44ba-8557-be191c8a0a9d": {
-      "type": "both_image",
-      "settings": {
-        "img": "shopify:\/\/shop_images\/OXA_nisan_10483_e0c58571-ed61-4567-9a62-74a5a18100af.png",
-        "heading1": "premium grain leather",
-        "desc1": "Shop Now",
-        "link1": "shopify:\/\/collections\/samsung-galaxy-leather-cases",
-        "rightimg": "shopify:\/\/shop_images\/deli.jpg",
-        "heading2": "Cable And Accessories",
-        "desc2": "Shop Now",
-        "link2": "shopify:\/\/collections\/cable-organizer"
-      }
-    },
-    "1652166873f253677f": {
-      "type": "refrence",
+    "multicolumn": {
+      "type": "multicolumn",
       "disabled": true,
       "blocks": {
-        "f20d5a40-6de5-4928-819c-21a71bf18e4a": {
-          "type": "logos",
+        "column1": {
+          "type": "column",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_7.png",
-            "label": "Fast Delivery"
+            "image": "shopify:\/\/shop_images\/Rectangle_1344.jpg",
+            "title": "Production",
+            "heading": "Lorem Ipsum Dolar Sit Amet",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+            "link_label": "READ MORE",
+            "link": "#"
           }
         },
-        "ffef2547-9b47-430d-8958-cfebf280a44c": {
-          "type": "logos",
+        "column2": {
+          "type": "column",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_4.png",
-            "label": "Secure Payments"
+            "image": "shopify:\/\/shop_images\/Rectangle_1344_1.jpg",
+            "title": "Product Review",
+            "heading": "Lorem Ipsum Dolar Sit Amet",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+            "link_label": "READ MORE",
+            "link": "#"
           }
         },
-        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f": {
-          "type": "logos",
+        "column3": {
+          "type": "column",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_5.png",
-            "label": "5 Star Reviews"
-          }
-        },
-        "0fdf803b-646e-4be7-99cf-c231bf4c0b68": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_6.png",
-            "label": "14-Day Returns"
+            "image": "shopify:\/\/shop_images\/Rectangle_1344_2.jpg",
+            "title": "NEWS",
+            "heading": "Lorem Ipsum Dolar Sit Amet",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<\/p>",
+            "link_label": "READ MORE",
+            "link": "#"
           }
         }
       },
       "block_order": [
-        "f20d5a40-6de5-4928-819c-21a71bf18e4a",
-        "ffef2547-9b47-430d-8958-cfebf280a44c",
-        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f",
-        "0fdf803b-646e-4be7-99cf-c231bf4c0b68"
+        "column1",
+        "column2",
+        "column3"
       ],
       "settings": {
-        "heading": "AS SEEN ON",
-        "subheading": ""
+        "title": "NEW JOURNAL",
+        "subheadings": "We tell the journey of our love for new technology and great design that we are inspired by with our articles.",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "16523258986295531a": {
@@ -416,49 +326,89 @@
         "9262aab5-a2a9-48c3-8b57-d36c9c15f01a"
       ],
       "settings": {
-        "top_heading": "Trusted by 2500+ Customers",
-        "top_subheading": ""
+        "top_heading": "OUR HAPPY CUSTOMERS",
+        "top_subheading": "Trusted by 27,000+ Customers"
       }
     },
-    "91a279e4-4b4e-40b4-9b60-2314a41e464d": {
-      "type": "image_with_text",
+    "1652166873f253677f": {
+      "type": "refrence",
+      "blocks": {
+        "f20d5a40-6de5-4928-819c-21a71bf18e4a": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_114.png"
+          }
+        },
+        "ffef2547-9b47-430d-8958-cfebf280a44c": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mask_Group_24.png"
+          }
+        },
+        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo_small_2def740a-7349-4976-af57-c903a0e487d0.png"
+          }
+        },
+        "0fdf803b-646e-4be7-99cf-c231bf4c0b68": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_112.png"
+          }
+        }
+      },
+      "block_order": [
+        "f20d5a40-6de5-4928-819c-21a71bf18e4a",
+        "ffef2547-9b47-430d-8958-cfebf280a44c",
+        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f",
+        "0fdf803b-646e-4be7-99cf-c231bf4c0b68"
+      ],
       "settings": {
-        "img": "shopify:\/\/shop_images\/Group_3434449.png",
-        "rightimg": "shopify:\/\/shop_images\/Frame.png",
-        "heading": "Becoming<br> Planet Positive",
-        "desc": "Made with an innovative leather alternative. <br>Made from nothing but nature."
+        "heading": "AS SEEN ON",
+        "subheading": ""
       }
     },
-    "79b82c23-8b21-4914-b35b-e411dcf023f8": {
-      "type": "instafeed",
+    "rich_text": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Apple iPhone Case<\/strong><br\/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et turpis maximus, tincidunt nisl id, tincidunt metus. Nunc lacinia dolor a aliquam mollis. Aenean urna elit, efficitur id felis et, aliquam mattis nisi. Nullam egestas tellus eu sapien pulvinar aliquet. <br\/><br\/><strong> Samsung Galaxy Case<\/strong><br\/>Phasellus sodales porta convallis. Mauris dignissim feugiat tortor in condimentum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla sem nulla, venenatis in auctor vel, luctus nec diam. <br\/><br\/><strong> Apple iPad Case<\/strong><br\/>Etiam finibus, mi feugiat feugiat sagittis, tortor sem ultricies sem, ut ultrices est augue sit amet enim. Integer convallis massa at diam tincidunt posuere. Duis rutrum eget ex scelerisque varius. Aliquam viverra, justo quis tincidunt fringilla.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
       "settings": {
-        "heading_size": 20,
-        "feed_width": 100,
-        "html_area": ""
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 60
       }
     },
     "1652177403c5493a30": {
       "type": "newsletter-form",
       "settings": {
-        "heading": "Keep Yourself Up to date with our new offers",
-        "text": ""
+        "heading": "NEWSLETTER",
+        "text": "Subscribe to our newsletter now and  never miss exclusive offers or news again."
       }
     }
   },
   "order": [
     "1652075548b8eb1181",
-    "0ad550dc-de7d-4c60-803e-a2546fd7fdcb",
+    "1652080653d0b60c93",
     "1652098478e13e339b",
     "16520888013a8f76a5",
-    "31f28649-564f-4af5-b316-8fbc6d09025f",
-    "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e",
-    "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
+    "featured_collection",
     "165215959574bcb5a2",
-    "771b419b-9373-44ba-8557-be191c8a0a9d",
-    "1652166873f253677f",
+    "multicolumn",
     "16523258986295531a",
-    "91a279e4-4b4e-40b4-9b60-2314a41e464d",
-    "79b82c23-8b21-4914-b35b-e411dcf023f8",
+    "1652166873f253677f",
+    "rich_text",
     "1652177403c5493a30"
   ]
 }

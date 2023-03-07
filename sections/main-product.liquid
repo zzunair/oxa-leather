@@ -59,26 +59,8 @@
   {% elsif product.tags contains 'airpods' %}
       {% assign coll = collections['airpods'].products %}
   {% endif %}
-
-  <div class="accordion custom">
-    {% for block in section.blocks %}
-      {% if block.type=='accordion' %}
-        <div class="content-container">
-           <span class="que_icon">{{ block.settings.que_icon }}</span>
-           <div class="space_eq"> <div class="question"><span class="quee">{{ block.settings.que }}</span></div>
-            <div class="answer">{{ block.settings.ans }}</div></div>
-        </div>
-        {% endif %}
-    {% endfor %}
-
-    <div class="content_video">
-        {% assign collection_gallery2 = product.metafields.custom.video_cart.value %}
-         {{ collection_gallery2 | video_tag: image_size: '327x200', controls: true, loop: "true", autoplay: "autoplay", width: 327, height: 200 }} 
-    </div> 
-   </div>
-
-    
-   {% comment %}
+  
+ 
   <div class="freqntly-boght-with"><div>FREQUENTLY BOUGHT WITH:</div></div>
   {% assign add_ons = product.metafields.my_fields.add_on %}
   
@@ -93,7 +75,7 @@
        {% assign featured_image = product_v2.selected_or_first_available_variant.featured_image | default: product_v2.featured_image %}
       <div class="imges"><img src="{{ featured_image | img_url:'56x56' }}"></div>
       <div class="title-price">
-        <div class="add_on_tilte aa">{{ product_v2.title }}<span class="pipe">|</span><span class="compare_at_price">{{ product_v2.compare_at_price | money | remove: '.00' }}</span><span>{{ product_v2.price | money | remove: '.00' }}</span></div>                 
+        <div class="add_on_tilte">{{ product_v2.title }}<span class="pipe">|</span><span>{{ product_v2.price | money | remove: '.00' }}</span></div>                 
       </div>
       {% assign exist_p = false %}
       {% for itm in cart.items %}
@@ -123,13 +105,10 @@
     {% endfor %}
   </div>
   {% endif %}
- {% endcomment %}
   {% endcapture %}
   
   {% capture freeshiping %}
-  <div class="free-shipp">
-  <div class="free-ship-text">{{ section.settings.freeship }}</div>
-  </div>
+  <div class="free-shipp"><div class="free-ship-text">{{ section.settings.freeship }}</div></div>
   {% endcapture %}
   
   {% capture shortdesc %}
@@ -564,20 +543,16 @@
         {% endif %}
            {%- when 'title' -%}
             <div class="product__title" {{ block.shopify_attributes }}>
-              <div class="pro-title-heading aa" >
-            {% if product.metafields.custom.product_modal.value != blank %}<p class="prometatitle">{{ product.title }}</p>{% comment %}<p>{{ product.metafields.custom.device_series.value }}</p>{% endcomment %}{% else %}{{ product.title | escape }}{% endif %}</div>
+              <div class="pro-title-heading">{{ product.title | escape }}</div>
               <!--Yotpo Star Rating on Product Page-->
-            <div class="series_review">
             <div class="review_price">
-            <!-- <div class="series">  {% if product.metafields.custom.product_modal.value != blank %}<p class="test_new">{{ product.metafields.custom.device_series.value }}</p>{% else %}{{ product.title | escape }}{% endif %}</div> </div> -->
             <div class="yotpo bottomLine"
               data-product-id="{{ product.id }}">
             </div>
-            </div>
-            </div>
             <div class="price_for_mob">{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}</div>
+            </div>
             <!--End of Yotpo Star Rating on Product Page-->
-<!--             </div> -->
+            </div>
             <div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
           {%- when 'price' -%}
             <div class="no-js-hidden product-page-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -734,7 +709,7 @@
                                 form="{{ product_form_id }}"
                                 {% if option.selected_value == value %}checked{% endif %}
                           >
-                          <label style="background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" data-color="color-{{ option.position }}-{{ forloop.index0 }}">
+                          <label style="background-image:url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/{{ value | handle }}.png?v=1634598478')" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
 <!--                             {{ value }} -->
                           </label>
                         {%- endfor -%}
@@ -791,14 +766,13 @@
                   <span class="product-form__error-message"></span>
                 </div>
                   
-                {% assign monoprice = all_products['monogram'] %}                     
+                  {% assign monoprice = all_products['monogram'] %}     
                  
-                  <a style="{% if product.tags contains 'notcustom' %}display:none;{% endif %}" class="pop-up-open" data-bs-toggle="modal" href="#exampleModalToggle" role="button">CUSTOMIZE (+ {{ monoprice.price | money | remove:'.00' }})</a>
+                  <a style="{% if product.tags contains 'notcustom' %}display:none;{% endif %}" class="pop-up-open" data-bs-toggle="modal" href="#exampleModalToggle" role="button">CUSTOMIZE (+{{ monoprice.price | money | remove:'.00' }})</a>
                   
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input class="vrntid" type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <input type="hidden" name="sku" value="{{ product.selected_or_first_available_variant.sku }}" disabled>
-                  <input type="hidden" name="properties[_tags]" value="{{ product.tags | join: "," }}" />
                   <div class="product-form__buttons">
                     <button
                       type="submit"
@@ -1008,7 +982,20 @@
   {%- endif -%}
 
     <div class="sticky-product-mobile stickymob">
-     <button class="product-form__submit button button--full-width button--primary">Add to Cart {{ product.price | money | remove: '0.00' }}</button>
+     <button class="product-form__submit button button--full-width button--primary"onclick="dataLayer.push({ 'ecommerce': null });dataLayer.push({
+'event': 'add_to_cart',
+'ecommerce': {
+		'items': [{
+		'item_id': '{{ product.id }}',
+		'item_name': '{{ product.title | remove: "'" | remove: '"' }}',
+		'item_brand': '{{ product.vendor | remove: "'" | remove: '"' }}',
+		'item_category': '{{ product.collections[0].title | remove: "'" | remove: '"' }}',
+		'item_variant': '{{ product.selected_variant.sku }}',
+		'currency': '{{ shop.currency }}',
+		'price': '{{ product.price  | times: 0.01}}'
+		}]
+	}
+});">Add to Cart {{ product.price | money | remove: '0.00' }}</button>
     </div>
     
     <div class="product-page-sticky-btn sticky">
@@ -1061,9 +1048,7 @@
       "name": {{ product.title | json }},
       "url": {{ request.origin | append: product.url | json }},
       {% if seo_media -%}
-        "image": [
-          {{ seo_media | image_url: width: seo_media.preview_image.width | prepend: "https:" | json }}
-        ],
+        "image":[{{ seo_media | image_url: width: seo_media.preview_image.width | prepend: "https:" | json }}],
       {%- endif %}
       "description": {{ product.description | strip_html | json }},
       {% if product.selected_or_first_available_variant.sku != blank -%}
@@ -1455,27 +1440,6 @@
           "id": "page",
           "type": "page",
           "label": "t:sections.main-product.blocks.popup.settings.page.label"
-        }
-      ]
-    },
-            {
-      "type": "accordion",
-      "name": "Accordion",
-      "settings": [
-        {
-          "type": "html",
-          "id": "que_icon",
-          "label": "Add Icon"
-        },
-        {
-          "type": "text",
-          "id": "que",
-          "label": "Add Title"
-        },
-        {
-          "id": "ans",
-          "type": "text",
-          "label": "Add Text"
         }
       ]
     },
