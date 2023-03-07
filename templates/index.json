@@ -50,47 +50,6 @@
       "settings": {
       }
     },
-    "0ad550dc-de7d-4c60-803e-a2546fd7fdcb": {
-      "type": "black_banner_bottom",
-      "disabled": true,
-      "blocks": {
-        "df13ee76-398c-41cf-aaf1-1cfc494787cc": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_2.png"
-          }
-        },
-        "720ef555-b690-4950-81f8-2b9d82929fe0": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_3.png"
-          }
-        },
-        "c7d820f0-dca4-4c67-b207-1d8a9fe08112": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_4.png"
-          }
-        },
-        "eb968fb3-23b4-40ed-ba3d-70e527b782ac": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_5.png"
-          }
-        }
-      },
-      "block_order": [
-        "df13ee76-398c-41cf-aaf1-1cfc494787cc",
-        "720ef555-b690-4950-81f8-2b9d82929fe0",
-        "c7d820f0-dca4-4c67-b207-1d8a9fe08112",
-        "eb968fb3-23b4-40ed-ba3d-70e527b782ac"
-      ],
-      "settings": {
-        "heading": "",
-        "heading2": "Rated #1 leather accessory",
-        "link": ""
-      }
-    },
     "1652098478e13e339b": {
       "type": "collections",
       "blocks": {
@@ -151,46 +110,6 @@
         "collectss": "leather-apple-watch-bands",
         "btntxt": "View All",
         "btynlink": "shopify:\/\/collections\/best-seller"
-      }
-    },
-    "31f28649-564f-4af5-b316-8fbc6d09025f": {
-      "type": "blacksection",
-      "disabled": true,
-      "blocks": {
-        "56dc3902-7206-421e-a38d-8bd4188a5db8": {
-          "type": "line",
-          "settings": {
-            "limg": "shopify:\/\/shop_images\/Frame_9dd959e5-0a98-4d5f-b857-a7691291b209.png",
-            "ltxt": "Best Leather iPhone Cases"
-          }
-        },
-        "88595d9c-0b3a-4cd1-9415-b19f79b1a848": {
-          "type": "line",
-          "settings": {
-            "limg": "shopify:\/\/shop_images\/Frame_1.png",
-            "ltxt": "Customizable Phone Cases"
-          }
-        },
-        "86fd1594-fca5-4d6a-9b6c-ebeee59e2f03": {
-          "type": "line",
-          "settings": {
-            "limg": "shopify:\/\/shop_images\/Frame_2.png",
-            "ltxt": "+10000 happy users"
-          }
-        }
-      },
-      "block_order": [
-        "56dc3902-7206-421e-a38d-8bd4188a5db8",
-        "88595d9c-0b3a-4cd1-9415-b19f79b1a848",
-        "86fd1594-fca5-4d6a-9b6c-ebeee59e2f03"
-      ],
-      "settings": {
-        "heading": "Unique Leather Designs",
-        "desc": "Adding extra quality and style to long-lasting products like smartphones, tablets, iPods, laptops, and more is our goal. The cases and products we make are all handcrafted from high quality, 100 percent full grain genuine leather, and they are done with both precision and elegance.  Providing a standard of excellence is our commitment, and we understand that it's a lifestyle and a conscious choice for our customers.",
-        "btntxt": "Shop Now",
-        "btnlink": "shopify:\/\/collections\/newest-products",
-        "firstimg": "shopify:\/\/shop_images\/Asset_3_3x_1.png",
-        "secimg": "shopify:\/\/shop_images\/Oxa10163.png"
       }
     },
     "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e": {
@@ -304,50 +223,6 @@
         "link2": "shopify:\/\/collections\/cable-organizer"
       }
     },
-    "1652166873f253677f": {
-      "type": "refrence",
-      "disabled": true,
-      "blocks": {
-        "f20d5a40-6de5-4928-819c-21a71bf18e4a": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_7.png",
-            "label": "Fast Delivery"
-          }
-        },
-        "ffef2547-9b47-430d-8958-cfebf280a44c": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_4.png",
-            "label": "Secure Payments"
-          }
-        },
-        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_5.png",
-            "label": "5 Star Reviews"
-          }
-        },
-        "0fdf803b-646e-4be7-99cf-c231bf4c0b68": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Mask_group_6.png",
-            "label": "14-Day Returns"
-          }
-        }
-      },
-      "block_order": [
-        "f20d5a40-6de5-4928-819c-21a71bf18e4a",
-        "ffef2547-9b47-430d-8958-cfebf280a44c",
-        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f",
-        "0fdf803b-646e-4be7-99cf-c231bf4c0b68"
-      ],
-      "settings": {
-        "heading": "AS SEEN ON",
-        "subheading": ""
-      }
-    },
     "821faca3-d633-4f7c-8d21-68a794f71edc": {
       "type": "hp-cases",
       "blocks": {
@@ -388,15 +263,6 @@
         "image-heading": "iPhone 14 Series",
         "btn-text": "SHOP NOW",
         "btn-url": ""
-      }
-    },
-    "91a279e4-4b4e-40b4-9b60-2314a41e464d": {
-      "type": "image_with_text",
-      "settings": {
-        "img": "shopify:\/\/shop_images\/Group_3434449.png",
-        "rightimg": "shopify:\/\/shop_images\/Frame.png",
-        "heading": "Becoming<br> Planet Positive",
-        "desc": "Made with an innovative leather alternative. <br>Made from nothing but nature."
       }
     },
     "50d706d4-648a-4974-b1c5-8020b0379153": {
@@ -500,24 +366,159 @@
         "feed_width": 100,
         "html_area": ""
       }
+    },
+    "91a279e4-4b4e-40b4-9b60-2314a41e464d": {
+      "type": "image_with_text",
+      "disabled": true,
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Group_3434449.png",
+        "rightimg": "shopify:\/\/shop_images\/Frame.png",
+        "heading": "Becoming<br> Planet Positive",
+        "desc": "Made with an innovative leather alternative. <br>Made from nothing but nature."
+      }
+    },
+    "1652166873f253677f": {
+      "type": "refrence",
+      "disabled": true,
+      "blocks": {
+        "f20d5a40-6de5-4928-819c-21a71bf18e4a": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mask_group_7.png",
+            "label": "Fast Delivery"
+          }
+        },
+        "ffef2547-9b47-430d-8958-cfebf280a44c": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mask_group_4.png",
+            "label": "Secure Payments"
+          }
+        },
+        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mask_group_5.png",
+            "label": "5 Star Reviews"
+          }
+        },
+        "0fdf803b-646e-4be7-99cf-c231bf4c0b68": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Mask_group_6.png",
+            "label": "14-Day Returns"
+          }
+        }
+      },
+      "block_order": [
+        "f20d5a40-6de5-4928-819c-21a71bf18e4a",
+        "ffef2547-9b47-430d-8958-cfebf280a44c",
+        "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f",
+        "0fdf803b-646e-4be7-99cf-c231bf4c0b68"
+      ],
+      "settings": {
+        "heading": "AS SEEN ON",
+        "subheading": ""
+      }
+    },
+    "31f28649-564f-4af5-b316-8fbc6d09025f": {
+      "type": "blacksection",
+      "disabled": true,
+      "blocks": {
+        "56dc3902-7206-421e-a38d-8bd4188a5db8": {
+          "type": "line",
+          "settings": {
+            "limg": "shopify:\/\/shop_images\/Frame_9dd959e5-0a98-4d5f-b857-a7691291b209.png",
+            "ltxt": "Best Leather iPhone Cases"
+          }
+        },
+        "88595d9c-0b3a-4cd1-9415-b19f79b1a848": {
+          "type": "line",
+          "settings": {
+            "limg": "shopify:\/\/shop_images\/Frame_1.png",
+            "ltxt": "Customizable Phone Cases"
+          }
+        },
+        "86fd1594-fca5-4d6a-9b6c-ebeee59e2f03": {
+          "type": "line",
+          "settings": {
+            "limg": "shopify:\/\/shop_images\/Frame_2.png",
+            "ltxt": "+10000 happy users"
+          }
+        }
+      },
+      "block_order": [
+        "56dc3902-7206-421e-a38d-8bd4188a5db8",
+        "88595d9c-0b3a-4cd1-9415-b19f79b1a848",
+        "86fd1594-fca5-4d6a-9b6c-ebeee59e2f03"
+      ],
+      "settings": {
+        "heading": "Unique Leather Designs",
+        "desc": "Adding extra quality and style to long-lasting products like smartphones, tablets, iPods, laptops, and more is our goal. The cases and products we make are all handcrafted from high quality, 100 percent full grain genuine leather, and they are done with both precision and elegance.  Providing a standard of excellence is our commitment, and we understand that it's a lifestyle and a conscious choice for our customers.",
+        "btntxt": "Shop Now",
+        "btnlink": "shopify:\/\/collections\/newest-products",
+        "firstimg": "shopify:\/\/shop_images\/Asset_3_3x_1.png",
+        "secimg": "shopify:\/\/shop_images\/Oxa10163.png"
+      }
+    },
+    "0ad550dc-de7d-4c60-803e-a2546fd7fdcb": {
+      "type": "black_banner_bottom",
+      "disabled": true,
+      "blocks": {
+        "df13ee76-398c-41cf-aaf1-1cfc494787cc": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_2.png"
+          }
+        },
+        "720ef555-b690-4950-81f8-2b9d82929fe0": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_3.png"
+          }
+        },
+        "c7d820f0-dca4-4c67-b207-1d8a9fe08112": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_4.png"
+          }
+        },
+        "eb968fb3-23b4-40ed-ba3d-70e527b782ac": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_5.png"
+          }
+        }
+      },
+      "block_order": [
+        "df13ee76-398c-41cf-aaf1-1cfc494787cc",
+        "720ef555-b690-4950-81f8-2b9d82929fe0",
+        "c7d820f0-dca4-4c67-b207-1d8a9fe08112",
+        "eb968fb3-23b4-40ed-ba3d-70e527b782ac"
+      ],
+      "settings": {
+        "heading": "",
+        "heading2": "Rated #1 leather accessory",
+        "link": ""
+      }
     }
   },
   "order": [
     "1652075548b8eb1181",
-    "0ad550dc-de7d-4c60-803e-a2546fd7fdcb",
     "1652098478e13e339b",
     "16520888013a8f76a5",
-    "31f28649-564f-4af5-b316-8fbc6d09025f",
     "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e",
     "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
     "165215959574bcb5a2",
     "771b419b-9373-44ba-8557-be191c8a0a9d",
-    "1652166873f253677f",
     "821faca3-d633-4f7c-8d21-68a794f71edc",
-    "91a279e4-4b4e-40b4-9b60-2314a41e464d",
     "50d706d4-648a-4974-b1c5-8020b0379153",
     "16523258986295531a",
     "1652177403c5493a30",
-    "79b82c23-8b21-4914-b35b-e411dcf023f8"
+    "79b82c23-8b21-4914-b35b-e411dcf023f8",
+    "91a279e4-4b4e-40b4-9b60-2314a41e464d",
+    "1652166873f253677f",
+    "31f28649-564f-4af5-b316-8fbc6d09025f",
+    "0ad550dc-de7d-4c60-803e-a2546fd7fdcb"
   ]
 }
