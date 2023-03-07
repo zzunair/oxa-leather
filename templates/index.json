@@ -355,6 +355,7 @@
           "type": "product",
           "settings": {
             "title": "iPhone 13 Series",
+            "url": "",
             "image": "shopify:\/\/shop_images\/download_1.jpg"
           }
         },
@@ -362,6 +363,7 @@
           "type": "product",
           "settings": {
             "title": "iPhone 12 Series",
+            "url": "",
             "image": "shopify:\/\/shop_images\/download_2.jpg"
           }
         },
@@ -369,6 +371,7 @@
           "type": "product",
           "settings": {
             "title": "iPhone 11 Series",
+            "url": "",
             "image": "shopify:\/\/shop_images\/download_001630fd-f597-40c0-b64e-fffb9b14980f.jpg"
           }
         }
@@ -384,6 +387,26 @@
         "m-image": "shopify:\/\/shop_images\/download-_3.jpg",
         "image-heading": "iPhone 14 Series",
         "btn-text": "SHOP NOW",
+        "btn-url": ""
+      }
+    },
+    "91a279e4-4b4e-40b4-9b60-2314a41e464d": {
+      "type": "image_with_text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/Group_3434449.png",
+        "rightimg": "shopify:\/\/shop_images\/Frame.png",
+        "heading": "Becoming<br> Planet Positive",
+        "desc": "Made with an innovative leather alternative. <br>Made from nothing but nature."
+      }
+    },
+    "50d706d4-648a-4974-b1c5-8020b0379153": {
+      "type": "hp-environment",
+      "settings": {
+        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a330b554ee6c4621825ce29f68e30ba3.mp4",
+        "sub-heading": "Our Commitment to Carbon Emissions",
+        "heading": "Planting Trees",
+        "desc": "We take pride in our eco-friendly approach to business by planting a tree for every order we receive. Through our efforts, we are reducing our carbon footprint and contributing to a healthier planet.",
+        "btn-text": "Learn More",
         "btn-url": ""
       }
     },
@@ -463,13 +486,11 @@
         "top_subheading": ""
       }
     },
-    "91a279e4-4b4e-40b4-9b60-2314a41e464d": {
-      "type": "image_with_text",
+    "1652177403c5493a30": {
+      "type": "newsletter-form",
       "settings": {
-        "img": "shopify:\/\/shop_images\/Group_3434449.png",
-        "rightimg": "shopify:\/\/shop_images\/Frame.png",
-        "heading": "Becoming<br> Planet Positive",
-        "desc": "Made with an innovative leather alternative. <br>Made from nothing but nature."
+        "heading": "Keep Yourself Up to date with our new offers",
+        "text": ""
       }
     },
     "79b82c23-8b21-4914-b35b-e411dcf023f8": {
@@ -478,24 +499,6 @@
         "heading_size": 20,
         "feed_width": 100,
         "html_area": ""
-      }
-    },
-    "1652177403c5493a30": {
-      "type": "newsletter-form",
-      "settings": {
-        "heading": "Keep Yourself Up to date with our new offers",
-        "text": ""
-      }
-    },
-    "50d706d4-648a-4974-b1c5-8020b0379153": {
-      "type": "hp-environment",
-      "settings": {
-        "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4e6ebfe962a1439f973b3acaf51cf4b0.mp4",
-        "sub-heading": "test",
-        "heading": "Carbon Footsteps",
-        "desc": "Description",
-        "btn-text": "asdasda",
-        "btn-url": ""
       }
     }
   },
@@ -511,10 +514,10 @@
     "771b419b-9373-44ba-8557-be191c8a0a9d",
     "1652166873f253677f",
     "821faca3-d633-4f7c-8d21-68a794f71edc",
-    "16523258986295531a",
     "91a279e4-4b4e-40b4-9b60-2314a41e464d",
-    "79b82c23-8b21-4914-b35b-e411dcf023f8",
+    "50d706d4-648a-4974-b1c5-8020b0379153",
+    "16523258986295531a",
     "1652177403c5493a30",
-    "50d706d4-648a-4974-b1c5-8020b0379153"
+    "79b82c23-8b21-4914-b35b-e411dcf023f8"
   ]
 }
