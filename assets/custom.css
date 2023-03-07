@@ -547,7 +547,8 @@ body.index .testimonial_slider button.slick-arrow svg path {
 
 .bestbtn {
     text-align: center;
-    padding: 12px 0
+    padding: 12px 0;
+    margin-bottom: 30px;
 }
 
 .best-arrival {

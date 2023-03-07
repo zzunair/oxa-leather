@@ -16,10 +16,12 @@
 				<div class="products-wrap">
 				{%- for block in section.blocks -%}
 					<div class="products">
+						<a href="{{block.settings.url}}">
 							<div class="product-heading">
 								<h1>{{block.settings.title}}</h1>
 							</div>
 							<img src="{{block.settings.image | img_url: 'master'}}" alt="">
+						</a>
 					</div>
 				{%- endfor -%}
 				</div>
@@ -71,6 +73,11 @@
 							"type": "text",
 							"id": "title",
 							"label": "Title"
+						},
+						{
+							"type": "url",
+							"id": "url",
+							"label": "Series URL"
 						},
 						{
 							"type": "image_picker",

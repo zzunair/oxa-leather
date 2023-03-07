@@ -1,0 +1,9 @@
+
+
+
+
+@media all and (max-width: 600px){
+    .collectionss .col-title-btn .fill_summer{
+        display: none;
+    }
+}
