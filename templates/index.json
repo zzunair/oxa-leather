@@ -354,6 +354,9 @@
     },
     "1652177403c5493a30": {
       "type": "newsletter-form",
+      "custom_css": [
+
+      ],
       "settings": {
         "heading": "Keep Yourself Up to date with our new offers",
         "text": ""
@@ -361,6 +364,7 @@
     },
     "79b82c23-8b21-4914-b35b-e411dcf023f8": {
       "type": "instafeed",
+      "disabled": true,
       "settings": {
         "heading_size": 20,
         "feed_width": 100,
