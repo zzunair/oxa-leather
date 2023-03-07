@@ -152,55 +152,9 @@
         "link": "#"
       }
     },
-    "c5ae0244-b762-40f6-b80d-dd61584d2c0c": {
-      "type": "collection_logos",
-      "blocks": {
-        "0ba0acb1-4c43-4695-a388-219927ee70a8": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_9.png",
-            "star": "Fast Delivery",
-            "label": "Your cargo will reach you in a short time without any problems."
-          }
-        },
-        "f404b191-1e9b-47fb-b441-39fd4036cd6e": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_10.png",
-            "star": "5 star Reviews",
-            "label": "Stylish and flashy models that customers are satisfied with."
-          }
-        },
-        "98fe3433-8e81-4813-a3e0-7490e1b17495": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_11.png",
-            "star": "Secure Payments",
-            "label": "No problem during the payment"
-          }
-        },
-        "966f5d78-db84-4c4a-95d5-209c92981b22": {
-          "type": "logos",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/Frame_12.png",
-            "star": "14-Day Returns",
-            "label": "Refund guarantee in case of any defect in the product."
-          }
-        }
-      },
-      "block_order": [
-        "0ba0acb1-4c43-4695-a388-219927ee70a8",
-        "f404b191-1e9b-47fb-b441-39fd4036cd6e",
-        "98fe3433-8e81-4813-a3e0-7490e1b17495",
-        "966f5d78-db84-4c4a-95d5-209c92981b22"
-      ],
-      "settings": {
-        "heading": "",
-        "subheading": ""
-      }
-    },
     "165215959574bcb5a2": {
       "type": "summer-sale",
+      "disabled": true,
       "settings": {
         "summerimg": "shopify:\/\/shop_images\/zilli.jpg",
         "summerimgmob": "shopify:\/\/shop_images\/zilli.jpg",
@@ -212,6 +166,7 @@
     },
     "771b419b-9373-44ba-8557-be191c8a0a9d": {
       "type": "both_image",
+      "disabled": true,
       "settings": {
         "img": "shopify:\/\/shop_images\/OXA_nisan_10483_e0c58571-ed61-4567-9a62-74a5a18100af.png",
         "heading1": "premium grain leather",
@@ -263,6 +218,53 @@
         "image-heading": "iPhone 14 Series",
         "btn-text": "SHOP NOW",
         "btn-url": ""
+      }
+    },
+    "c5ae0244-b762-40f6-b80d-dd61584d2c0c": {
+      "type": "collection_logos",
+      "blocks": {
+        "0ba0acb1-4c43-4695-a388-219927ee70a8": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_9.png",
+            "star": "Fast Delivery",
+            "label": "Your cargo will reach you in a short time without any problems."
+          }
+        },
+        "f404b191-1e9b-47fb-b441-39fd4036cd6e": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_10.png",
+            "star": "5 star Reviews",
+            "label": "Stylish and flashy models that customers are satisfied with."
+          }
+        },
+        "98fe3433-8e81-4813-a3e0-7490e1b17495": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_11.png",
+            "star": "Secure Payments",
+            "label": "No problem during the payment"
+          }
+        },
+        "966f5d78-db84-4c4a-95d5-209c92981b22": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_12.png",
+            "star": "14-Day Returns",
+            "label": "Refund guarantee in case of any defect in the product."
+          }
+        }
+      },
+      "block_order": [
+        "0ba0acb1-4c43-4695-a388-219927ee70a8",
+        "f404b191-1e9b-47fb-b441-39fd4036cd6e",
+        "98fe3433-8e81-4813-a3e0-7490e1b17495",
+        "966f5d78-db84-4c4a-95d5-209c92981b22"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": ""
       }
     },
     "50d706d4-648a-4974-b1c5-8020b0379153": {
@@ -512,10 +514,10 @@
     "1652098478e13e339b",
     "16520888013a8f76a5",
     "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e",
-    "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
     "165215959574bcb5a2",
     "771b419b-9373-44ba-8557-be191c8a0a9d",
     "821faca3-d633-4f7c-8d21-68a794f71edc",
+    "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
     "50d706d4-648a-4974-b1c5-8020b0379153",
     "16523258986295531a",
     "1652177403c5493a30",
