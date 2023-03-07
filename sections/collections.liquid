@@ -1,38 +1,22 @@
 <div class="homepage-collection">
   {% for block in section.blocks %}
-    <div class="collectionss {% cycle 'odd', 'even' %}">
-    <div class="adding_layer">   
-     <a class="overlay" href="{{ block.settings.collink }}">
-         <div class="transform_scale">
-          <img
-            class="lazyload desktop"
-            src="{{ block.settings.colimg | img_url: '1x1' }}"
-            data-src="{{ block.settings.colimg | img_url: '500x' }}"
-          >
-         <img
-            class="lazyload for_mobile"
-            src="{{ block.settings.colimg1 | img_url: '1x1' }}"
-            data-src="{{ block.settings.colimg1 | img_url: '500x' }}"
-          >
-          {% if block.settings.tag != ''%}
-         <span class="award_tag">{% render 'award' %}{{ block.settings.tag }}</span>
-          {% endif %}
-       <div class="col-title-btn">
-          <div class="home-col-tilte">{{ block.settings.coltitle }}</div>
-          <div class="fill_summer">Shop now ></div>
-        </div>
-        </div>
-      </a>
-    </div>
-    </div>
-  {% endfor %}
+    <div class="collectionss">
+      <a href="{{ block.settings.collink }}">
+      <img class="lazyload" src="{{ block.settings.colimg | img_url: '1x1' }}" data-src="{{ block.settings.colimg | img_url: '500x' }}" />
+          </a>
+      <div class="col-title-btn">
+      <div class="home-col-tilte">{{ block.settings.coltitle }}</div>
+        <a class="fill_summer" href="{{ block.settings.collink }}">SHOP NOW</a>
+      </div>
+    </div> 
+   {% endfor %}
 </div>
 {% schema %}
   {
     "name": "Homepage-collection",
     "class":"collections--homepage",
     "settings": [],
-    "blocks":[{
+"blocks":[{
 	"name": "Collections",
 	"type": "collection",
 	"settings":[
@@ -40,16 +24,6 @@
        "type": "image_picker",
        "id": "colimg",
        "label": "collection img"
-      },
-      {
-       "type": "image_picker",
-       "id": "colimg1",
-       "label": "collection img Mobile"
-      },
-      {
-       "type": "text",
-       "id": "tag",
-       "label": "Tag"
       },
      {
        "type": "text",

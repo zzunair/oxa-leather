@@ -11,18 +11,20 @@
 {% assign editions = product.metafields.info.linkedproducts | split: "," %}
 
 {% if editions[0] %}
-
+<section class="linkedDevices" >
+  <select name="DeviceOptions" id="DeviceOptions">
     {% for pid in editions %}
     	 {% assign p_id = pid | strip | plus: 0  %}
     	 {% paginate collections.all.products by 1000 %}
     		{% for link_product in collections.all.products %}
     			{% if link_product.id == p_id %}
-    				<p class="optionbuttons" {% if link_product.id == product.id %}selected="selected" {% endif %} data-url="{{ link_product.handle }}">{{ link_product.metafields.my_fields.product_model}}</p>
+    				<option {% if link_product.id == product.id %}selected="selected" {% endif %} value="{{ link_product.handle }}">{{ link_product.metafields.my_fields.product_model}}</option>
     			{% endif %}
     		{% endfor %}
     	 {% endpaginate %}
     {% endfor %}
-  
+  </select>
+</section>
 {% endif %}
 
 {% comment %}

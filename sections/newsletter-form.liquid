@@ -1,4 +1,20 @@
-
+<style>
+  @media only screen and (max-width:767px){
+  .newsletter{
+   background-image: url("https://cdn.shopify.com/s/files/1/0507/0418/7590/files/envalope_1_1.png?v=1652253330")!important;
+    background-repeat: no-repeat!important;
+    background-position: right top!important;
+  }   
+  }
+  @media only screen and (min-width:768px){
+   .newsletter{
+     background-image: url('https://cdn.shopify.com/s/files/1/0507/0418/7590/files/envalope_1_42caab77-e4a4-45a3-9061-4d9c6f80dae9.png?v=1652941356')!important;
+     background-repeat: no-repeat!important;
+        background-position: left!important;
+    height: 200px;
+    }
+  }
+</style>
 <div class="newsletter center">
  {% comment %} <div class="newsimg">
     {% if section.settings.newsimg %}
@@ -32,7 +48,7 @@
                  {% elsif form.posted_successfully? %}
                  aria-describedby="Newsletter-success--{{ section.id }}"
                  {% endif %}
-                 placeholder="Your Email Address"
+                 placeholder="{{ 'newsletter.label' | t }}"
                  required
                  >
          {% comment%}  <label class="field__label" for="NewsletterForm--{{ section.id }}">

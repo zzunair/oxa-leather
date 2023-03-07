@@ -444,9 +444,6 @@
       },
       "payment": {
         "card_security_notice": "We never store your credit card number. Your payment is secure."
-      },
-      "general": {
-        "pay_now_button_label": "Complete order 🔒"
       }
     }
   }

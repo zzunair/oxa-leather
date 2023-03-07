@@ -35,7 +35,6 @@
                         ],
                         variant_title: "{{ item.variant.title }}",
                         vendor: "{{ item.product.vendor }}",
-                        tags: "{{ item.product.tags }}",
                         properties: {
 						  {% for pro in item.properties %}
                             {% unless pro.last == blank  %}
@@ -98,17 +97,8 @@
                     tp += item.final_line_price;
                 });
                 return tp;
-            },
-           cmp_price: function cmp_price(){
-                var tcp = 0;
-                this.cart_items.forEach(function(item){
-                    tcp += parseFloat(item.compare_price);
-                });
-                return tcp;
             }
-  
         },
-        
         filters: {
             money: function money(price){
                 return "$" + (price/100).toFixed(2);
@@ -355,19 +345,6 @@
                 if(typeof product_form != "undefined") {
                     product_form.check_wishlist();
                 }
-            },
-            checkMono: function checkMono(prop, sku){
-console.log("prop", prop, 'sku', sku);
-//return true;
-              if(typeof prop['_tags'] != "undefined" && !prop['_tags'].includes('notcustom')){
-                if(this.cart_items.find(itm => itm.properties["SKU"] == sku)){
-                  return false;
-                }else{
-                  return true;
-                }
-              }else{
-                return false;
-              }
             }
         }
     });
