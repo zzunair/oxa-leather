@@ -70,7 +70,7 @@
 
         {%- assign variable_product = variable_product | append:'},"variants":[' -%}
         {%- assign variants_arr = "" | split: "," -%}
-        {%- assign show_products_without_variants = false -%}
+        {%- assign show_products_without_variants = true -%}
         {%- if product.has_only_default_variant and show_products_without_variants -%}
           {%- assign variant_hsh = '{}' -%}
           {%- for product in full_product.variants -%}

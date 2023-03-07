@@ -1,0 +1,77 @@
+<div id="popup1" class="popup_view" style="display:none;">
+	<div class="popup">
+		<h2>Bundle and Save!</h2>
+		<a class="close" href="#">&times;</a>
+ <div class="freqntly-boght-with"><div>FREQUENTLY BOUGHT WITH:</div></div>
+
+ {% assign collection_gallery = product.metafields.custom.popup_video.value %}
+         {{ collection_gallery | video_tag: image_size: '327x200', controls: true, autoplay:"autoplay", loop:"loop", width: 327, height: 200 }} 
+  {% assign add_ons = product.metafields.my_fields.add_on %}
+  
+ {% if add_ons != blank %}
+  {% assign add_ons = product.metafields.my_fields.add_on | split :"," %}
+  <div class="monos" >                   
+     {% for product_id in add_ons %}
+    {% assign product_id =  product_id | strip %}
+    {% assign product_v2 = all_products[product_id] %}
+    {% if product_v2.available %}
+    <div class="products-extra">      
+       {% assign featured_image = product_v2.selected_or_first_available_variant.featured_image | default: product_v2.featured_image %}
+      <div class="imges"><img src="{{ featured_image | img_url:'56x56' }}"></div>
+      <div class="title-price">
+        <div class="add_on_tilte aa">{{ product_v2.title }}<span class="pipe">|</span><span class="compare_at_price">{{ product_v2.compare_at_price | money | remove: '.00' }}</span><span>{{ product_v2.price | money | remove: '.00' }}</span></div>                 
+      </div>
+      {% assign exist_p = false %}
+      {% for itm in cart.items %}
+      	{% if itm.id == product_v2.selected_or_first_available_variant.id %}
+      		{% assign exist_p = true %}
+      	{% endif %}
+      {% endfor %}
+      
+      <div class="bttn" data-toggle="modal" data-target="#myModal2" style="{% if exist_p %}display:none{% endif %}">
+      	<a data-id="{{ product_v2.selected_or_first_available_variant.id }}">Add</a>
+        <div class="loading-overlay__spinner hidden">
+           <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30" style="stroke: #fff;"></circle>
+           </svg>
+        </div>
+      </div>
+      <div class="click-cross">
+      <span class="click-icon {% if exist_p %}click-icon-show{% endif %}">
+       {% render 'click-icon' %}
+      </span>
+      <span class="cross-addon {% if exist_p %}cross-mobile{% endif %}">
+        <img src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/Vector_3.png?v=1653896313">
+      </span>
+      </div>      
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
+ 
+
+    {% assign collection_gallery2 =  product.metafields.custom.popup_video2.value %}
+         {{ collection_gallery2 | video_tag: image_size: '327x200', controls: true, autoplay:"autoplay", loop:"loop", width: 327, height: 200 }}      
+	</div>
+</div>
+
+
+  
+{% schema %}
+  {
+    "name": "video_popup",
+    "settings": [],
+    "presets":[
+                {
+                  "name":"video_popup"    
+                }
+              ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

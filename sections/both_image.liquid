@@ -1,0 +1,90 @@
+<div class="m_main_image page-width">
+  <div class="m_cont_image">
+    <div class="m_left_image">
+      <img class="lazyload" data-srcset="{{ section.settings.img | img_url:'master' }}">
+      <div class="m_left_image-inner">
+        <h3>{{ section.settings.heading1 }}</h3>
+        <a href="{{ section.settings.link1 }}">
+          <p>
+            {{ section.settings.desc1 }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+              <path d="M5.3771 6.5556L0.977051 2.15557L2.23394 0.898682L7.8908 6.5556L2.23394 12.2125L0.977051 10.9556L5.3771 6.5556Z" fill="#1B1B1B"/>
+            </svg>
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="m_right_image">
+      <img class="lazyload" data-srcset="{{ section.settings.rightimg | img_url:'master' }}">
+      <div class="m_right_image-inner">
+        <h3>{{ section.settings.heading2 }}</h3>
+        <a href="{{ section.settings.link2 }}">
+          <p>
+            {{ section.settings.desc2 }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+              <path d="M5.3771 6.5556L0.977051 2.15557L2.23394 0.898682L7.8908 6.5556L2.23394 12.2125L0.977051 10.9556L5.3771 6.5556Z" fill="white"/>
+            </svg>
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Both image",
+  "settings": [
+    {
+      "type":"image_picker",
+      "id":"img",
+      "label":"leftimage"
+    },
+    {
+      "type":"text",
+      "id":"heading1",
+      "label":"heading"
+    },
+    {
+      "type":"text",
+      "id":"desc1",
+      "label":"description"
+    },
+    {
+      "type":"url",
+      "id":"link1",
+      "label":"add link"
+    },
+    {
+      "type":"image_picker",
+      "id":"rightimg",
+      "label":"right image"
+    },
+    {
+      "type":"text",
+      "id":"heading2",
+      "label":"heading"
+    },
+    {
+      "type":"text",
+      "id":"desc2",
+      "label":"description"
+    },
+    {
+      "type":"url",
+      "id":"link2",
+      "label":"add link2"
+    }
+  ],
+  "presets":[
+    {
+      "name":"Both image"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

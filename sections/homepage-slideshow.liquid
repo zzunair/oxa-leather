@@ -1,26 +1,29 @@
 <div class="homepage-slider" style="visibility:hidden;">
-{% for block in section.blocks %}
-  <div class="slideshow-image">
-    <div class="slide-img">
-       <img class="slider-desktop" src="{{ block.settings.slideimg | img_url:'1920x522' }}">
-       <img class="slider-mobile" src="{{ block.settings.slidemob | img_url:'700x' }}">
-      
-<!--<picture>
-  <source media="(max-width:767px)" srcset="{{ block.settings.slidemob | img_url:'700x' }}">
-  <source media="(min-width:767px)" srcset="{{ block.settings.slideimg | img_url:'1920x522' }}">
-  <img src="" alt="{{ block.settings.slideimg.alt}}">
-</picture>-->
-      
-      
+  {% for block in section.blocks %}
+    <div class="slideshow-image">
+      <div class="slide-img">
+        <div class="desktop-slide">
+          <img class="slider-desktop lazyload" data-srcset="{{ block.settings.slideimg | img_url:'master' }}">
+        </div>
+        <div class="mob-slide {% if block.settings.enableOverlay %} enableOverlay {% endif %}">
+          <img class="slider-mobile" src="{{ block.settings.slidemob | img_url:'700x' }}">
+        </div>
+        <!--
+          <picture>
+            <source media="(max-width:767px)" srcset="{{ block.settings.slidemob | img_url:'700x' }}">
+            <source media="(min-width:767px)" srcset="{{ block.settings.slideimg | img_url:'1920x522' }}">
+            <img src="" alt="{{ block.settings.slideimg.alt}}">
+          </picture>
+        -->
+      </div>
+      <div class="slideshow-content page-width">
+        <div class="slider-headings">{{ block.settings.heading }}</div>
+        <p>{{ block.settings.subheading }}</p>
+        <a class="fill" href="{{ block.settings.btntxtlink }}">{{ block.settings.btntxt }}</a>
+      </div>
     </div>
-    <div class="slideshow-content page-width">
-      <div class="slider-headings">{{ block.settings.heading }}</div>
-      <p>{{ block.settings.subheading }}</p>
-      <a class="fill" href="{{ block.settings.btntxtlink }}">{{ block.settings.btntxt }}</a>
-    </div>
-  </div>
-{% endfor %}
-  </div>
+  {% endfor %}
+</div>
 {% schema %}
   {
     "name": "Slideshow-images",
@@ -41,7 +44,12 @@
                   "type": "image_picker",
                   "label": "Image for mobile"
                 },
-                 {
+                {
+                  "id": "enableOverlay",
+                  "type": "checkbox",
+                  "label": "Enable Overlay"
+                },
+                {
                   "id": "heading",
                   "type": "text",
                   "label": "Add text"
@@ -62,7 +70,7 @@
                   "label": "Add btn link"
                 }
               ]
-            }           
+            }
           ],
 "presets":[
  {

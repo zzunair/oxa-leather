@@ -84,7 +84,7 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_linkdin_link": "https:\/\/www.linkedin.com\/company\/oxa-leather",
-    "social_twitter_link": "",
+    "social_twitter_link": "#",
     "social_facebook_link": "https:\/\/facebook.com\/oxaleather",
     "social_pinterest_link": "",
     "social_instagram_link": "https:\/\/www.instagram.com\/oxaleather",
@@ -99,11 +99,13 @@
     "favicon": "shopify:\/\/shop_images\/x-16.png",
     "currency_code_enabled": true,
     "cart_notes_enable": true,
-    "cartfreeshipping": "Free shipping in 1 day",
-    "cartreturn": "30 Days Return",
-    "cartwarranty": "1 Year Warranty",
+    "image_fl1": "shopify:\/\/shop_images\/icons8-warranty-50_1.webp",
+    "cartwarranty": "1-year product warranty",
+    "image_fl2": "shopify:\/\/shop_images\/icons8-in-transit-50_7148be22-5bcc-405e-961f-f08226f07664.png",
+    "cartfreeshipping": "Free shipping for orders $50",
+    "image_fl3": "shopify:\/\/shop_images\/icons8-rollback-50_2.webp",
+    "cartreturn": "30 days hassle free returns",
     "checkout_logo_image": "shopify:\/\/shop_images\/1-_checkout_banner_v3_copy.jpg",
-    "checkout_logo_size": "small",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -129,9 +131,10 @@
           "72971e15-4fb9-4176-ad5a-de700f04e82f": {
             "type": "announcement",
             "settings": {
-              "text": "HOLIDAY SALE | 30% OFF SITEWIDE | LIMITED",
+              "text": "<strong>Free shipping <\/strong> for orders from <strong>$50<\/strong>",
+              "img": "shopify:\/\/shop_images\/Group_3434347.png",
               "color_scheme": "accent-1",
-              "link": ""
+              "link": "https:\/\/oxaleather.com\/discount\/HOLIDAYS45"
             }
           }
         },
@@ -149,49 +152,169 @@
           "421d1771-7f93-47c6-ba27-4ea0c2c20bb1": {
             "type": "megamenus",
             "settings": {
-              "menu1heading": "Apple iPhone",
+              "menuimg1": "shopify:\/\/shop_images\/keah-th.jpg",
+              "menu1heading": "iPhone",
               "menu1headinglink": "shopify:\/\/collections\/all-phone-cases",
-              "menu1": "iphone-series",
-              "menu2heading": "Apple Watch",
-              "menu2headinglink": "shopify:\/\/collections\/leather-apple-watch-bands",
-              "menu2": "apple-watch",
-              "menu3heading": "Apple iPad",
+              "menu1": "iphone-series-1",
+              "menuimg2": "shopify:\/\/shop_images\/Mask_group_3.jpg",
+              "menu2heading": "Galaxy",
+              "menu2headinglink": "",
+              "menu2": "2-samsung-cases",
+              "menuimg3": "shopify:\/\/shop_images\/Mask_group_6.jpg",
+              "menu3heading": "iPad",
               "menu3headinglink": "shopify:\/\/collections\/leather-ipad-covers",
               "menu3": "ipad",
-              "menu4heading": "",
+              "menuimg4": "shopify:\/\/shop_images\/Mask_group_7.jpg",
+              "menu4heading": "Airpods",
               "menu4headinglink": "#",
+              "menu4": "airpods",
+              "menu5heading": "",
+              "menu5headinglink": "",
+              "menu5": "",
+              "menu6heading": "",
+              "menu6headinglink": "",
+              "menu6": "",
+              "menu7heading": "",
+              "menu7headinglink": "",
+              "menu7": "",
+              "menu8heading": "",
+              "menu8headinglink": "",
+              "menu8": "",
+              "menu9heading": "",
+              "menu9headinglink": "",
+              "menu9": "",
+              "menu10heading": "",
+              "menu10headinglink": "",
+              "menu10": ""
+            }
+          },
+          "6d99a532-e69c-4af3-baae-760b63e1b941": {
+            "type": "megamenus",
+            "settings": {
+              "menuimg1": "shopify:\/\/shop_images\/OXA_mart_4728.jpg",
+              "menu1heading": "Apple Watch",
+              "menu1headinglink": "",
+              "menu1": "apple-watch",
+              "menuimg2": "shopify:\/\/shop_images\/OXA_nisan_9132.jpg",
+              "menu2heading": "Fitbit",
+              "menu2headinglink": "",
+              "menu2": "fitbit-watch-bands",
+              "menu3heading": "",
+              "menu3headinglink": "",
+              "menu3": "",
+              "menu4heading": "",
+              "menu4headinglink": "",
               "menu4": "",
-              "menu5heading": "Apple Airtag",
-              "menu5headinglink": "shopify:\/\/collections\/apple-airtags",
-              "menu5": "airtag",
-              "menu6heading": "Apple Airpods",
-              "menu6headinglink": "shopify:\/\/collections\/airpods-all",
-              "menu6": "airpods",
-              "menu7heading": "Samsung Galaxy",
-              "menu7headinglink": "shopify:\/\/collections\/samsung-galaxy-leather-cases",
-              "menu7": "samsung-cases",
-              "menu8heading": "Fitbit",
-              "menu8headinglink": "shopify:\/\/collections\/fitbit",
-              "menu8": "fitbit-watch-bands",
-              "menu9heading": "Accessories",
-              "menu9headinglink": "shopify:\/\/collections\/leather-accessories",
-              "menu9": "accessories",
-              "menu10heading": "Office Essentials",
-              "menu10headinglink": "shopify:\/\/products\/leather-desk-mat",
-              "menu10": "office-essentials"
+              "menu5heading": "",
+              "menu5headinglink": "",
+              "menu5": "",
+              "menu6heading": "",
+              "menu6headinglink": "",
+              "menu6": "",
+              "menu7heading": "",
+              "menu7headinglink": "",
+              "menu7": "",
+              "menu8heading": "",
+              "menu8headinglink": "",
+              "menu8": "",
+              "menu9heading": "",
+              "menu9headinglink": "",
+              "menu9": "",
+              "menu10heading": "",
+              "menu10headinglink": "",
+              "menu10": ""
+            }
+          },
+          "4a480eed-f195-4216-b09f-b6930e79a110": {
+            "type": "megamenus",
+            "settings": {
+              "menuimg1": "shopify:\/\/shop_images\/frye.jpg",
+              "menu1heading": "Airtags",
+              "menu1headinglink": "",
+              "menu1": "airtag",
+              "menuimg2": "shopify:\/\/shop_images\/Mask_group_10.jpg",
+              "menu2heading": "Office Essentials",
+              "menu2headinglink": "",
+              "menu2": "office-essentials",
+              "menuimg3": "shopify:\/\/shop_images\/1._bags.jpg",
+              "menu3heading": "Bags & Sleeves",
+              "menu3headinglink": "",
+              "menu3": "macbook",
+              "menuimg4": "shopify:\/\/shop_images\/1._organizer.jpg",
+              "menu4heading": "Wallets & Organizers",
+              "menu4headinglink": "",
+              "menu4": "accessories",
+              "menu5heading": "",
+              "menu5headinglink": "",
+              "menu5": "",
+              "menu6heading": "",
+              "menu6headinglink": "",
+              "menu6": "",
+              "menu7heading": "",
+              "menu7headinglink": "",
+              "menu7": "",
+              "menu8heading": "",
+              "menu8headinglink": "",
+              "menu8": "",
+              "menu9heading": "",
+              "menu9headinglink": "",
+              "menu9": "",
+              "menu10heading": "",
+              "menu10headinglink": "",
+              "menu10": ""
+            }
+          },
+          "53414cf7-a23a-4a7b-8ef3-46ca797f95bd": {
+            "type": "megamenus",
+            "settings": {
+              "menuimg1": "shopify:\/\/shop_images\/Mask_group_11.jpg",
+              "menu1heading": "Support",
+              "menu1headinglink": "",
+              "menu1": "support-new",
+              "menuimg2": "shopify:\/\/shop_images\/Mask_group_12.jpg",
+              "menu2heading": "Brand",
+              "menu2headinglink": "",
+              "menu2": "brand-menu-new",
+              "menu3heading": "",
+              "menu3headinglink": "",
+              "menu3": "",
+              "menu4heading": "",
+              "menu4headinglink": "",
+              "menu4": "",
+              "menu5heading": "",
+              "menu5headinglink": "",
+              "menu5": "",
+              "menu6heading": "",
+              "menu6headinglink": "",
+              "menu6": "",
+              "menu7heading": "",
+              "menu7headinglink": "",
+              "menu7": "",
+              "menu8heading": "",
+              "menu8headinglink": "",
+              "menu8": "",
+              "menu9heading": "",
+              "menu9headinglink": "",
+              "menu9": "",
+              "menu10heading": "",
+              "menu10headinglink": "",
+              "menu10": ""
             }
           }
         },
         "block_order": [
-          "421d1771-7f93-47c6-ba27-4ea0c2c20bb1"
+          "421d1771-7f93-47c6-ba27-4ea0c2c20bb1",
+          "6d99a532-e69c-4af3-baae-760b63e1b941",
+          "4a480eed-f195-4216-b09f-b6930e79a110",
+          "53414cf7-a23a-4a7b-8ef3-46ca797f95bd"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "logo": "shopify:\/\/shop_images\/OXALEATHER---LOGO-05.jpg",
+          "logo": "shopify:\/\/shop_images\/oxa_rectangle.png",
           "logo_width": 100,
           "logo_width_mob": 60,
           "logo_position": "middle-left",
-          "menu": "new_menu",
+          "menu": "1-desktop-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
@@ -204,15 +327,15 @@
           "86b89b0a-f005-45b7-b22a-7498c258b852": {
             "type": "text",
             "settings": {
-              "heading": "ABOUT OXA",
-              "subtext": "<p>Oxa hand crafts top quality genuine leather products that stand up exquisitely to daily use. Paying attention to every detail by leather artisans, we are aiming to offer elegant and durable products that last for a lifetime.<\/p><p><br\/>© OXA LEATHER. All Rights Reserved.<br\/>Sarawell LLC is registered at 420 Kuller Road, Clifton, NJ 07011, USA.<\/p><p>Email: contact@oxaleather.com<\/p><p>Toll Free Phone: +1 (888) 859 1168<\/p><p>Apple Watch and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries.<\/p>",
+              "heading": "",
+              "subtext": "<p>Oxa hand crafts top quality genuine leather products that stand up exquisitely to daily use. Paying attention to every detail by leather artisans, we are aiming to offer elegant and durable products that last for a lifetime.<\/p><p><\/p><p>Sarawell LLC is registered at 420 Kuller Road, Clifton, NJ 07011, USA.<\/p>",
               "divwidth": 46
             }
           },
           "9d60ebcb-3d9b-4fdb-ac77-c6f990d8b072": {
             "type": "link_list",
             "settings": {
-              "heading": "quıck access",
+              "heading": "Products",
               "menu": "main-menu-old",
               "divwidth": 25
             }
@@ -221,7 +344,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Support",
-              "menu": "footer",
+              "menu": "new-footer-menu",
               "divwidth": 25
             }
           }
@@ -232,10 +355,11 @@
           "acd07e6b-e98a-452d-93f4-0ad6bb7a77f4"
         ],
         "settings": {
-          "footlogo": "shopify:\/\/shop_images\/OXALEATHER---LOGO-05.jpg",
+          "footlogo": "shopify:\/\/shop_images\/oxa_rectangle.png",
           "footlogotext": "",
-          "privacy": "",
-          "term": "",
+          "moblogo": "shopify:\/\/shop_images\/Vector_f452d535-50bd-4aed-a16b-bdabc9cb18e7.png",
+          "privacy": "Privacy policy",
+          "term": "Term of service",
           "reserve": "2022© © OXA LEATHER. All Rights Reserved.",
           "color_scheme": "background-1",
           "newsletter_enable": false,
@@ -303,18 +427,6 @@
       },
       "3720565183479497137": {
         "type": "shopify:\/\/apps\/product-options-variant-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "6143736321357441667": {
-        "type": "shopify:\/\/apps\/tidio-live-chat-chatbots\/blocks\/app-embed\/1002274d-fb18-4939-98f6-5f05a8deeadc",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "14429071373314833104": {
-        "type": "shopify:\/\/apps\/candy-rack-all-in-one-upsell\/blocks\/head\/cb9c657f-334f-4905-80c2-f69cca01460c",
         "disabled": false,
         "settings": {
         }

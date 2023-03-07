@@ -1163,19 +1163,34 @@
     "name": "mini-cart",
     "settings": [
       {
-        "type": "text",
-        "id": "cartfreeshipping",
-        "label": "Free shipping"
-      },
-      {
-        "type": "text",
-        "id": "cartreturn",
-        "label": "Return"
+        "type": "image_picker",
+        "id": "image_fl1",
+        "label": "Warranty"
       },
       {
         "type": "text",
         "id": "cartwarranty",
         "label": "Warranty"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_fl2",
+        "label": "Warranty"
+      },
+      {
+        "type": "text",
+        "id": "cartfreeshipping",
+        "label": "Free shipping"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_fl3",
+        "label": "Warranty"
+      },
+      {
+        "type": "text",
+        "id": "cartreturn",
+        "label": "Return"
       }
     ]
   }

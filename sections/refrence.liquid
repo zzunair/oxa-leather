@@ -1,12 +1,15 @@
 
-<div class="refrence-section page-width">
+<div class="refrence-section">
   <div class="reference-heading">{{ section.settings.heading }}</div>
   <p>{{ section.settings.subheading }}</p>
 
   <div class="referencelogo">
     {% for block in section.blocks %} 
+    <div class="refdiv">
     <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ block.settings.logo | img_url: '250x250' }}">
-    {% endfor %}
+    <p>{{ block.settings.label }}</p>
+    </div>
+      {% endfor %}
   </div>
 </div>
 
@@ -34,7 +37,12 @@
        "type": "image_picker",
        "id": "logo",
        "label": "Add image"
-        }
+        },
+      {
+        "type":"text",
+        "id":"label",
+        "label":"logo label"
+      }
 ]
 }],
 "presets":[
