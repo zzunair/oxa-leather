@@ -11,7 +11,9 @@
             "slidemob": "shopify:\/\/shop_images\/winter-banner-mobile.png",
             "enableOverlay": false,
             "heading": "PREMIUM QUALİTY <br> LEATHER IPHONE CASES",
+            "heading_color": "",
             "subheading": "Leather accessories committed to the feeling <br>that transcends experience and style.",
+            "subHeading_color": "",
             "btntxt": "SHOP NOW",
             "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
           }
@@ -20,10 +22,12 @@
           "type": "Slideshow-imges",
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/download.jpg",
-            "slidemob": "shopify:\/\/shop_images\/download.jpg",
-            "enableOverlay": false,
+            "slidemob": "shopify:\/\/shop_images\/download_1_07c09afe-b027-43f2-970c-2f02a1d79461.jpg",
+            "enableOverlay": true,
             "heading": "PREMIUM QUALITY LEATHER CASE",
+            "heading_color": "",
             "subheading": "%30 Discounts on Leather iPhone Cases and Accessories",
+            "subHeading_color": "",
             "btntxt": "Shop Now",
             "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
           }
@@ -36,7 +40,9 @@
             "slidemob": "shopify:\/\/shop_images\/monogram-cover_mobile.png",
             "enableOverlay": false,
             "heading": "",
+            "heading_color": "",
             "subheading": "",
+            "subHeading_color": "",
             "btntxt": "",
             "btntxtlink": ""
           }
