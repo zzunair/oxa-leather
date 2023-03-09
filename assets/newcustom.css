@@ -1,9 +1,43 @@
+.homepage-collection-content {
+    text-align: center;
+    padding: 0px 20px;
+    margin-top: 56px;
+}
+.homepage-collection-content h4 {
+    margin-bottom: 0;
+    font-family: "Manrope 800";
+}
+.homepage-collection-content h1 {
+    margin-top: 10px;
+    font-family: "Manrope 800";
+    font-size: 47px;
+}
+.carousel-inner ul.slick-dots {
+    z-index: 9;
+    bottom: -45px;
+}
+.carousel-inner .slick-dots li button:before{
+    font-size: 36px;
 
-
-
-
-@media all and (max-width: 600px){
+}
+.carousel-inner .slick-dots li.slick-active button:before {
+    width: 25px;
+    font-size: 36px;
+    line-height: 20px;
+    background: #5f5b5b;
+    border-radius: 15px;
+    color: #5f5b5b;
+    height: 17px;
+}
+.carousel-inner .slick-dots li{
+    margin: 0 2px;
+    width: 20px;
+}
+@media all and (max-width: 767px){
     .collectionss .col-title-btn .fill_summer{
         display: none;
+    }
+    .homepage-collection{
+        margin-top: 20px;
     }
 }

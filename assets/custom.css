@@ -4506,7 +4506,7 @@ p.oxinstagram {
     }
 
     .mob-slide:after {
-        background: linear-gradient(111.21deg, rgba(0, 0, 0, .88) 11.74%, rgba(0, 0, 0, .72) 37.06%, rgba(0, 0, 0, .79) 53.9%);
+        /* background: linear-gradient(111.21deg, rgba(0, 0, 0, .88) 11.74%, rgba(0, 0, 0, .72) 37.06%, rgba(0, 0, 0, .79) 53.9%); */
         position: absolute;
         content: "";
         top: 0;
@@ -8418,7 +8418,7 @@ ul#product-grid .banner img {
     border-bottom: 2px solid #eff2f6;
     gap: 50px;
     padding-top: 74px;
-    padding-bottom: 74px;
+    padding-bottom: 56px;
     max-width: 100%;
     display: grid;
     grid-template-columns: auto auto auto auto;

@@ -17,8 +17,8 @@
         -->
       </div>
       <div class="slideshow-content page-width">
-        <div class="slider-headings">{{ block.settings.heading }}</div>
-        <p>{{ block.settings.subheading }}</p>
+        <div class="slider-headings" style="color: {{block.settings.heading_color}}">{{ block.settings.heading }}</div>
+        <p style="color: {{block.settings.subHeading_color}}">{{ block.settings.subheading }}</p>
         <a class="fill" href="{{ block.settings.btntxtlink }}">{{ block.settings.btntxt }}</a>
       </div>
     </div>
@@ -54,10 +54,20 @@
                   "type": "text",
                   "label": "Add text"
                 },
+                {
+                  "type": "color",
+                  "id": "heading_color",
+                  "label": "Heading Color"
+                },
                  {
                   "id": "subheading",
                   "type": "text",
                   "label": "Add Subheading"
+                },
+                {
+                  "type": "color",
+                  "id": "subHeading_color",
+                  "label": "Subheading Color"
                 },
                 {
                   "id": "btntxt",
