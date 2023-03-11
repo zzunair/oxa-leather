@@ -1,0 +1,41 @@
+.sus-video-section {
+    margin-top: 20px;
+    position: relative;
+    z-index: 99;
+    height: 780px;
+}
+.sus-video-section video {
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    height: 100%;
+
+}
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; 
+}
+.text-container h4{
+    font-size: 27px;
+    color: #fff;
+    font-family: "Manrope 800";
+    margin: 0;
+}
+.text-container h1{
+    font-size: 80px;
+    color: #fff;
+    font-family: "Manrope 800";
+    margin: 0;
+    line-height: 1.2;
+}
+.text-container p {
+    color: #fff;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}

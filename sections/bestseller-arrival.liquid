@@ -58,6 +58,15 @@
   div#bestsellertext .best-arrival .color__swatches {
       z-index: 999999 !important;
   }
+  @media all and (max-width: 767px){
+    div#bestsellertext {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+      grid-row-gap: 10px;
+      visibility: visible !important;
+    }
+  }
 </style>
 <script>
         $(document).on("click",".cusrt-nav span.dot",function(){
