@@ -65,7 +65,7 @@
             "colimg": "shopify:\/\/shop_images\/Mask_group.png",
             "colimg1": "shopify:\/\/shop_images\/Property_1_Default.png",
             "tag": "Award Winning",
-            "coltitle": "Leather  Wallet Case",
+            "coltitle": "iPhone Cases",
             "collink": "shopify:\/\/collections\/leather-cases-for-iphone-14"
           }
         },
@@ -76,26 +76,26 @@
             "colimg1": "shopify:\/\/shop_images\/case1.jpg",
             "tag": "",
             "coltitle": "Airpod Case",
-            "collink": "shopify:\/\/collections\/airpods-1-2"
+            "collink": "shopify:\/\/collections\/airpods-all"
           }
         },
         "ddec89b5-4544-4032-8bb1-ee16c19ca418": {
           "type": "collection",
           "settings": {
-            "colimg": "shopify:\/\/shop_images\/watchbands.jpg",
-            "colimg1": "shopify:\/\/shop_images\/watchbands.jpg",
+            "colimg": "shopify:\/\/shop_images\/1_7ca879a5-3516-4ec7-ba21-3293c585f2e4.jpg",
+            "colimg1": "shopify:\/\/shop_images\/1_7ca879a5-3516-4ec7-ba21-3293c585f2e4.jpg",
             "tag": "",
-            "coltitle": "Watch Band",
+            "coltitle": "Apple Watch Band",
             "collink": "shopify:\/\/collections\/leather-apple-watch-bands"
           }
         },
         "1ffeefdf-d714-4349-b49c-a8b7854a79de": {
           "type": "collection",
           "settings": {
-            "colimg": "shopify:\/\/shop_images\/Property_1_Variant2_3.png",
-            "colimg1": "shopify:\/\/shop_images\/Property_1_Variant2_3.png",
+            "colimg": "shopify:\/\/shop_images\/ipad_cases_1.jpg",
+            "colimg1": "shopify:\/\/shop_images\/ipad_cases_1.jpg",
             "tag": "",
-            "coltitle": "Accessories",
+            "coltitle": "iPad Cases",
             "collink": "shopify:\/\/collections\/leather-accessories"
           }
         }
