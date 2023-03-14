@@ -1089,7 +1089,7 @@ ul.list-menu a.header__menu-item:hover {
     font-size: 45px;
     line-height: 56px;
     letter-spacing: .04em;
-    color: #fff;
+    color: #000;
     margin-bottom: unset;
     margin-top: unset
 }
