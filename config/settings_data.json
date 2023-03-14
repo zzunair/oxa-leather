@@ -457,8 +457,9 @@
           "5567d4a5-55a0-44e7-91ee-8b5f969c38b1": {
             "type": "logo",
             "settings": {
-              "coltitle": "",
-              "colurl": ""
+              "logo": "shopify:\/\/shop_images\/Frame_6_66221158-0cbf-4372-a163-b7de33710832.png",
+              "coltitle": "Airpods",
+              "colurl": "shopify:\/\/collections\/airpods-all"
             }
           },
           "9fa10a67-85d8-46f3-8bef-be6468aa6b26": {
