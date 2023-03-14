@@ -552,8 +552,9 @@
           "6bc150c0-5059-4cd1-81a7-e418609beed4": {
             "type": "logos",
             "settings": {
-              "star": "",
-              "label": ""
+              "logo": "shopify:\/\/shop_images\/Frame_12_0aa094c1-8dec-4996-847c-130fe8c9fa40.png",
+              "star": "14-Day Returns",
+              "label": "Refund guarantee in case of any defect in the product."
             }
           }
         },
