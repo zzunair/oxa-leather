@@ -575,6 +575,29 @@
           "heading": "",
           "text": ""
         }
+      },
+      "coll_image_text": {
+        "type": "coll_image_text",
+        "settings": {
+          "headingmain": "Featured accessories",
+          "img": "shopify:\/\/shop_images\/OXA_MAYIS_2496_01_1.webp",
+          "rightimg": "firstsection",
+          "heading": "Airpod Case",
+          "desc": "Stylish, beautiful and customizable airpod case models",
+          "linktxt": "Shop Now >",
+          "btnlink": "shopify:\/\/collections\/airpods-all"
+        }
+      },
+      "col_image_text": {
+        "type": "col_image_text",
+        "settings": {
+          "headingmain": "",
+          "rightimg": "",
+          "heading": "",
+          "desc": "",
+          "linktxt": "",
+          "btnlink": ""
+        }
       }
     },
     "content_for_index": [
