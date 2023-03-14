@@ -1097,13 +1097,14 @@ ul.list-menu a.header__menu-item:hover {
 .slider-homepage .slideshow-image p {
     font-family: "Manrope 500";
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 45px;
     letter-spacing: .06rem;
-    color: #fff;
+    color: #000;
     margin-top: 16px;
-    margin-bottom: 45px
+    margin-bottom: 45px;
+    font-family: "Manrope 800";
 }
 
 .slider-homepage .slideshow-image a {
