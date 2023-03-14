@@ -592,11 +592,12 @@
         "type": "col_image_text",
         "settings": {
           "headingmain": "",
-          "rightimg": "",
-          "heading": "",
-          "desc": "",
-          "linktxt": "",
-          "btnlink": ""
+          "img": "shopify:\/\/shop_images\/Mask_group_2e20f3da-c8ca-45ea-b8e6-7ebe1813f050.webp",
+          "rightimg": "secondsection",
+          "heading": "Airtag Ring",
+          "desc": "Watch your back with beautiful airtag models",
+          "linktxt": "Shop Now >",
+          "btnlink": "shopify:\/\/collections\/apple-airtags"
         }
       }
     },
