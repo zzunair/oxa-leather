@@ -173,6 +173,14 @@ body.collection\.all-series .reference .refrence-section p{
 body.collection\.all-series .m_right {
     margin-top: 0px;
 }
+body.collection\.all-series .m_main.secondsection {
+    padding-top: 20px!important;
+    padding-bottom: 77px!important;
+}
+body.collection\.all-series .m_main {
+    padding: 0!important;
+    margin-bottom: 0!important;
+}
 @media only screen and (max-width:767px) {
   body.collection section.quick-view .prohandlequick h2 {
       font-size: 18px !important;
