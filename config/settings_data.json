@@ -441,8 +441,9 @@
           "e5b9d7bb-8702-45a7-beec-c021d3db674c": {
             "type": "logo",
             "settings": {
-              "coltitle": "",
-              "colurl": ""
+              "logo": "shopify:\/\/shop_images\/Frame_5_b25e22b3-4cee-4fab-87dc-3868a8e3b165.png",
+              "coltitle": "Samsung Galaxy",
+              "colurl": "shopify:\/\/collections\/samsung-galaxy-leather-cases"
             }
           },
           "e2d3f7aa-9f1c-4fc8-ac19-210dc5f8c1ea": {
