@@ -20,6 +20,7 @@
         },
         "0fa7ccbb-9d1d-421d-aae4-585a15cf974a": {
           "type": "Slideshow-imges",
+          "disabled": true,
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/download.jpg",
             "slidemob": "shopify:\/\/shop_images\/download_1_07c09afe-b027-43f2-970c-2f02a1d79461.jpg",
@@ -34,7 +35,6 @@
         },
         "5c67aca3-493a-4afe-bd5e-25a4029a7e71": {
           "type": "Slideshow-imges",
-          "disabled": true,
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/monogram-cover.png",
             "slidemob": "shopify:\/\/shop_images\/monogram-cover_mobile.png",
