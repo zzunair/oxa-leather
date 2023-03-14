@@ -524,6 +524,43 @@
       },
       "collection_logos": {
         "type": "collection_logos",
+        "blocks": {
+          "1ebaa547-74a2-4954-adf4-c65737574c0f": {
+            "type": "logos",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Frame_9_4316857f-8fcf-4938-91a4-cb045ffbe77d.png",
+              "star": "Fast Delivery",
+              "label": "Your cargo will reach you in a short time without any problems."
+            }
+          },
+          "5bfd8fbc-c1d0-4fc8-900d-803d88d943aa": {
+            "type": "logos",
+            "settings": {
+              "star": "",
+              "label": ""
+            }
+          },
+          "c56d6203-09c7-4e38-97f6-da3af284f35d": {
+            "type": "logos",
+            "settings": {
+              "star": "",
+              "label": ""
+            }
+          },
+          "6bc150c0-5059-4cd1-81a7-e418609beed4": {
+            "type": "logos",
+            "settings": {
+              "star": "",
+              "label": ""
+            }
+          }
+        },
+        "block_order": [
+          "1ebaa547-74a2-4954-adf4-c65737574c0f",
+          "5bfd8fbc-c1d0-4fc8-900d-803d88d943aa",
+          "c56d6203-09c7-4e38-97f6-da3af284f35d",
+          "6bc150c0-5059-4cd1-81a7-e418609beed4"
+        ],
         "settings": {
           "heading": "",
           "subheading": ""
