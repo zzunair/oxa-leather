@@ -433,8 +433,9 @@
           "e3413b04-a805-4a1f-8355-206624de5024": {
             "type": "logo",
             "settings": {
-              "coltitle": "",
-              "colurl": ""
+              "logo": "shopify:\/\/shop_images\/Frame_4_ad34c399-5fef-46bc-9f30-e4d0970643d0.png",
+              "coltitle": "Legacy iPhone",
+              "colurl": "shopify:\/\/collections\/case-for-iphone-x-series"
             }
           },
           "e5b9d7bb-8702-45a7-beec-c021d3db674c": {
