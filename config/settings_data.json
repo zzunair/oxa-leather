@@ -514,9 +514,11 @@
       "summer-sale": {
         "type": "summer-sale",
         "settings": {
-          "heading": "",
-          "subheading": "",
-          "btntxt": "",
+          "summerimg": "shopify:\/\/shop_images\/newsumer_240271f9-372d-47f7-b1af-a49320d4313e.png",
+          "summerimgmob": "shopify:\/\/shop_images\/Oxa10163_306c50b8-f1dc-47b5-92c3-8980c025e47c.jpg",
+          "heading": "Personalized with Carving",
+          "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam aliquet sem, nec placerat augue efficitur nec.",
+          "btntxt": "Get Yours",
           "btnlink": ""
         }
       },
