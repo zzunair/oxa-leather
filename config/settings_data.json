@@ -394,6 +394,136 @@
           "cart_empty_url": "",
           "alert_text": "The sale is ending soon. Act Now!"
         }
+      },
+      "all-series": {
+        "type": "all-series",
+        "blocks": {
+          "bd54120b-5d2b-4813-91c9-34b73bd0eda9": {
+            "type": "logo",
+            "settings": {
+              "logo": "shopify:\/\/shop_images\/Frame_3_9a99891e-836a-4f85-9d24-e0ffcbac77b8.png",
+              "coltitle": "iPhone 14 Series",
+              "colurl": "shopify:\/\/collections\/case-for-iphone-14"
+            }
+          },
+          "4876f313-3605-448c-92f6-068045b40e26": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "a72a0772-b539-49de-978d-9c29e0b1061e": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "5318c1c1-6d1a-4843-ba9a-8554b9edbcbd": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "e3413b04-a805-4a1f-8355-206624de5024": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "e5b9d7bb-8702-45a7-beec-c021d3db674c": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "e2d3f7aa-9f1c-4fc8-ac19-210dc5f8c1ea": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "5567d4a5-55a0-44e7-91ee-8b5f969c38b1": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "9fa10a67-85d8-46f3-8bef-be6468aa6b26": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          },
+          "1d7672db-9f1c-4b97-90c7-e2a5ad61f61f": {
+            "type": "logo",
+            "settings": {
+              "coltitle": "",
+              "colurl": ""
+            }
+          }
+        },
+        "block_order": [
+          "bd54120b-5d2b-4813-91c9-34b73bd0eda9",
+          "4876f313-3605-448c-92f6-068045b40e26",
+          "a72a0772-b539-49de-978d-9c29e0b1061e",
+          "5318c1c1-6d1a-4843-ba9a-8554b9edbcbd",
+          "e3413b04-a805-4a1f-8355-206624de5024",
+          "e5b9d7bb-8702-45a7-beec-c021d3db674c",
+          "e2d3f7aa-9f1c-4fc8-ac19-210dc5f8c1ea",
+          "5567d4a5-55a0-44e7-91ee-8b5f969c38b1",
+          "9fa10a67-85d8-46f3-8bef-be6468aa6b26",
+          "1d7672db-9f1c-4b97-90c7-e2a5ad61f61f"
+        ],
+        "settings": {
+          "product_breadcrumb": false,
+          "show_collection_description": true,
+          "show_collection_image": false,
+          "color_scheme": "background-1",
+          "products_per_page": 16,
+          "columns_desktop": 4,
+          "image_ratio": "adapt",
+          "show_secondary_image": false,
+          "show_vendor": false,
+          "show_rating": false,
+          "enable_quick_add": false,
+          "enable_filtering": true,
+          "filter_type": "horizontal",
+          "enable_sorting": true,
+          "columns_mobile": "2",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "summer-sale": {
+        "type": "summer-sale",
+        "settings": {
+          "heading": "",
+          "subheading": "",
+          "btntxt": "",
+          "btnlink": ""
+        }
+      },
+      "collection_logos": {
+        "type": "collection_logos",
+        "settings": {
+          "heading": "",
+          "subheading": ""
+        }
+      },
+      "newsletter-form": {
+        "type": "newsletter-form",
+        "settings": {
+          "heading": "",
+          "text": ""
+        }
       }
     },
     "content_for_index": [
