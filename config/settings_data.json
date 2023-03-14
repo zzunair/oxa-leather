@@ -473,8 +473,9 @@
           "1d7672db-9f1c-4b97-90c7-e2a5ad61f61f": {
             "type": "logo",
             "settings": {
-              "coltitle": "",
-              "colurl": ""
+              "logo": "shopify:\/\/shop_images\/Frame_8_98edd83e-7e49-46ac-889d-ceeb6628d46c.png",
+              "coltitle": "Accessories",
+              "colurl": "shopify:\/\/collections"
             }
           }
         },
