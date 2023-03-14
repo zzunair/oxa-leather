@@ -105,6 +105,7 @@
         "2ea81737-952f-4176-a9a8-f633b54eb673"
       ],
       "settings": {
+        "quick-view": "Quick View",
         "product_breadcrumb": true,
         "show_collection_description": false,
         "show_collection_image": true,
