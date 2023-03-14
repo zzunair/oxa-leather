@@ -233,4 +233,10 @@ body.collection\.all-series .m_main {
     font-size: 12px!important;
     line-height: 18px;
 }
+    body.collection\.all-series .summerimg {
+    height: unset;
+    position: unset;
+}
+  body.collection\.all-series .summer-sale .summerimg img { position: unset; }
+ body.collection\.all-series .collection-hero__image-container.media>*:not(.zoom):not(.deferred-media__poster-button) { height:100%; }
 }
