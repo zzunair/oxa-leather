@@ -109,6 +109,48 @@
       "settings": {
       }
     },
+    "821faca3-d633-4f7c-8d21-68a794f71edc": {
+      "type": "hp-cases",
+      "blocks": {
+        "54f6135d-ba60-4bee-a767-da8d809931c7": {
+          "type": "product",
+          "settings": {
+            "title": "iPhone 13 Series",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/download_1.jpg"
+          }
+        },
+        "1ef8976b-3512-431a-9601-b8525e50d661": {
+          "type": "product",
+          "settings": {
+            "title": "iPhone 12 Series",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/download_2.jpg"
+          }
+        },
+        "02f0df83-d761-49e5-bf23-2a4266d66181": {
+          "type": "product",
+          "settings": {
+            "title": "iPhone 11 Series",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/download_001630fd-f597-40c0-b64e-fffb9b14980f.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "54f6135d-ba60-4bee-a767-da8d809931c7",
+        "1ef8976b-3512-431a-9601-b8525e50d661",
+        "02f0df83-d761-49e5-bf23-2a4266d66181"
+      ],
+      "settings": {
+        "heading": "Shop iPhone Cases",
+        "image": "shopify:\/\/shop_images\/download_82fb662f-e6a0-455b-9d48-fc848a3d1011.jpg",
+        "m-image": "shopify:\/\/shop_images\/download-_3.jpg",
+        "image-heading": "iPhone 14 Series",
+        "btn-text": "SHOP NOW",
+        "btn-url": ""
+      }
+    },
     "16520888013a8f76a5": {
       "type": "bestseller-arrival",
       "settings": {
@@ -182,48 +224,6 @@
         "heading2": "Cable And Accessories",
         "desc2": "Shop Now",
         "link2": "shopify:\/\/collections\/cable-organizer"
-      }
-    },
-    "821faca3-d633-4f7c-8d21-68a794f71edc": {
-      "type": "hp-cases",
-      "blocks": {
-        "54f6135d-ba60-4bee-a767-da8d809931c7": {
-          "type": "product",
-          "settings": {
-            "title": "iPhone 13 Series",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/download_1.jpg"
-          }
-        },
-        "1ef8976b-3512-431a-9601-b8525e50d661": {
-          "type": "product",
-          "settings": {
-            "title": "iPhone 12 Series",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/download_2.jpg"
-          }
-        },
-        "02f0df83-d761-49e5-bf23-2a4266d66181": {
-          "type": "product",
-          "settings": {
-            "title": "iPhone 11 Series",
-            "url": "",
-            "image": "shopify:\/\/shop_images\/download_001630fd-f597-40c0-b64e-fffb9b14980f.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "54f6135d-ba60-4bee-a767-da8d809931c7",
-        "1ef8976b-3512-431a-9601-b8525e50d661",
-        "02f0df83-d761-49e5-bf23-2a4266d66181"
-      ],
-      "settings": {
-        "heading": "Shop iPhone Cases",
-        "image": "shopify:\/\/shop_images\/download_82fb662f-e6a0-455b-9d48-fc848a3d1011.jpg",
-        "m-image": "shopify:\/\/shop_images\/download-_3.jpg",
-        "image-heading": "iPhone 14 Series",
-        "btn-text": "SHOP NOW",
-        "btn-url": ""
       }
     },
     "c5ae0244-b762-40f6-b80d-dd61584d2c0c": {
@@ -518,11 +518,11 @@
   "order": [
     "1652075548b8eb1181",
     "1652098478e13e339b",
+    "821faca3-d633-4f7c-8d21-68a794f71edc",
     "16520888013a8f76a5",
     "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e",
     "165215959574bcb5a2",
     "771b419b-9373-44ba-8557-be191c8a0a9d",
-    "821faca3-d633-4f7c-8d21-68a794f71edc",
     "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
     "50d706d4-648a-4974-b1c5-8020b0379153",
     "16523258986295531a",
