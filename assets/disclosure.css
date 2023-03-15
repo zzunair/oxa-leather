@@ -181,6 +181,9 @@ body.collection\.all-series .m_main {
     padding: 0!important;
     margin-bottom: 0!important;
 }
+body.collection.leather-ipad-covers section.quick-view ul#product-grid .prohandle {
+    display: none !important;
+}
 @media only screen and (max-width:767px) {
   body.collection section.quick-view .prohandlequick h2 {
       font-size: 18px !important;
