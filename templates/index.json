@@ -109,6 +109,46 @@
       "settings": {
       }
     },
+    "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e": {
+      "type": "home_banner_bottom",
+      "blocks": {
+        "ca802db9-7faf-4bd6-9f55-c7b11cf3fe7b": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_2.png"
+          }
+        },
+        "fd636869-a532-4019-85c2-b962a4c0c944": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_3.png"
+          }
+        },
+        "dacf610a-685d-45f5-9fe7-eabc4b3dd42b": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_4.png"
+          }
+        },
+        "de8dd1eb-3c34-4011-ae43-348c1cd4874f": {
+          "type": "banimg",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/oxa_logos_5.png"
+          }
+        }
+      },
+      "block_order": [
+        "ca802db9-7faf-4bd6-9f55-c7b11cf3fe7b",
+        "fd636869-a532-4019-85c2-b962a4c0c944",
+        "dacf610a-685d-45f5-9fe7-eabc4b3dd42b",
+        "de8dd1eb-3c34-4011-ae43-348c1cd4874f"
+      ],
+      "settings": {
+        "heading": "",
+        "heading2": "Rated #1 leather accessory",
+        "link": "#"
+      }
+    },
     "821faca3-d633-4f7c-8d21-68a794f71edc": {
       "type": "hp-cases",
       "blocks": {
@@ -158,46 +198,6 @@
         "collectss": "leather-apple-watch-bands",
         "btntxt": "View All",
         "btynlink": "shopify:\/\/collections\/best-seller"
-      }
-    },
-    "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e": {
-      "type": "home_banner_bottom",
-      "blocks": {
-        "ca802db9-7faf-4bd6-9f55-c7b11cf3fe7b": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_2.png"
-          }
-        },
-        "fd636869-a532-4019-85c2-b962a4c0c944": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_3.png"
-          }
-        },
-        "dacf610a-685d-45f5-9fe7-eabc4b3dd42b": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_4.png"
-          }
-        },
-        "de8dd1eb-3c34-4011-ae43-348c1cd4874f": {
-          "type": "banimg",
-          "settings": {
-            "logo": "shopify:\/\/shop_images\/oxa_logos_5.png"
-          }
-        }
-      },
-      "block_order": [
-        "ca802db9-7faf-4bd6-9f55-c7b11cf3fe7b",
-        "fd636869-a532-4019-85c2-b962a4c0c944",
-        "dacf610a-685d-45f5-9fe7-eabc4b3dd42b",
-        "de8dd1eb-3c34-4011-ae43-348c1cd4874f"
-      ],
-      "settings": {
-        "heading": "",
-        "heading2": "Rated #1 leather accessory",
-        "link": "#"
       }
     },
     "165215959574bcb5a2": {
@@ -518,9 +518,9 @@
   "order": [
     "1652075548b8eb1181",
     "1652098478e13e339b",
+    "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e",
     "821faca3-d633-4f7c-8d21-68a794f71edc",
     "16520888013a8f76a5",
-    "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e",
     "165215959574bcb5a2",
     "771b419b-9373-44ba-8557-be191c8a0a9d",
     "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
