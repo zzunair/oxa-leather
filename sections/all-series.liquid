@@ -347,7 +347,7 @@
           </div>
         {% endif %}
       </div>
-      {% assign sub_collections = collection.metafields.custom.subcategory %}
+      {% assign sub_collections = collection.metafields.custom.subcategory.value %}
       {% for collection in sub_collections %}
       {%- paginate collection.products by 50 -%}
         {%- if collection.products.size == 0 -%}
