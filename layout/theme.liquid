@@ -30,13 +30,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     {% if template == 'collection' %}
-      <META NAME="robots" CONTENT="noindex,nofollow">
+      <META NAME="robots" CONTENT="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
     {% elsif template == 'cart' %}
-      <META NAME="robots" CONTENT="noindex,nofollow">
+      <META NAME="robots" CONTENT="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
     {% elsif template == 'search' %}
-      <META NAME="robots" CONTENT="noindex,nofollow">
+      <META NAME="robots" CONTENT="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
     {% elsif template contains 'customers' %}
-      <META NAME="robots" CONTENT="noindex,nofollow">
+      <META NAME="robots" CONTENT="index,follow,max-snippet:-1,max-video-preview:-1,max-image-preview:large">
     {% endif %}
 
     {{ 'libs.js' | asset_url | script_tag }}
