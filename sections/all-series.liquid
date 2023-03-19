@@ -37,6 +37,9 @@
         padding-bottom: calc({{ settings.media_shadow_vertical_offset | at_least: 0 }}px + 2rem);
       }
     }
+  #product-grid li.grid__item {
+      display: block !important;
+  }
 {%- endstyle -%}
 
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
@@ -347,7 +350,8 @@
           </div>
         {% endif %}
       </div>
-      {%- paginate collection.products by section.settings.products_per_page -%}
+        {% assign sub_category = collection.metafields.custom.subcategory.value %}
+        {% for collection in sub_category %}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -375,14 +379,11 @@
                 grid--{{ section.settings.columns_desktop }}-col-desktop
               "
             >
-              {% render 'variable-products-card-product-main-collection-product-grid',
-                collection: collection,
-                forloop: forloop,
-                product: product,
-                section: section,
-                lazy_load: lazy_load
-              %}
-
+               <div class="prohandle">
+                  <span class="series-title">
+                    <h2 class="pro">{{- collection.metafields.custom.title -}}</h2>
+                  </span>
+                </div>
               {%- for product in collection.products -%}
                 {% assign values = null %}
                 {% if product.options contains 'Color' %}
@@ -400,37 +401,10 @@
                 {% assign index = forloop.index0 %}
                 {% assign colorlist = '' %}
                 {% assign color = '' %}
-                {% for variant in product.variants %}
-                  {% if forloop.index == 1 %}
-                    {% if product.metafields.custom.series_title.value != blank %}
-                      <div class="prohandle">
-                        <span class="series-title">
-                          <h2 class="pro">{{- product.metafields.custom.series_title.value -}}</h2>
-                        </span>
-
-                        {% comment %}
-                          {% if product.metafields.custom.product_modal.value %}
-                            <h2>{{ product.metafields.custom.product_modal.value }}</h2>
-                          {% else %}
-                            <h2 class="pro">{{ product.title }}</h2>
-                          {% endif %}
-                        {% endcomment %}
-                      </div>
-                    {% endif %}
-                  {% endif %}
-                  {% if forloop.index == 3 %}
-                    <div class="banner dd {{ forloop.index }}">
-                      {% if forloop.index == 3 %}
-                        <img src="{{ product.metafields.custom.coll_banner_one | img_url:'master' }}">
-                      {% elsif forloop.index == 6 %}
-                        <img src="{{ product.metafields.custom.coll_banner_two | img_url:'master' }}">
-                      {% endif %}
-                    </div>
-                  {% endif %}
 
                   <li
                     size="{{ sizes }}"
-                    class="grid__item {% if collection.title contains 'Watch' %}{% if forloop.index > 5  %}display_none{% endif %}{% elsif forloop.index >  5 %}display_none{% endif %}{% if forloop.index > sizes %} display_none {% endif %}"
+                    class="grid__item"
                     data-active="{{ forloop.index }}"
                   >
                     {% render 'card-product',
@@ -442,49 +416,17 @@
                       lazy_load: lazy_load,
                       show_quick_add: section.settings.enable_quick_add,
                       section_id: section.id,
-                      variant: variant,
+                      variant: product.variants.first,
                       index: forloop.index0
                     %}
                   </li>
-                {% endfor %}
+               
               {%- endfor -%}
             </ul>
-
-            {% comment %}
-                 {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
-              {%- endif -%}
-            {% endcomment %}
           </div>
 
-          <div class="pagination-wrapper">
-            {%- if paginate.next -%}
-              <span class="next-page-wrapper">
-                <a href="{{ paginate.next.url }}" id="paginatie-next">Next</a>
-              </span>
-            {%- endif -%}
-            {%- if paginate.previous -%}
-              <span>
-                <a href="{{ paginate.previous.url }}" id="paginatie-previous">Previous</a>
-              </span>
-            {%- endif -%}
-          </div>
-          {% if collection.products.size > 18 %}
-            <div class="collection-load-more loading-overlay__spinner">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                role="presentation"
-                class="spinner"
-                viewBox="0 0 66 66"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30" style="stroke: #000;"></circle>
-              </svg>
-            </div>
-          {% endif %}
-        {%- endif -%}
-      {%- endpaginate -%}
+          {%- endif -%}
+        {% endfor %}
     </div>
   </div>
 </div>
