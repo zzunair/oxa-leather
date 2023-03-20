@@ -13,8 +13,4 @@
     {{ group.sitemap }}
   {%- endif -%}
   
-  {%- if group.user_agent.value == '*' -%}
-    {{ 'Disallow: /*?*' }} 
-  {%- endif -%}
-
 {% endfor %}
