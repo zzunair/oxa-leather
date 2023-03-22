@@ -11,6 +11,7 @@
   
   
   
+  
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
@@ -1095,12 +1096,12 @@
 // monogram_code
 
 
-    // $('.product-form__buttons button.product-form__submit').click(function(){
-    //     $('.popup_view').show();
-    // });
-    // $('.close').click(function(){
-    //       $('.popup_view').hide();
-    // });
+    $('.product-form__buttons button.product-form__submit').click(function(){
+        $('.popup_view').show();
+    });
+    $('.close').click(function(){
+          $('.popup_view').hide();
+    });
   $('.product-form__buttons button.product-form__submit').click(function(){
     $('body.gradient').addClass('show_popup')   
   });
@@ -1139,6 +1140,7 @@
     $('.refrence-section-about').click(function(){
     $(this).toggleClass('Showdesc')
   })
+
 
 
 
