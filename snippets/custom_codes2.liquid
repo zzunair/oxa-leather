@@ -1,5 +1,6 @@
 <script>
   
+  
   function setBreadcrumbForCollections(f_m){
         var breadC = `<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
     <a href="https://oxaleather.com" title="Oxa Leather" itemprop="item" class="breadcrumb_link">
@@ -58,18 +59,19 @@
        
   }   
 
-  $('.product-form__buttons button.product-form__submit').click(function(){
-  $('body.gradient').addClass('show_popup')   
-  });
-  $('div#popup1 a.close').click(function(){
-   $('body.gradient').removeClass('show_popup')
-  });
+  // $('.product-form__buttons button.product-form__submit').click(function(){
+  // $('body.gradient').addClass('show_popup')   
+  // });
+  // $('div#popup1 a.close').click(function(){
+  //  $('body.gradient').removeClass('show_popup')
+  // });
 
 
   $('.accordion .content-container').click(function(){
      $(this).siblings().removeClass('active');
         $(this).toggleClass('active');
     });
+
 
 
 
