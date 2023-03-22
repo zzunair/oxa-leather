@@ -9,6 +9,7 @@
   
   
   
+  
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
@@ -732,9 +733,9 @@
         $(".product-form__buttons button").click();
       });
       
-     // $(".sticky-product-mobile button.product-form__submit.button").click(function(){
-     //    $(".product-form__buttons button").click();
-     //  });
+     $(".sticky-product-mobile button.product-form__submit.button").click(function(){
+        $(".product-form__buttons button").click();
+      });
   
       $(".monos .products-extra .bttn a").click(function(){
         var title = $(this).parents('.products-extra').find('.title-price h3').text();
@@ -1137,6 +1138,7 @@
     $('.refrence-section-about').click(function(){
     $(this).toggleClass('Showdesc')
   })
+
 
 
 
