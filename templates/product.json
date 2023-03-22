@@ -153,6 +153,7 @@
     },
     "b1a83097-8dbd-4466-8ec8-2a5aa2ef23dd": {
       "type": "video_popup",
+      "disabled": true,
       "settings": {
       }
     },
