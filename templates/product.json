@@ -27,16 +27,16 @@
             "picker_type": "button"
           }
         },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": false
-          }
-        },
         "52c35c4d-8da9-457d-95b3-0295f4df816e": {
           "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
           "settings": {
             "debugging_script": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false
           }
         },
         "quantity_selector": {
@@ -124,8 +124,8 @@
         "price",
         "caption",
         "variant_picker",
-        "buy_buttons",
         "52c35c4d-8da9-457d-95b3-0295f4df816e",
+        "buy_buttons",
         "quantity_selector",
         "description",
         "collapsible-row-0",
