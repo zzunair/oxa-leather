@@ -168,6 +168,23 @@
       "settings": {
       }
     },
+    "alireviews-section-1656684475": {
+      "type": "apps",
+      "blocks": {
+        "14bb6e64-2003-4201-9c0c-784ca85d5e91": {
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
+          "settings": {
+            "debugging_script": ""
+          }
+        }
+      },
+      "block_order": [
+        "14bb6e64-2003-4201-9c0c-784ca85d5e91"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1653559275c0ab506a": {
       "type": "apps",
       "blocks": {
@@ -288,12 +305,6 @@
         "text": "Subscribe to our newsletter now and  never miss exclusive offers or news again."
       }
     },
-    "alireviews-section-1656684475": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "loox-product-reviews-app-section": {
       "type": "apps",
       "settings": {
@@ -315,12 +326,12 @@
     "b1a83097-8dbd-4466-8ec8-2a5aa2ef23dd",
     "16527669850006b4d7",
     "16559825249e1802e4",
+    "alireviews-section-1656684475",
     "1653559275c0ab506a",
     "16527016155f6cbb0e",
     "product-recommendations",
     "1652790375698f076d",
     "1652767746beb0cfbc",
-    "alireviews-section-1656684475",
     "loox-product-reviews-app-section",
     "e117ec0f-bf6f-44e4-bfed-6457b245c3e5"
   ]
