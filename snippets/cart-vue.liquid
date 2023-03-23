@@ -361,6 +361,7 @@ console.log("prop", prop, 'sku', sku);
 //return true;
               if(prop){
                 if(typeof prop['_tags'] != "undefined" && !prop['_tags'].includes('notcustom')){
+                  debugger;
                   if(this.cart_items.find(itm => itm.properties["SKU"] == sku)){
                     return false;
                   }else{
