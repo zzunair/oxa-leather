@@ -29,6 +29,7 @@
         },
         "52c35c4d-8da9-457d-95b3-0295f4df816e": {
           "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
+          "disabled": true,
           "settings": {
             "debugging_script": ""
           }
