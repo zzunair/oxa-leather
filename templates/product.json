@@ -27,13 +27,6 @@
             "picker_type": "button"
           }
         },
-        "52c35c4d-8da9-457d-95b3-0295f4df816e": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
-          "disabled": true,
-          "settings": {
-            "debugging_script": ""
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -103,6 +96,12 @@
           "settings": {
           }
         },
+        "52c35c4d-8da9-457d-95b3-0295f4df816e": {
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
+          "settings": {
+            "debugging_script": ""
+          }
+        },
         "b77f0535-d8f6-4ee7-b4ec-63fbc1d5d245": {
           "type": "accordion",
           "settings": {
@@ -125,7 +124,6 @@
         "price",
         "caption",
         "variant_picker",
-        "52c35c4d-8da9-457d-95b3-0295f4df816e",
         "buy_buttons",
         "quantity_selector",
         "description",
@@ -135,6 +133,7 @@
         "collapsible-row-3",
         "share",
         "fac400d5-8321-47e6-9844-1587b64db30f",
+        "52c35c4d-8da9-457d-95b3-0295f4df816e",
         "b77f0535-d8f6-4ee7-b4ec-63fbc1d5d245",
         "bbf9eaf0-adf6-4bdf-8108-f757d0136d01"
       ],
