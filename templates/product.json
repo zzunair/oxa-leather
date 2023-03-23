@@ -171,6 +171,12 @@
     "1653559275c0ab506a": {
       "type": "apps",
       "blocks": {
+        "6824c6bd-8bc8-48ca-9b35-f8663fa38d3d": {
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
+          "settings": {
+            "debugging_script": ""
+          }
+        },
         "1cd9bcd8-3d06-48f8-a25f-8ab4ebfb62b5": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -181,18 +187,12 @@
           "settings": {
             "product": "{{product}}"
           }
-        },
-        "6824c6bd-8bc8-48ca-9b35-f8663fa38d3d": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
-          "settings": {
-            "debugging_script": ""
-          }
         }
       },
       "block_order": [
+        "6824c6bd-8bc8-48ca-9b35-f8663fa38d3d",
         "1cd9bcd8-3d06-48f8-a25f-8ab4ebfb62b5",
-        "df69281d-ccb2-46cd-9ee4-b5062ec101ab",
-        "6824c6bd-8bc8-48ca-9b35-f8663fa38d3d"
+        "df69281d-ccb2-46cd-9ee4-b5062ec101ab"
       ],
       "settings": {
         "include_margins": true
