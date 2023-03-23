@@ -170,6 +170,7 @@
     },
     "alireviews-section-1656684475": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "14bb6e64-2003-4201-9c0c-784ca85d5e91": {
           "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
