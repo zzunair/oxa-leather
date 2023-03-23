@@ -359,14 +359,16 @@
             checkMono: function checkMono(prop, sku){
 console.log("prop", prop, 'sku', sku);
 //return true;
-              if(typeof prop['_tags'] != "undefined" && !prop['_tags'].includes('notcustom')){
-                if(this.cart_items.find(itm => itm.properties["SKU"] == sku)){
-                  return false;
+              if(prop){
+                if(typeof prop['_tags'] != "undefined" && !prop['_tags'].includes('notcustom')){
+                  if(this.cart_items.find(itm => itm.properties["SKU"] == sku)){
+                    return false;
+                  }else{
+                    return true;
+                  }
                 }else{
-                  return true;
+                  return false;
                 }
-              }else{
-                return false;
               }
             }
         }
