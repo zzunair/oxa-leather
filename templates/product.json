@@ -33,6 +33,12 @@
             "show_dynamic_checkout": false
           }
         },
+        "52c35c4d-8da9-457d-95b3-0295f4df816e": {
+          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
+          "settings": {
+            "debugging_script": ""
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -104,12 +110,6 @@
             "ans": "All our goods are ready in stock and ships in 1 business day from our New Jersey warehouse."
           }
         },
-        "52c35c4d-8da9-457d-95b3-0295f4df816e": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
-          "settings": {
-            "debugging_script": ""
-          }
-        },
         "bbf9eaf0-adf6-4bdf-8108-f757d0136d01": {
           "type": "accordion",
           "settings": {
@@ -125,6 +125,7 @@
         "caption",
         "variant_picker",
         "buy_buttons",
+        "52c35c4d-8da9-457d-95b3-0295f4df816e",
         "quantity_selector",
         "description",
         "collapsible-row-0",
@@ -134,7 +135,6 @@
         "share",
         "fac400d5-8321-47e6-9844-1587b64db30f",
         "b77f0535-d8f6-4ee7-b4ec-63fbc1d5d245",
-        "52c35c4d-8da9-457d-95b3-0295f4df816e",
         "bbf9eaf0-adf6-4bdf-8108-f757d0136d01"
       ],
       "settings": {
