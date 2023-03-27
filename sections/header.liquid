@@ -441,7 +441,7 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                                                 Back
                                               </button>
                                               <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                                                <li class="Shop-all-menu cc"><a href="{{ link.url }}" >Shop all {{ link.title | escape }}</a></li>
+                                                <li class="Shop-all-menu"><a href="{{ link.url }}" >Shop all {{ link.title | escape }}</a></li>
                                                 {%- for childlink in link.links -%}
                                                 <li>
                                                   {%- if childlink.links == blank -%}
@@ -462,7 +462,7 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                                                         Back
                                                       </button>
                                                       <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                                                        <li class="Shop-all-menu bb" > <a href="{{ childlink.url }}" >Shop all {{ childlink.title | escape }}</a></li>
+                                                        <li class="Shop-all-menu" > <a href="{{ childlink.url }}" >Shop all {{ childlink.title | escape }}</a></li>
                                                         {%- for grandchildlink in childlink.links -%}
                                                         <li>
                                                           <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
