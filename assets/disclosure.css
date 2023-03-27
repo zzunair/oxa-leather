@@ -252,7 +252,7 @@ body.collection section.quick-view ul#product-grid .prohandle {
 .collection-hero__inner .collection-hero__description.rte {
     position: absolute !important;
 }
- .logomain .lgrid a {
+.collection .logomain .lgrid a {
     align-items: center;
 }
 }
