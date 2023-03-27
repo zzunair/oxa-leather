@@ -242,4 +242,10 @@ body.collection section.quick-view ul#product-grid .prohandle {
 }
   body.collection\.all-series .summer-sale .summerimg img { position: unset; }
  body.collection\.all-series .collection-hero__image-container.media>*:not(.zoom):not(.deferred-media__poster-button) { height:100%; }
+
+
+
+.collection-hero__inner .collection-hero__description.rte {
+    position: absolute !important;
+}
 }
