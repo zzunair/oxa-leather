@@ -264,3 +264,4 @@ body.index .slideshow-content .slider-headings {
     font-size: 21px;
 }
 body.index .slider-homepage .slideshow-content { padding:unset; }
+body.index  .slider-homepage .slideshow-image p {  font-size: 45px; }
