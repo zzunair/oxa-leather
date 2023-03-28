@@ -9,24 +9,26 @@
       {% endif %}
       <p class="center_comment">{{ section.settings.text_h }}</p>
     </div>
-    {% if section.settings.text_lie != 'blank' %}
+    {% if section.settings.text_lie != blank %}
       <p class="center_head_faq">{{ section.settings.text_lie }}</p>
     {% endif %}
     <div class="row">
       <div class="col-md-12 accordion-div">
         <div class="mack_os">
           {% for block in section.blocks %}
-            <div class="accordion_container">
-              <div class="accordion_head">
-                {{ block.settings.accordian_text_col -}}
-                <span class="plusminus"
-                  ><img src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/Border_d4c80746-0b31-4cd2-a4af-50dc5d7f11d0.png?v=1652705460"
-                ></span>
+            {% if block.settings.accordian_text_col != blank %}
+              <div class="accordion_container">
+                <div class="accordion_head">
+                  {{ block.settings.accordian_text_col -}}
+                  <span class="plusminus"
+                    ><img src="https://cdn.shopify.com/s/files/1/0507/0418/7590/files/Border_d4c80746-0b31-4cd2-a4af-50dc5d7f11d0.png?v=1652705460"
+                  ></span>
+                </div>
+                <div class="accordion_body" style="display: none;">
+                  <p>{{ block.settings.accordian_text_col2 }}</p>
+                </div>
               </div>
-              <div class="accordion_body" style="display: none;">
-                <p>{{ block.settings.accordian_text_col2 }}</p>
-              </div>
-            </div>
+            {% endif %}
           {% endfor %}
         </div>
       </div>
