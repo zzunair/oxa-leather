@@ -36,11 +36,11 @@
           "type": "Slideshow-imges",
           "settings": {
             "slideimg": "shopify:\/\/shop_images\/gray_v2.jpg",
-            "slidemob": "shopify:\/\/shop_images\/Mirrors_mobile.jpg",
+            "slidemob": "shopify:\/\/shop_images\/gray_mobil.jpg",
             "enableOverlay": false,
             "heading": "Discover Timeless Elegance with Oxa Leather",
             "heading_color": "",
-            "subheading": "Premium Handcrafted Accessories for Your Tech Devices.",
+            "subheading": "Premium Accessories for Your Tech Devices",
             "subHeading_color": "",
             "btntxt": "Shop Now",
             "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
