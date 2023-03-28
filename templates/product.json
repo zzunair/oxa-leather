@@ -218,6 +218,7 @@
     },
     "16527016155f6cbb0e": {
       "type": "Faq_comments",
+      "disabled": true,
       "blocks": {
         "6510f45d-73ec-4246-b7fc-3c70d412b707": {
           "type": "faq_sec",
