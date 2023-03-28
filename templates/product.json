@@ -251,7 +251,7 @@
           "type": "faq_sec",
           "settings": {
             "accordian_text_col": "{{ product.metafields.custom.faq_q5.value }}",
-            "accordian_text_col2": "<p>{{ product.metafields.custom.faq_a5 | metafield_tag }}<\/p>"
+            "accordian_text_col2": ""
           }
         }
       },
