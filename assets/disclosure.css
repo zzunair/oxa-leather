@@ -255,4 +255,12 @@ body.collection section.quick-view ul#product-grid .prohandle {
 .collection .logomain .lgrid a {
     align-items: center;
 }
+
+
+  
 }
+
+body.index .slideshow-content .slider-headings {
+    font-size: 20px;
+}
+body.index .slider-homepage .slideshow-content { padding:unset; }
