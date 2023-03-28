@@ -287,6 +287,9 @@ body.index .slider-homepage .slideshow-image .fill:hover { box-shadow: inset 0 0
 }
 @media only screen and (min-width:768px) {
     body.index .homepage-slider .desktop-slide img.slider-desktop { height:unset; }
+  .testimonial_slider .carousel-inner ul.slick-dots {
+    left: 0;
+}
 }
 @media only screen and (min-width:1600px) {
   body.index .slider-homepage .slideshow-image p { font-size: 60px !important; line-height: 70px!important; }
