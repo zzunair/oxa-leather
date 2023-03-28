@@ -206,41 +206,6 @@
         "btn-url": ""
       }
     },
-    "16520888013a8f76a5": {
-      "type": "bestseller-arrival",
-      "settings": {
-        "collects": "all-phone-cases",
-        "collectss": "leather-apple-watch-bands",
-        "btntxt": "View All",
-        "btynlink": "shopify:\/\/collections\/best-seller"
-      }
-    },
-    "165215959574bcb5a2": {
-      "type": "summer-sale",
-      "disabled": true,
-      "settings": {
-        "summerimg": "shopify:\/\/shop_images\/zilli.jpg",
-        "summerimgmob": "shopify:\/\/shop_images\/zilli.jpg",
-        "heading": "<span class=\"grey\">8 years<\/span>of crafting the perfect leather.",
-        "subheading": "",
-        "btntxt": "Learn More",
-        "btnlink": "shopify:\/\/pages\/about-us"
-      }
-    },
-    "771b419b-9373-44ba-8557-be191c8a0a9d": {
-      "type": "both_image",
-      "disabled": true,
-      "settings": {
-        "img": "shopify:\/\/shop_images\/OXA_nisan_10483_e0c58571-ed61-4567-9a62-74a5a18100af.png",
-        "heading1": "premium grain leather",
-        "desc1": "Shop Now",
-        "link1": "shopify:\/\/collections\/samsung-galaxy-leather-cases",
-        "rightimg": "shopify:\/\/shop_images\/deli.jpg",
-        "heading2": "Cable And Accessories",
-        "desc2": "Shop Now",
-        "link2": "shopify:\/\/collections\/cable-organizer"
-      }
-    },
     "c5ae0244-b762-40f6-b80d-dd61584d2c0c": {
       "type": "collection_logos",
       "blocks": {
@@ -286,6 +251,41 @@
       "settings": {
         "heading": "",
         "subheading": ""
+      }
+    },
+    "16520888013a8f76a5": {
+      "type": "bestseller-arrival",
+      "settings": {
+        "collects": "all-phone-cases",
+        "collectss": "leather-apple-watch-bands",
+        "btntxt": "View All",
+        "btynlink": "shopify:\/\/collections\/best-seller"
+      }
+    },
+    "165215959574bcb5a2": {
+      "type": "summer-sale",
+      "disabled": true,
+      "settings": {
+        "summerimg": "shopify:\/\/shop_images\/zilli.jpg",
+        "summerimgmob": "shopify:\/\/shop_images\/zilli.jpg",
+        "heading": "<span class=\"grey\">8 years<\/span>of crafting the perfect leather.",
+        "subheading": "",
+        "btntxt": "Learn More",
+        "btnlink": "shopify:\/\/pages\/about-us"
+      }
+    },
+    "771b419b-9373-44ba-8557-be191c8a0a9d": {
+      "type": "both_image",
+      "disabled": true,
+      "settings": {
+        "img": "shopify:\/\/shop_images\/OXA_nisan_10483_e0c58571-ed61-4567-9a62-74a5a18100af.png",
+        "heading1": "premium grain leather",
+        "desc1": "Shop Now",
+        "link1": "shopify:\/\/collections\/samsung-galaxy-leather-cases",
+        "rightimg": "shopify:\/\/shop_images\/deli.jpg",
+        "heading2": "Cable And Accessories",
+        "desc2": "Shop Now",
+        "link2": "shopify:\/\/collections\/cable-organizer"
       }
     },
     "50d706d4-648a-4974-b1c5-8020b0379153": {
@@ -535,10 +535,10 @@
     "1652098478e13e339b",
     "e2b0f1c5-ebe3-4137-b67c-ff22ca76091e",
     "821faca3-d633-4f7c-8d21-68a794f71edc",
+    "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
     "16520888013a8f76a5",
     "165215959574bcb5a2",
     "771b419b-9373-44ba-8557-be191c8a0a9d",
-    "c5ae0244-b762-40f6-b80d-dd61584d2c0c",
     "50d706d4-648a-4974-b1c5-8020b0379153",
     "16523258986295531a",
     "1652177403c5493a30",
