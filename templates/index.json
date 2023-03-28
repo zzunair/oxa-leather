@@ -3,35 +3,6 @@
     "1652075548b8eb1181": {
       "type": "homepage-slideshow",
       "blocks": {
-        "e199dced-cede-462e-b2a8-c2f031d99445": {
-          "type": "Slideshow-imges",
-          "disabled": true,
-          "settings": {
-            "slidemob": "shopify:\/\/shop_images\/winter-banner-mobile.png",
-            "enableOverlay": false,
-            "heading": "PREMIUM QUALİTY <br> LEATHER IPHONE CASES",
-            "heading_color": "",
-            "subheading": "Leather accessories committed to the feeling <br>that transcends experience and style.",
-            "subHeading_color": "",
-            "btntxt": "SHOP NOW",
-            "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
-          }
-        },
-        "0fa7ccbb-9d1d-421d-aae4-585a15cf974a": {
-          "type": "Slideshow-imges",
-          "disabled": true,
-          "settings": {
-            "slideimg": "shopify:\/\/shop_images\/Mirrors.jpg",
-            "slidemob": "shopify:\/\/shop_images\/Mirrors_mobile.jpg",
-            "enableOverlay": false,
-            "heading": "Elegant Design",
-            "heading_color": "",
-            "subheading": "Timeless Quality",
-            "subHeading_color": "",
-            "btntxt": "Shop Now",
-            "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
-          }
-        },
         "9276ecb4-355c-4406-9007-e6850ba6dc36": {
           "type": "Slideshow-imges",
           "settings": {
@@ -45,28 +16,10 @@
             "btntxt": "Shop Now",
             "btntxtlink": "shopify:\/\/collections\/all-phone-cases"
           }
-        },
-        "5c67aca3-493a-4afe-bd5e-25a4029a7e71": {
-          "type": "Slideshow-imges",
-          "disabled": true,
-          "settings": {
-            "slideimg": "shopify:\/\/shop_images\/monogram-cover.png",
-            "slidemob": "shopify:\/\/shop_images\/monogram-cover_mobile.png",
-            "enableOverlay": false,
-            "heading": "",
-            "heading_color": "",
-            "subheading": "",
-            "subHeading_color": "",
-            "btntxt": "",
-            "btntxtlink": ""
-          }
         }
       },
       "block_order": [
-        "e199dced-cede-462e-b2a8-c2f031d99445",
-        "0fa7ccbb-9d1d-421d-aae4-585a15cf974a",
-        "9276ecb4-355c-4406-9007-e6850ba6dc36",
-        "5c67aca3-493a-4afe-bd5e-25a4029a7e71"
+        "9276ecb4-355c-4406-9007-e6850ba6dc36"
       ],
       "settings": {
       }
