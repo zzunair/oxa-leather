@@ -124,7 +124,7 @@
           "type": "product",
           "settings": {
             "title": "iPhone 13 Series",
-            "url": "",
+            "url": "shopify:\/\/collections\/case-for-iphone-13",
             "image": "shopify:\/\/shop_images\/13_pro_max.jpg"
           }
         },
@@ -132,7 +132,7 @@
           "type": "product",
           "settings": {
             "title": "iPhone 12 Series",
-            "url": "",
+            "url": "shopify:\/\/collections\/case-for-iphone-12",
             "image": "shopify:\/\/shop_images\/12_pro_max.jpg"
           }
         },
@@ -140,7 +140,7 @@
           "type": "product",
           "settings": {
             "title": "iPhone 11 Series",
-            "url": "",
+            "url": "shopify:\/\/collections\/case-for-iphone-11",
             "image": "shopify:\/\/shop_images\/refurb-iphone-11-pro-max-space-gray-2019.jpg"
           }
         }
