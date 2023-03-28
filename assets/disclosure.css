@@ -291,4 +291,5 @@ body.index .slider-homepage .slideshow-image .fill:hover { box-shadow: inset 0 0
 @media only screen and (min-width:1600px) {
   body.index .slider-homepage .slideshow-image p { font-size: 60px !important; }
   body.index .slider-homepage .slideshow-content { max-width: 700px!important; }
+  body.index .slideshow-content .slider-headings { font-size: 28px; }
 }
