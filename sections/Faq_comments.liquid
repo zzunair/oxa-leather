@@ -9,9 +9,11 @@
       {% endif %}
       <p class="center_comment">{{ section.settings.text_h }}</p>
     </div>
-
-    <p class="center_head_faq">{{ section.settings.text_lie }}</p>
-
+    {% for block in section.blocks %}
+      {% if block.settings.accordian_text_col != blank %}
+        <p class="center_head_faq">{{ section.settings.text_lie }}</p>
+      {% endif %}
+    {% endfor %}
     <div class="row">
       <div class="col-md-12 accordion-div">
         <div class="mack_os">
