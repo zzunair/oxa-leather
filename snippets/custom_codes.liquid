@@ -496,7 +496,7 @@
         jQuery('ul.mobile_GalleryThumbnails_dots li[data-color="'+c_color+'"]').css("display", "flex");
       });
       
-      $(".product-form__input input[type=radio]").click(function(){
+      $(document).on('click',".product-form__input input[type=radio]",function(){
         var name = $(this).val();
         if($(window).width() > 991){
           console.log("if...");
