@@ -1,6 +1,11 @@
 <!doctype html>
 <html class="no-js for-font" lang="{{ request.locale.iso_code }}">
   <head>
+
+   {% unless template contains 'cart' %}
+      <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/preload.js" ></script>
+   {% endunless %}
+    
     <script>
       
       
@@ -587,5 +592,10 @@ $('.monogram_check').each(function(){
     </script>
     {% render 'content-footer' %}
     {% render 'preorder-now' %}
+
+    {% unless template contains 'cart' %}
+      <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/deferload.js" defer></script>
+    {% endunless %}
+    
   </body>
 </html>
