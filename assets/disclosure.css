@@ -14,7 +14,7 @@ body.collection\.all-series .card-information .price {
 body.collection\.all-series .card__information {
     padding-bottom: 0px;
 }
-body.collection\.all-series .collection-hero__description.rte h2 span {
+body.collection\.all-series .collection-hero__description.rte h1 {
     font-family: "Manrope 800";
     font-weight: 800;
     font-size: 45px;
