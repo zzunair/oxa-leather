@@ -248,7 +248,7 @@ body.collection section.quick-view ul#product-grid .prohandle {
 }
 body.collection\.all-series 
 .collection-hero__inner .collection-hero__description.rte {
-    position: unset!important;
+    position: unset !important;
 }
 .collection .logomain .lgrid a {
     align-items: center;
