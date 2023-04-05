@@ -116,7 +116,8 @@
             "settings": {
               "text": "<p>Free shipping<span>for orders from<\/span> $50<\/p>",
               "color_scheme": "background-1",
-              "link": ""
+              "link": "",
+              "trust_link": ""
             }
           },
           "0b0007d6-dca8-4e1d-9b35-c56f68140734": {
@@ -125,7 +126,8 @@
             "settings": {
               "text": "<p>Free Monogram for orders over $100 <b> | SHOP NOW<\/b> <\/p>",
               "color_scheme": "accent-1",
-              "link": ""
+              "link": "",
+              "trust_link": ""
             }
           },
           "72971e15-4fb9-4176-ad5a-de700f04e82f": {
@@ -134,7 +136,8 @@
               "text": "<strong>Free shipping <\/strong> for orders from <strong>$50<\/strong>",
               "img": "shopify:\/\/shop_images\/Group_3434347.png",
               "color_scheme": "accent-1",
-              "link": ""
+              "link": "",
+              "trust_link": "https:\/\/www.trustpilot.com\/review\/oxaleather.com"
             }
           }
         },
