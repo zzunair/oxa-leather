@@ -96,12 +96,6 @@
           "settings": {
           }
         },
-        "52c35c4d-8da9-457d-95b3-0295f4df816e": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
-          "settings": {
-            "debugging_script": ""
-          }
-        },
         "b77f0535-d8f6-4ee7-b4ec-63fbc1d5d245": {
           "type": "accordion",
           "settings": {
@@ -133,7 +127,6 @@
         "collapsible-row-3",
         "share",
         "fac400d5-8321-47e6-9844-1587b64db30f",
-        "52c35c4d-8da9-457d-95b3-0295f4df816e",
         "b77f0535-d8f6-4ee7-b4ec-63fbc1d5d245",
         "bbf9eaf0-adf6-4bdf-8108-f757d0136d01"
       ],
@@ -178,17 +171,6 @@
     "alireviews-section-1656684475": {
       "type": "apps",
       "disabled": true,
-      "blocks": {
-        "14bb6e64-2003-4201-9c0c-784ca85d5e91": {
-          "type": "shopify:\/\/apps\/reelup-shoppable-videos-ugc\/blocks\/reelup-product-slider\/5e0256f9-2330-4b36-9ee7-2c3900572f7a",
-          "settings": {
-            "debugging_script": ""
-          }
-        }
-      },
-      "block_order": [
-        "14bb6e64-2003-4201-9c0c-784ca85d5e91"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -321,7 +303,7 @@
     "e117ec0f-bf6f-44e4-bfed-6457b245c3e5": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "<script>\nwindow.addEventListener('load', function() {\nvar _learnq = window._learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}\/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price\/100,\n      $value: data.total_price\/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price\/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', cart]);\n        klAjax = false;\n      }\n  }))\n};\n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}\/cart\/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch));\nvar klAjax = true;\nvar atcButtons = document.querySelectorAll(\"form[action*='\/cart\/add'] button[type='submit']\");\nfor (var i = 0; i < atcButtons.length; i++) {\n    atcButtons[i].addEventListener(\"click\", function() {\n      if (klAjax) {\n        _learnq.push(['track', 'Added to Cart', item]);\n        klAjax = false;\n      }\n    })\n}\n});\n<\/script>",
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
