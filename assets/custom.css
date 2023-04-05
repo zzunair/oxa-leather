@@ -9439,3 +9439,10 @@ product-recommendations.product-recommendations .price__container s.price-item.p
         height: unset;
     }
 }
+@media only screen and (min-width: 990px){
+.announcement-bar__message {
+    background-image: url(https://cdn.shopify.com/s/files/1/0507/0418/7590/files/Trustpliot_Logo.png?v=1653024443);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+}
