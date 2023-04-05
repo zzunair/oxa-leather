@@ -3924,7 +3924,7 @@ p.oxinstagram {
 }
 
 @media only screen and (min-width:990px) {
-    .announcement-bar__message {
+    .announcement-bar__message .trust_widget {
         background-image: url("https://cdn.shopify.com/s/files/1/0507/0418/7590/files/Trustpliot_Logo.png?v=1653024443") !important;
         background-repeat: no-repeat!important;
         background-position: left center!important;
