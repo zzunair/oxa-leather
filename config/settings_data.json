@@ -624,12 +624,6 @@
         "settings": {
         }
       },
-      "7570552984445421165": {
-        "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "3720565183479497137": {
         "type": "shopify:\/\/apps\/product-options-variant-option\/blocks\/app-embed-block\/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
         "disabled": false,
@@ -650,6 +644,12 @@
       },
       "uppromote-affiliate-referral-message-bar-31320-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
         "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/message-bar\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": true,
         "settings": {
         }
