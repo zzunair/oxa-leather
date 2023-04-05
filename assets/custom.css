@@ -3928,6 +3928,10 @@ p.oxinstagram {
         background-image: url("https://cdn.shopify.com/s/files/1/0507/0418/7590/files/Trustpliot_Logo.png?v=1653024443") !important;
         background-repeat: no-repeat!important;
         background-position: left center!important;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
     }
 
     .mega-menus nav.nav_menu_custom ul.mega-list-menu a {
