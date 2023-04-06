@@ -793,7 +793,7 @@
                   
                 {% assign monoprice = all_products['monogram'] %}                     
                  
-                  <a style="{% if product.tags contains 'notcustom' %}display:none;{% endif %}" class="pop-up-open" data-bs-toggle="modal" href="#exampleModalToggle" role="button">CUSTOMIZE (+ {{ monoprice.price | money | remove:'.00' }})</a>
+                  <a style="{% if product.tags contains 'notcustom' %}display:none;{% endif %}" class="pop-up-open" data-bs-toggle="modal" href="#exampleModalToggle" role="button">PERSONALIZE (+ {{ monoprice.price | money | remove:'.00' }})</a>
                   
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input class="vrntid" type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
