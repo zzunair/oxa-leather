@@ -4004,7 +4004,7 @@ p.oxinstagram {
         line-height: 28px;
         letter-spacing: .04em;
         color: #2f2f2f;
-        text-transform: capitalize;
+/*         text-transform: capitalize; */
         text-decoration: none
     }
 
