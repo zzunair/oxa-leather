@@ -196,7 +196,7 @@
             "settings": {
               "menuimg1": "shopify:\/\/shop_images\/OXA_mart_4728.jpg",
               "menu1heading": "Apple Watch",
-              "menu1headinglink": "",
+              "menu1headinglink": "https:\/\/oxaleather.com\/collections\/leather-apple-watch-bands",
               "menu1": "apple-watch",
               "menuimg2": "shopify:\/\/shop_images\/OXA_nisan_9132.jpg",
               "menu2heading": "Fitbit",
@@ -630,18 +630,6 @@
       "6143736321357441667": {
         "type": "shopify:\/\/apps\/tidio-live-chat-chatbots\/blocks\/app-embed\/1002274d-fb18-4939-98f6-5f05a8deeadc",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-customer-referral-31320-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "uppromote-affiliate-referral-message-bar-31320-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
-        "type": "shopify:\/\/apps\/uppromote-affiliate-referral\/blocks\/message-bar\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
-        "disabled": true,
         "settings": {
         }
       },
