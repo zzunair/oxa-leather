@@ -46,6 +46,7 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="section-{{ section.id }}-padding">
+  {% render 'new-breadcrumb' %}
   {% if collection.previous_product or collection.next_product or section.settings.product_breadcrumb %}
     <div class="clearfix breadcrumb-collection page-width">
       {% if collection.previous_product or collection.next_product %}
@@ -165,7 +166,9 @@
                 {%- endif -%}
                 {%- if collection.metafields.my_fields.collection_desc -%}
                   <div class="collection-hero__description rte">
-                    <h1><strong>{{ collection.metafields.my_fields.collection_desc }}</strong></h1>
+                    <h1>
+                      <strong>{{ collection.metafields.my_fields.collection_desc }}</strong>
+                    </h1>
                   </div>
                 {%- endif -%}
               </div>
@@ -350,8 +353,8 @@
           </div>
         {% endif %}
       </div>
-        {% assign sub_category = collection.metafields.custom.subcategory.value %}
-        {% for collection in sub_category %}
+      {% assign sub_category = collection.metafields.custom.subcategory.value %}
+      {% for collection in sub_category %}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -379,11 +382,11 @@
                 grid--{{ section.settings.columns_desktop }}-col-desktop
               "
             >
-               <div class="prohandle">
-                  <span class="series-title">
-                    <h2 class="pro">{{- collection.metafields.custom.title -}}</h2>
-                  </span>
-                </div>
+              <div class="prohandle">
+                <span class="series-title">
+                  <h2 class="pro">{{- collection.metafields.custom.title -}}</h2>
+                </span>
+              </div>
               {%- for product in collection.products -%}
                 {% assign values = null %}
                 {% if product.options contains 'Color' %}
@@ -402,31 +405,29 @@
                 {% assign colorlist = '' %}
                 {% assign color = '' %}
 
-                  <li
-                    size="{{ sizes }}"
-                    class="grid__item"
-                    data-active="{{ forloop.index }}"
-                  >
-                    {% render 'card-product',
-                      card_product: product,
-                      media_aspect_ratio: section.settings.image_ratio,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_rating: section.settings.show_rating,
-                      lazy_load: lazy_load,
-                      show_quick_add: section.settings.enable_quick_add,
-                      section_id: section.id,
-                      variant: product.variants.first,
-                      index: forloop.index0
-                    %}
-                  </li>
-               
+                <li
+                  size="{{ sizes }}"
+                  class="grid__item"
+                  data-active="{{ forloop.index }}"
+                >
+                  {% render 'card-product',
+                    card_product: product,
+                    media_aspect_ratio: section.settings.image_ratio,
+                    show_secondary_image: section.settings.show_secondary_image,
+                    show_vendor: section.settings.show_vendor,
+                    show_rating: section.settings.show_rating,
+                    lazy_load: lazy_load,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id,
+                    variant: product.variants.first,
+                    index: forloop.index0
+                  %}
+                </li>
               {%- endfor -%}
             </ul>
           </div>
-
-          {%- endif -%}
-        {% endfor %}
+        {%- endif -%}
+      {% endfor %}
     </div>
   </div>
 </div>
