@@ -204,6 +204,7 @@
                           height="{{ featured_media.height }}"
                         >
                       {% else %}
+                      {% if var_imgg  %}
                       <img
                     class="imges bbb"
                     proure="{{ card_product.url }}"
@@ -226,6 +227,7 @@
                     width="{{ var_imgg.width }}"
                     height="{{ var_imgg.height }}"
                   >
+                    {% endif %}
                     {% endif %}
                 {% endif %}
                 {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
