@@ -138,9 +138,7 @@
     ></script>
     <!-- END JLM Analytics Code snippet -->
 
-  {%- if settings.favicon != blank -%} 
-      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
-    {%- endif -%} 
+ 
     
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
@@ -330,7 +328,9 @@
       window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
       heap.load("3719209354");
     </script>
-
+ {%- if settings.favicon != blank -%} 
+      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
+    {%- endif -%} 
     {% render 'content-header' %}
 
     {% render 'digismoothie-candyrack' %}
