@@ -143,9 +143,10 @@
     <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
     <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
   {%- endif -%}
-{% render 'new-breadcrumb' %}
+
    {% if collection.previous_product or collection.next_product or section.settings.product_breadcrumb %}
       <div class="clearfix breadcrumb-collection">
+          {% render 'new-breadcrumb' %}
         {% if collection.previous_product or collection.next_product %}
           {% if section.settings.product_narow %}
             <div class="nav_arrows breadcrumb_text">
