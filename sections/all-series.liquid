@@ -46,7 +46,7 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="section-{{ section.id }}-padding">
-  {% render 'new-breadcrumb' %}
+  {% comment %}   {% render 'new-breadcrumb' %} {% endcomment %}
   {% if collection.previous_product or collection.next_product or section.settings.product_breadcrumb %}
     <div class="clearfix breadcrumb-collection page-width">
       {% render 'new-breadcrumb' %}
