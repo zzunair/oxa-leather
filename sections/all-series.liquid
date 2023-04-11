@@ -49,6 +49,7 @@
   {% render 'new-breadcrumb' %}
   {% if collection.previous_product or collection.next_product or section.settings.product_breadcrumb %}
     <div class="clearfix breadcrumb-collection page-width">
+      {% render 'new-breadcrumb' %}
       {% if collection.previous_product or collection.next_product %}
         {% if section.settings.product_narow %}
           <div class="nav_arrows breadcrumb_text">
