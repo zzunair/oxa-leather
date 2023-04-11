@@ -137,15 +137,17 @@
     ></script>
     <!-- END JLM Analytics Code snippet -->
 
-    {%- if settings.favicon != blank -%} 
-      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
-    {%- endif -%}
-    
+ 
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
+
+   {%- if settings.favicon != blank -%} 
+      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
+    {%- endif -%}
+    
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
