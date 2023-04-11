@@ -142,6 +142,9 @@
       class="product-grid-container{% if section.settings.filter_type == 'vertical' and section.settings.collapse_on_larger_devices %} product-grid-container-vertical{% endif %}"
       id="ProductGridContainer"
     >
+      <div class="clearfix breadcrumb-collection page-width">
+        {% render 'new-breadcrumb' %}
+      </div>
       {%- if collection.metafields.my_fields.collection_banner or collection.metafields.my_fields.collection_desc -%}
         <div class="collection-hero collection-hero--with-image color-{{ section.settings.color_scheme }} gradient">
           <div class="collection-hero__inner">
