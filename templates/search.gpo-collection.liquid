@@ -17,6 +17,7 @@
       {%- if product.id != '' -%}
         {
           "id": {{ product.id }},
+          "title": {{ product.title | json }},
           "handle": {{ handle | json }},
           "variants": [
             {%- for variant in product.variants -%}
@@ -27,6 +28,9 @@
               }{%- unless forloop.last -%},{%- endunless -%}
             {% endfor %}
           ],
+          "vendor": {{ product.vendor | json }},
+          "type": {{ product.type | json }},
+          "collections": {{ product.collections | map: 'id' | json }},
           "tags": {{ product.tags | json }},
           "isAddon": {%- if product.tags contains 'globo-product-options' -%}true{%- else -%}false{%- endif -%}
         }
