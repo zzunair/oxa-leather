@@ -135,7 +135,9 @@
     ></script>
     <!-- END JLM Analytics Code snippet -->
 
-    <link rel="icon" type="image/png" href="{{ settings.favicon | img_url:'32x32' }}">
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url:'32x32' }}">
+    {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
