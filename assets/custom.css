@@ -9443,3 +9443,27 @@ product-recommendations.product-recommendations .price__container s.price-item.p
         height: unset;
     }
 }
+
+
+
+/* monogram css */
+.pop-up-open {
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-family: "Manrope 800";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #191919;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #191919;
+}
