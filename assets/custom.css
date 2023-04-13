@@ -1216,7 +1216,7 @@ div#exampleModalTogglesse {
     line-height: 40px;
     letter-spacing: .04em;
     font-style: normal;
-    text-transform: capitalize
+/*     text-transform: capitalize */
 }
 
 .product-img-title .product-images a {
