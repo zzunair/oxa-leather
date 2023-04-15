@@ -923,9 +923,13 @@
       
          $(".main--products .modal-dialog .popup-right .add-to-cart button").click(function(){        
        		var ID = $(this).attr("data-id");
+           alert(ID);
            	var parent_product = jQuery('[data-type="add-to-cart-form"] [name="id"]').val();
+             alert(parent_product);
             var sku_product = meta.product.variants.find(x => x.id == parent_product).sku;
+           alert(sku_product);
          	var name =  $(this).parents(".popup-right").find(".name-initial input").val();
+            alert(name);
             $(this).parents(".popup-right").find(".error").remove();
             if(name.trim() == ""){
 			  $(this).parents(".popup-right").find(".name-initial input").css("border-color", "red");
