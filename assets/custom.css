@@ -9446,3 +9446,8 @@ product-recommendations.product-recommendations .price__container s.price-item.p
 
 
 /* .clearfix.breadcrumb-collection .breadcrumb_text { display:block !important; } */
+
+
+@media only screen and (max-width:767px){
+  .bestseller-products .cols img.front-image { position:relative; }
+}
