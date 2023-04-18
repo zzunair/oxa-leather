@@ -9450,4 +9450,5 @@ product-recommendations.product-recommendations .price__container s.price-item.p
 
 @media only screen and (max-width:767px){
   .bestseller-products .cols img.front-image { position:relative; }
+  .bestseller-products .cols img.hover-image { left: 0; }
 }
