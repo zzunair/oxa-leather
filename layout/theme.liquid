@@ -31,65 +31,11 @@
       f=false,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},hide_element_style:function(){return'{'+hide_element_style+'}'},finish:function(){if(!f){f=true;var e=d.getElementById('_vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.innerText;t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},getVersion:function(){return version},getMatchedCookies:function(e){var t=[];if(document.cookie){t=document.cookie.match(e)||[]}return t},getCombinationCookie:function(){var e=code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi);e=e.map(function(e){try{var t=decodeURIComponent(e);if(!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)){return''}return t}catch(e){return''}});var i=[];e.forEach(function(e){var t=e.match(/([\d,]+)/g);t&&i.push(t.join('-'))});return i.join('|')},init:function(){if(d.URL.indexOf('__vwo_disable__')>-1)return;window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{'+hide_element_style+'}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');vwoCodeEl&&e.setAttribute('nonce',vwoCodeEl.nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);var n=this.getCombinationCookie();this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version+(n?'&c='+n:''));return settings_timer}};window._vwo_settings_timer = code.init();return code;}());
     </script>
     <!-- End VWO Async SmartCode -->
-    <script>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-                      
+    <script>                  
         
 /* >> TriplePixel :: start*/
 ~function(W,H,A,L,E,_){function O(T,R){void 0===R&&(R=!1),H=new XMLHttpRequest,H.open("GET","//triplewhale-pixel.web.app/triplepx.txt?"+~(Date.now()/9e7),!0),H.send(null),H.onreadystatechange=function(){4===H.readyState&&200===H.status?setTimeout(function(){return eval(H.responseText)},50):(299<H.status||H.status<200)&&T&&!R&&(R=!0,O(T-1))}}if(L=window,!L[H+"sn"]){L[H+"sn"]=1;try{A.setItem(H,1+(0|A.getItem(H)||0)),W.includes("⇈")&&A.setItem(H+"Stg",1+(0|A.getItem(H+"Stg")||0)),(E=JSON.parse(A.getItem(H+"U")||"[]")).push(location.href),A.setItem(H+"U",JSON.stringify(E))}catch(e){}A.getItem('"!nC`')||(A=L,A[H]||(L=function(){return Date.now().toString(36)+"_"+Math.random().toString(36)},E=A[H]=function(t,e){return W=L(),(E._q=E._q||[]).push([W,t,e]),E._headless=!0,W},E.ch=W,O(5)))}}("","TriplePixel",localStorage);
 /* << TriplePixel :: end*/
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </script>
 
@@ -479,13 +425,7 @@
     </script>
 
     <script>
-      
-      
 
-      
-      
-          
-    
  $('.product-form__input--dropdown .select__select').on('change', function() {
      event.stopPropagation();
       var size = (this.value);
@@ -646,11 +586,118 @@ $('.monogram_check').each(function(){
     }
 })
 
+    </script>
+
+      <script>
+      
+            $(document).on('click','.mega-menus nav.nav_menu_custom ul.mega-list-menu a:first-child',function(){
+                var parent = $(this).attr('href');
+                localStorage.setItem('parentlink',parent);
+                var handl = $(this).attr('collname')
+                localStorage.setItem('parentColl',handl);
+                localStorage.removeItem('botomscol');
+            });
+           $(document).on('click','li.new_custom_menu',function(){
+                var parent2 = $(this).parents('.list_section_desktop').find('.parentdiv').attr('href');
+                localStorage.setItem('parentlink',parent2);
+                var handl2 = $(this).parents('.list_section_desktop').find('.parentdiv').attr('collname');
+                localStorage.setItem('parentColl',handl2);
+                localStorage.removeItem('botomscol');
+            })
+          $(document).ready(function(){
+             if (window.location.href.indexOf("/collections/") > -1) {
+                $('.lgrid').click(function(){
+                    var subcolurl = $(this).attr('url');
+                    var subcol = $(this).attr('parentcol');
+                    var temp = `<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="`+subcolurl+`">`+subcol+`</a></li>')`;
+                    localStorage.setItem('botomscol',temp);
+                })
+                 var pname = localStorage.getItem('parentColl');
+                 var plink = localStorage.getItem('parentlink');
+               $('#product-grid li.grid__item').click(function(){
+                    var lastelm = $('ol.breadcrumbs__list').html();
+                    localStorage.setItem('probread',lastelm);
+               })
+               if(localStorage.getItem('botomscol')){
+                   var newitm = localStorage.getItem('botomscol');
+                   $(newitm).insertAfter("ol.breadcrumbs__list .breadcrumbs__item:first-child");
+                   
+               }else{
+                  var path = window.location.pathname;
+                 if(path == plink){
+                   
+                 }else{
+                   if(pname){
+                      $('<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="'+plink+'">'+pname+'</a></li>').insertAfter("ol.breadcrumbs__list .breadcrumbs__item:first-child");
+                      $('ol.breadcrumbs__list li.breadcrumbs__item:nth-child(1)').remove();
+                   }
+                 }
+               }
+               
+            }
+            if(window.location.href.indexOf("/products/") > -1){
+              if(localStorage.getItem('probread')){
+                  $('ol.breadcrumbs__list li:not(:last)').remove();
+                  const h2 = document.querySelector("ol.breadcrumbs__list");
+                  let html = localStorage.getItem('probread');
+                  h2.insertAdjacentHTML("afterbegin", html);
+                  //$('ol.breadcrumbs__list li:nth-child(1)').remove();
+                  $('ol.breadcrumbs__list li:nth-child(1) a').removeAttr('aria-current');
+                  $('ol.breadcrumbs__list li:nth-child(2) a').removeAttr('aria-current');
+               }
+            }
 
 
+          ////////////////////////////////// script ///////////////////////////
 
 
+          var schma = '';
+          var i = 1;
+          var total = $('ol.breadcrumbs__list li').length;
+          $('ol.breadcrumbs__list li').each(function(e){
+              var link = $(this).find('a').attr('href')
+              var titl = $(this).find('a').text();
+              if (e === total - 1) {
+                  schma += `{
+                  "@type": "ListItem", 
+                  "position": `+i+++`, 
+                  "name": "`+titl+`",
+                  "item": "`+link+`"  
+                  }`;
+              } else {
+                  schma += `{
+                  "@type": "ListItem", 
+                  "position": `+i+++`, 
+                  "name": "`+titl+`",
+                  "item": "`+link+`"  
+                  },`;
+              }
+          })
+          var scrpt = `<script type="application/ld+json">
+          {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [`+schma+`]
+          }`;
+       $('body').append(scrpt);
+      })
+      $('body.cust-page').click(function(){
+           localStorage.removeItem('probread')
+           localStorage.removeItem('parentColl');
+           localStorage.removeItem('parentlink'); 
+      });
+      $('body.cust-index').click(function(){
+           localStorage.removeItem('probread');
+           localStorage.removeItem('parentColl');
+           localStorage.removeItem('parentlink'); 
+      });
+      //  $(document).on('click', '.name-initial input#name', function(){
+      // $('.fonts-select .times').trigger('click');
+      //  })
 
+       //  $(document).on('click', '.name-initial input#name:focus', function(){
+       //  $('.fonts-select .times').click();
+       // })
     </script>
     {% comment %}
       <script>
