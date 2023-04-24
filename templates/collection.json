@@ -16,7 +16,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_3.png",
             "coltitle": "iPhone 14 Series",
-            "colurl": "shopify:\/\/collections\/case-for-iphone-14"
+            "colurl": "shopify:\/\/collections\/case-for-iphone-14",
+            "parent_collection": "all-phone-cases"
           }
         },
         "d92b5981-a8bb-44f1-8d32-de9ba95766e9": {
@@ -24,7 +25,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_3.png",
             "coltitle": "iPhone 13 Series",
-            "colurl": "shopify:\/\/collections\/case-for-iphone-13"
+            "colurl": "shopify:\/\/collections\/case-for-iphone-13",
+            "parent_collection": "all-phone-cases"
           }
         },
         "3d614e39-fbb2-4476-90dd-8ab513003c45": {
@@ -32,7 +34,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_3.png",
             "coltitle": "iPhone 12 Series",
-            "colurl": "shopify:\/\/collections\/case-for-iphone-12"
+            "colurl": "shopify:\/\/collections\/case-for-iphone-12",
+            "parent_collection": "all-phone-cases"
           }
         },
         "a4a06ff2-7af9-44f6-82b3-517ef3ecc8ab": {
@@ -40,7 +43,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_3.png",
             "coltitle": "iPhone 11 Series",
-            "colurl": "shopify:\/\/collections\/case-for-iphone-11"
+            "colurl": "shopify:\/\/collections\/case-for-iphone-11",
+            "parent_collection": "all-phone-cases"
           }
         },
         "00c10e96-2b4a-4307-931f-05fd4a94ee7d": {
@@ -48,7 +52,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_4.png",
             "coltitle": "Legacy iPhone",
-            "colurl": "shopify:\/\/collections\/legacy-cases"
+            "colurl": "shopify:\/\/collections\/legacy-cases",
+            "parent_collection": "all-phone-cases"
           }
         },
         "db86030f-8be9-403b-ad5d-4f2aa963d661": {
@@ -56,7 +61,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_5.png",
             "coltitle": "Samsung Galaxy",
-            "colurl": "shopify:\/\/collections\/samsung-galaxy-leather-cases"
+            "colurl": "shopify:\/\/collections\/samsung-galaxy-leather-cases",
+            "parent_collection": "galaxy-series"
           }
         },
         "064c01e8-c289-42fa-be5e-e0ea1e6e0fbe": {
@@ -64,7 +70,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Group_3434507.png",
             "coltitle": "iPad",
-            "colurl": "shopify:\/\/collections\/leather-ipad-covers"
+            "colurl": "shopify:\/\/collections\/leather-ipad-covers",
+            "parent_collection": "ipad-series"
           }
         },
         "be1fdd0e-c84b-4575-80bc-235a7ba20aa2": {
@@ -72,7 +79,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_6.png",
             "coltitle": "Airpod",
-            "colurl": "shopify:\/\/collections\/airpods-all"
+            "colurl": "shopify:\/\/collections\/airpods-all",
+            "parent_collection": "airpods-series"
           }
         },
         "b480ad53-8dc8-4224-b9bc-608aebe38238": {
@@ -80,7 +88,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_7_b5596ec2-aff7-4487-9487-f8b008fae51d.png",
             "coltitle": "Apple Watch",
-            "colurl": "shopify:\/\/collections\/leather-apple-watch-bands"
+            "colurl": "shopify:\/\/collections\/leather-apple-watch-bands",
+            "parent_collection": "leather-apple-watch-bands"
           }
         },
         "2ea81737-952f-4176-a9a8-f633b54eb673": {
@@ -88,7 +97,8 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/Frame_8.png",
             "coltitle": "Accessories",
-            "colurl": "shopify:\/\/collections\/leather-accessories"
+            "colurl": "shopify:\/\/collections\/leather-accessories",
+            "parent_collection": "leather-accessories"
           }
         }
       },
