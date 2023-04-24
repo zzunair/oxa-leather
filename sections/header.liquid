@@ -503,23 +503,40 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                       </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
                     {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
-
+                    {% assign class = "" %}
                     <div class="mega-menus">
                       {% for block in section.blocks %}
-					  {% if block %}
-                      <script class="breadcrumbs-json" type="application/json">[ {% for i in (1..10) %}{% assign mheading = 'menu'| append:i | append:'heading' %}{% assign mlink = 'menu'| append:i | append:'headinglink' %}{% assign m_menu = 'menu'| append:i %}{% if block.settings[m_menu] != blank %}{% for link in linklists[block.settings[m_menu]].links %}{"name" : "{{ link.title | escape }}","link" : "{{ link.url }}", "parent": "{{ block.settings[mheading] }}", "parent_link": "{{ block.settings[mlink] }}"}{% unless forloop.last %},{% endunless %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}]</script>
-					  {% endif %}
-                      <div class="menus-none megamenu{{ forloop.index }}">
+                      {% assign b = block.settings %}
+                      {% if block %}
+                                <script class="breadcrumbs-json" type="application/json">[ {% for i in (1..10) %}{% assign mheading = 'menu'| append:i | append:'heading' %}{% assign mlink = 'menu'| append:i | append:'headinglink' %}{% assign m_menu = 'menu'| append:i %}{% if block.settings[m_menu] != blank %}{% for link in linklists[block.settings[m_menu]].links %}{"name" : "{{ link.title | escape }}","link" : "{{ link.url }}", "parent": "{{ block.settings[mheading] }}", "parent_link": "{{ block.settings[mlink] }}"}{% unless forloop.last %},{% endunless %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}]</script>
+                      {% endif %}
+                      <div class="menus-none megamenu{{ forloop.index }} 
+                      {% if b.menu1 != '' %}
+                        {% assign class = "onecol" %}
+                      {% endif %}
+                      {% if b.menu2 != '' %}
+                        {% assign class = "twocol" %}
+                      {% endif %}
+                      {% if b.menu3 != '' %}
+                        {% assign class = "threecol" %}
+                      {% endif %}
+                      {% if b.menu4 != '' %}
+                        {% assign class = "fourcol" %}
+                      {% endif %}
+                      {{class}}
+                      ">
+                        
                         <div class="menus page-width">
-                       {% if block.settings.menu1 != ''  %} 
+                       {% if block.settings.menu1 != ''  %}
+                        {% assign index = 1 %}
                           <div class="column1">
                             <div class="site_navbar">
                             <div class="navimg">
-                               <img src="{{ block.settings.menuimg1 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg1 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                 <a class="parentdiv" href="{{ block.settings.menu1headinglink }}" collname="{{ block.settings.coll.title }}"> <div class="mega-menu-heading">{{ block.settings.menu1heading }}</div></a>
+                                 <a href="{{ block.settings.menu1headinglink }}"> <div class="mega-menu-heading">{{ block.settings.menu1heading }}</div></a>
                                   {%- for link in linklists[block.settings.menu1].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -555,14 +572,15 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           </div>
                          {% endif %}
                          {% if block.settings.menu2 != '' %}
+                        {% assign index = 2 %}
                           <div class="column2">
                             <div class="site_navbar">
                            <div class="navimg">
-                               <img src="{{ block.settings.menuimg2 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg2 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu2headinglink }}" collname="{{ block.settings.coll2.title }}"> <div class="mega-menu-heading">{{ block.settings.menu2heading }}</div> </a>
+                                  <a href="{{ block.settings.menu2headinglink }}"> <div class="mega-menu-heading">{{ block.settings.menu2heading }}</div> </a>
                                   {%- for link in linklists[block.settings.menu2].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -598,14 +616,15 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           </div>
                            {% endif %}
                          {% if block.settings.menu3 != '' %}
+                        {% assign index = 3 %}
                           <div class="column3">
                             <div class="site_navbar">
                            <div class="navimg">
-                               <img src="{{ block.settings.menuimg3 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg3 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu3headinglink }}" collname="{{ block.settings.coll3.title }}"> <div class="mega-menu-heading">{{ block.settings.menu3heading }}</div> </a>
+                                  <a href="{{ block.settings.menu3headinglink }}"> <div class="mega-menu-heading">{{ block.settings.menu3heading }}</div> </a>
                                   {%- for link in linklists[block.settings.menu3].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -642,14 +661,15 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           </div>
                            {% endif %}
                          {% if block.settings.menu4 != '' %}
+                        {% assign index = 4 %}
                           <div class="column4">
                             <div class="site_navbar">
                            <div class="navimg">
-                               <img src="{{ block.settings.menuimg4 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg4 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                   <a class="parentdiv" href="{{ block.settings.menu4headinglink }}" collname="{{ block.settings.coll4.title }}"> <div class="mega-menu-heading">{{ block.settings.menu4heading }}</div> </a>
+                                   <a href="{{ block.settings.menu4headinglink }}"> <div class="mega-menu-heading">{{ block.settings.menu4heading }}</div> </a>
                                   {%- for link in linklists[block.settings.menu4].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -689,11 +709,11 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           <div class="column5">
                             <div class="site_navbar">
                           <div class="navimg">
-                               <img src="{{ block.settings.menuimg5 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg5 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu5headinglink }}" collname="{{ block.settings.coll5.title }}"> <div class="mega-menu-heading">{{ block.settings.menu5heading }}</div></a>
+                                  <a href="{{ block.settings.menu5headinglink }}"> <div class="mega-menu-heading">{{ block.settings.menu5heading }}</div></a>
                                   {%- for link in linklists[block.settings.menu5].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -733,11 +753,11 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           <div class="column6">
                             <div class="site_navbar">
                            <div class="navimg">
-                               <img src="{{ block.settings.menuimg6 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg6 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu6headinglink }}" collname="{{ block.settings.coll6.title }}"> <div class="mega-menu-heading">{{ block.settings.menu6heading }}</div></a>
+                                  <a href="{{ block.settings.menu6headinglink }}"> <div class="mega-menu-heading">{{ block.settings.menu6heading }}</div></a>
                                   {%- for link in linklists[block.settings.menu6].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -777,11 +797,11 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           <div class="column7">
                             <div class="site_navbar">
                            <div class="navimg">
-                               <img src="{{ block.settings.menuimg7 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg7 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu7headinglink }}" collname="{{ block.settings.coll7.title }}"> <div class="mega-menu-heading">{{ block.settings.menu7heading }}</div></a>
+                                  <a href="{{ block.settings.menu7headinglink }}"> <div class="mega-menu-heading">{{ block.settings.menu7heading }}</div></a>
                                   {%- for link in linklists[block.settings.menu7].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -821,11 +841,11 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           <div class="column8">
                             <div class="site_navbar">
                            <div class="navimg">
-                               <img src="{{ block.settings.menuimg8 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg8 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu8headinglink }}" collname="{{ block.settings.coll8.title }}"><div class="mega-menu-heading">{{ block.settings.menu8heading }}</div></a>
+                                  <a href="{{ block.settings.menu8headinglink }}"><div class="mega-menu-heading">{{ block.settings.menu8heading }}</div></a>
                                   {%- for link in linklists[block.settings.menu8].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -865,11 +885,11 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           <div class="column9">
                             <div class="site_navbar">
                            <div class="navimg">
-                               <img src="{{ block.settings.menuimg9 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg9 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu9headinglink }}" collname="{{ block.settings.coll9.title }}"><div class="mega-menu-heading">{{ block.settings.menu9heading }}</div></a>
+                                  <a href="{{ block.settings.menu9headinglink }}"><div class="mega-menu-heading">{{ block.settings.menu9heading }}</div></a>
                                   {%- for link in linklists[block.settings.menu9].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -909,11 +929,11 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                           <div class="column10">
                             <div class="site_navbar">
                           <div class="navimg">
-                               <img src="{{ block.settings.menuimg10 | img_url:'master'}}">
+                               <img class="lazyload" data-srcset="{{ block.settings.menuimg10 | img_url:'master'}}">
                             </div>
                               <nav class="nav_menu_custom">
                                 <ul class="mega-list-menu list_section_desktop" role="list">
-                                  <a class="parentdiv" href="{{ block.settings.menu10headinglink }}" collname="{{ block.settings.coll10.title }}"><div class="mega-menu-heading">{{ block.settings.menu10heading }}</div></a>
+                                  <a href="{{ block.settings.menu10headinglink }}"><div class="mega-menu-heading">{{ block.settings.menu10heading }}</div></a>
                                   {%- for link in linklists[block.settings.menu10].links -%}
                                   <li class="new_custom_menu">
                                     <a class="header_menu_custom menu_item_custom" href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
@@ -1236,11 +1256,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "label": "Menu1 link"
                     },
                     {
-                      "type": "collection",
-                      "id": "coll",
-                      "label": "collection name"
-                    },
-                    {
                     "type": "link_list",
                     "id": "menu1",
                     "label": "Menu1"
@@ -1259,11 +1274,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "type": "url",
                     "id": "menu2headinglink",
                     "label": "Menu2 link"
-                    },
-                    {
-                      "type": "collection",
-                      "id": "coll2",
-                      "label": "collection name"
                     },
                     {
                     "type": "link_list",
@@ -1286,11 +1296,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "label": "Menu3 link"
                     },
                     {
-                      "type": "collection",
-                      "id": "coll3",
-                      "label": "collection name"
-                    },
-                    {
                     "type": "link_list",
                     "id": "menu3",
                     "label": "Menu3"
@@ -1309,11 +1314,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "type": "url",
                     "id": "menu4headinglink",
                     "label": "Menu4 link"
-                    },
-                     {
-                      "type": "collection",
-                      "id": "coll4",
-                      "label": "collection name"
                     },
                     {
                     "type": "link_list",
@@ -1335,11 +1335,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "id": "menu5headinglink",
                     "label": "Menu5 link"
                     },
-                     {
-                      "type": "collection",
-                      "id": "coll5",
-                      "label": "collection name"
-                    },
                     {
                     "type": "link_list",
                     "id": "menu5",
@@ -1359,11 +1354,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "type": "url",
                     "id": "menu6headinglink",
                     "label": "Menu6 link"
-                    },
-                     {
-                      "type": "collection",
-                      "id": "coll6",
-                      "label": "collection name"
                     },
                     {
                     "type": "link_list",
@@ -1386,11 +1376,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "label": "Menu7 link"
                     },
                     {
-                      "type": "collection",
-                      "id": "coll7",
-                      "label": "collection name"
-                    },
-                    {
                     "type": "link_list",
                     "id": "menu7",
                     "label": "Menu7"
@@ -1409,11 +1394,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "type": "url",
                     "id": "menu8headinglink",
                     "label": "Menu8 link"
-                    },
-                    {
-                      "type": "collection",
-                      "id": "coll8",
-                      "label": "collection name"
                     },
                     {
                     "type": "link_list",
@@ -1435,11 +1415,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "id": "menu9headinglink",
                     "label": "Menu9 link"
                     },
-                     {
-                      "type": "collection",
-                      "id": "coll9",
-                      "label": "collection name"
-                    },
                     {
                     "type": "link_list",
                     "id": "menu9",
@@ -1459,11 +1434,6 @@ margin-bottom: {{ section.settings.margin_bottom }}px;
                     "type": "url",
                     "id": "menu10headinglink",
                     "label": "Menu10 link"
-                    },
-                     {
-                      "type": "collection",
-                      "id": "coll10",
-                      "label": "collection name"
                     },
                     {
                     "type": "link_list",
