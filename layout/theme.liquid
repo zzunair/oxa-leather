@@ -651,35 +651,35 @@ $('.monogram_check').each(function(){
           ////////////////////////////////// script ///////////////////////////
 
 
-       //    var schma = '';
-       //    var i = 1;
-       //    var total = $('ol.breadcrumbs__list li').length;
-       //    $('ol.breadcrumbs__list li').each(function(e){
-       //        var link = $(this).find('a').attr('href')
-       //        var titl = $(this).find('a').text();
-       //        if (e === total - 1) {
-       //            schma += `{
-       //            "@type": "ListItem", 
-       //            "position": `+i+++`, 
-       //            "name": "`+titl+`",
-       //            "item": "`+link+`"  
-       //            }`;
-       //        } else {
-       //            schma += `{
-       //            "@type": "ListItem", 
-       //            "position": `+i+++`, 
-       //            "name": "`+titl+`",
-       //            "item": "`+link+`"  
-       //            },`;
-       //        }
-       //    })
-       //    var scrpt = `<script type="application/ld+json">
-       //    {
-       //    "@context": "https://schema.org/", 
-       //    "@type": "BreadcrumbList", 
-       //    "itemListElement": [`+schma+`]
-       //    }`;
-       // $('body').append(scrpt);
+          var schma = '';
+          var i = 1;
+          var total = $('ol.breadcrumbs__list li').length;
+          $('ol.breadcrumbs__list li').each(function(e){
+              var link = $(this).find('a').attr('href')
+              var titl = $(this).find('a').text();
+              if (e === total - 1) {
+                  schma += `{
+                  "@type": "ListItem", 
+                  "position": `+i+++`, 
+                  "name": "`+titl+`",
+                  "item": "`+link+`"  
+                  }`;
+              } else {
+                  schma += `{
+                  "@type": "ListItem", 
+                  "position": `+i+++`, 
+                  "name": "`+titl+`",
+                  "item": "`+link+`"  
+                  },`;
+              }
+          })
+          var scrpt = `<script type="application/ld+json">
+          {
+          "@context": "https://schema.org/", 
+          "@type": "BreadcrumbList", 
+          "itemListElement": [`+schma+`]
+          }`;
+       $('body').append(scrpt);
       })
       $('body.cust-page').click(function(){
            localStorage.removeItem('probread')
