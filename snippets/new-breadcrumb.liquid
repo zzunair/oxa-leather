@@ -1,6 +1,6 @@
 <style>
   .breadcrumbs {
-    margin: 0px 0px 0px;
+    margin: 0 0 2em;
   }
 
   .breadcrumbs__list {
@@ -27,13 +27,9 @@
   }
 
   .breadcrumbs__link {
-    font-size: 12px;
-    line-height: 24px;
     text-decoration: none;
-    color: #1b1b1bb3;
+    color: #000;
   }
-  li.breadcrumbs__item a:hover { color: #1b1b1bb3; }
-  li.breadcrumbs__item a { color: #1b1b1bb3; font-size: 12px; line-height: 24px; text-decoration: none; }
 
   .breadcrumbs__link[aria-current="page"] {
     color: inherit;
@@ -50,6 +46,7 @@
 
 {%- unless template == 'index' or template == '404' -%}
   {%- assign t = template | split: '.' | first -%}
+ 
   <div class="main_breadcrumbs">
     <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
       <ol class="breadcrumbs__list">
@@ -61,6 +58,7 @@
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
             </li>
+
           {%- when 'product' -%}
             {% comment %}
               {%- if collection.url -%}
@@ -83,11 +81,13 @@
                 {{ collection.title | link_to: collection.url }}
               </li>
             {%- endif -%}
+
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="{{ product.url | within:collection }}" aria-current="page">
                 {{- product.title -}}
               </a>
             </li>
+
           {%- when 'collection' and collection.handle -%}
             {%- if current_tags -%}
               <li class="breadcrumbs__item">
@@ -147,3 +147,17 @@
     </nav>
   </div>
 {%- endunless -%}
+
+<div class="container">
+  <div class="url-div">
+    <div class="first-url">
+      <a href=""></a>
+    </div>
+    <div class="previous-url">
+      <a href=""></a>
+    </div>
+    <div class="current-url">
+      <a href=""></a>
+    </div>
+  </div>
+</div>
