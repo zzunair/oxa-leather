@@ -176,7 +176,10 @@
         <div class="page-width">
           <div class="logocont">
             {% for block in section.blocks %}
-              <div class="lgrid">
+              <div class="lgrid"
+                 parentcol="{{ block.settings.parent_collection.title }}"
+                url="{{ block.settings.parent_collection.url }}"
+                >
                 <a href="{{ block.settings.colurl }}">
                   <img src="{{ block.settings.logo | img_url:'master' }}">
                   <span>{{ block.settings.coltitle }}</span></a
@@ -749,6 +752,11 @@
             "type":"url",
             "id":"colurl",
             "label":"link"
+          },
+           {
+            "type":"collection",
+            "id":"parent_collection",
+            "label":"Parent collection"
           }
         ]
       }
