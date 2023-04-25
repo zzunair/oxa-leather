@@ -630,6 +630,7 @@ $('.monogram_check').each(function(){
                    if(pname){
                       $('<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="'+plink+'">'+pname+'</a></li>').insertAfter("ol.breadcrumbs__list .breadcrumbs__item:first-child");
                       $('ol.breadcrumbs__list li.breadcrumbs__item:nth-child(1)').remove();
+                      $('.breadcrumb-collection ol.breadcrumbs__list').show();
                    }
                  }
                }
