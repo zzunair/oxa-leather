@@ -630,7 +630,8 @@ $('.monogram_check').each(function(){
                    if(pname){
                       $('<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="'+plink+'">'+pname+'</a></li>').insertAfter("ol.breadcrumbs__list .breadcrumbs__item:first-child");
                       $('ol.breadcrumbs__list li.breadcrumbs__item:nth-child(1)').remove();
-                      $('.breadcrumb-collection ol.breadcrumbs__list').show();
+                      $('body.collection ol.breadcrumbs__list').show();
+                      $('body.product ol.breadcrumbs__list').show();
                    }
                  }
                }
@@ -645,6 +646,7 @@ $('.monogram_check').each(function(){
                   //$('ol.breadcrumbs__list li:nth-child(1)').remove();
                   $('ol.breadcrumbs__list li:nth-child(1) a').removeAttr('aria-current');
                   $('ol.breadcrumbs__list li:nth-child(2) a').removeAttr('aria-current');
+                  $('body.product ol.breadcrumbs__list').show();
                }
             }
 
