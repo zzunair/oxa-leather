@@ -166,15 +166,15 @@
         {% endif %}
 
         {% if section.settings.product_breadcrumb %}
-          <div class="breadcrumb_text" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/BreadcrumbList" style="display:none;">
-            <span itemprop="itemListElement" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/ListItem">
+          <div class="breadcrumb_text" itemscope itemtype="http://schema.org/BreadcrumbList" style="display:none;">
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
               <a href="{{ shop.url }}" title="{{ shop.name | escape }}" itemprop="item" class="breadcrumb_link">
                 <span itemprop="name">{{ 'general.breadcrumbs.home' | t }}</span>
               </a>
               <meta itemprop="position" content="1" />
             </span>
             <span class="breadcrumb-divider"> {% render 'next-arrow' %} </span>
-            <span itemprop="itemListElement" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/ListItem">
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
               {% if collection %}
                 <a href="{{ collection.url }}" title="{{ collection.title | escape }}" itemprop="item" class="breadcrumb_link">
                   <span itemprop="name">{{ collection.title }}</span>
@@ -188,21 +188,21 @@
               {% endif %}
             </span>
             <span class="breadcrumb-divider"> {% render 'next-arrow' %} </span>
-            <span itemprop="itemListElement" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/ListItem">
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
               <a itemprop="item" class="breadcrumb_link">
                 <span itemprop="name">Cases</span>
                 <meta itemprop="position" content="3" />
               </a>
             </span>
             <span class="breadcrumb-divider"> {% render 'next-arrow' %} </span>
-            <span itemprop="itemListElement" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/ListItem">
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
               <a itemprop="item" class="breadcrumb_link">
                 <span itemprop="name">{% if product.tags contains 'iphone' %}Iphone{% elsif product.tags contains 'watch' %}watch{% elsif product.tags contains 'airpods' %}airpods{% elsif product.tags contains 'ipad' %}Ipad{% endif %}</span>
                 <meta itemprop="position" content="3" />
               </a>
             </span>
             <span class="breadcrumb-divider"> {% render 'next-arrow' %} </span>
-            <span itemprop="itemListElement" {% comment remove microdata structured data %}itemscope{% endcomment %} itemtype="http://schema.org/ListItem">
+            <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
               <a itemprop="item" class="breadcrumb_link last-child">
                 <span itemprop="name">{{ product.title }}</span>
                 <meta itemprop="position" content="3" />
