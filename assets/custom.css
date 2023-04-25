@@ -9458,3 +9458,6 @@ body.collection ol.breadcrumbs__list {
 body.product ol.breadcrumbs__list {
     display: none;
 }
+a.breadcrumbs__link {
+    padding-left: 4px;
+}
