@@ -9452,6 +9452,9 @@ product-recommendations.product-recommendations .price__container s.price-item.p
   .bestseller-products .cols img.front-image { position:relative; }
   .bestseller-products .cols img.hover-image { left: 0; }
 }
-.breadcrumb-collection ol.breadcrumbs__list {
+body.collection ol.breadcrumbs__list {
+    display: none;
+}
+body.product ol.breadcrumbs__list {
     display: none;
 }
