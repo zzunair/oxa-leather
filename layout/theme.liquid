@@ -621,7 +621,7 @@ $('.monogram_check').each(function(){
                if(localStorage.getItem('botomscol')){
                    var newitm = localStorage.getItem('botomscol');
                    $(newitm).insertAfter("ol.breadcrumbs__list .breadcrumbs__item:first-child");
-                   $('ol.breadcrumbs__list li.breadcrumbs__item:nth-child(1)').remove();
+                   //$('ol.breadcrumbs__list li.breadcrumbs__item:nth-child(1)').remove();
                }else{
                   var path = window.location.pathname;
                  if(path == plink){
@@ -629,7 +629,7 @@ $('.monogram_check').each(function(){
                  }else{
                    if(pname){
                       $('<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="'+plink+'">'+pname+'</a></li>').insertAfter("ol.breadcrumbs__list .breadcrumbs__item:first-child");
-                      $('ol.breadcrumbs__list li.breadcrumbs__item:nth-child(1)').remove();
+                      //$('ol.breadcrumbs__list li.breadcrumbs__item:nth-child(1)').remove();
                    }
                  }
                }
