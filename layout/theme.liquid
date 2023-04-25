@@ -325,7 +325,7 @@
     {% comment %}     {% render 'new-breadcrumb' %} {% endcomment %}
   </head>
 
-  <body class="gradient for-font {{ template }}  {% if template == 'product' %} template-product {% elsif template == 'index' %} index {% else template == 'cart' %}cart--page{% endif %}{% if template == "collection" %} {{ collection.handle }}{% endif %}">
+  <body class="gradient for-font {{ template }} cust-{{ template.name }}  {% if template == 'product' %} template-product {% elsif template == 'index' %} index {% else template == 'cart' %}cart--page{% endif %}{% if template == "collection" %} {{ collection.handle }}{% endif %}">
     <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-W6CWKJR"
@@ -717,4 +717,4 @@ $('.monogram_check').each(function(){
       <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/deferload.js" defer></script>
     {% endunless %}
   </body>
-</html>
+</html> 
