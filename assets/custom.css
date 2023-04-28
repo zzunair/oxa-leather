@@ -1,3 +1,6 @@
+html.cart-active {
+    overflow: hidden;
+}
 .allcont a,
 .refrence-section-about .refdiv strong,
 body.collection .m_right h3 {
