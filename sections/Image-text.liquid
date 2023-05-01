@@ -11,7 +11,7 @@
 <div class="first-section {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %} {% if thecycle == 'odd' %}fade-right{% else %}fade-left{% endif %}">
   <div class="img-content">
     <div data-aos="{% if thecycle == 'odd' %}fade-right{% else %}fade-left{% endif %}" data-aos-duration="1000" class="contents">
-      <div class="image-text-heading">{{ product.metafields.section[titles] }}</div>
+      <div class="image-text-heading"><h2>{{ product.metafields.section[titles] }}</h2></div>
       <p>{{ product.metafields.section[descr] }}</p>
     </div>        
   </div>
