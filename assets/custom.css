@@ -5742,7 +5742,7 @@ a.cart-upsell-title.cursor-pointer:after {
 
     .cart-item_desc-remove .cart-item_qty.desktop,
     .clearfix.breadcrumb-collection {
-        display: none
+/*         display: none */
     }
 
     .product_title.title-product-mob a.product__title {
