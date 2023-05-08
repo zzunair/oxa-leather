@@ -1,0 +1,245 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "5785f2f0-1604-4147-b1bd-0db21421d70b": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 14 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-14",
+            "parent_collection": "all-phone-cases"
+          }
+        },
+        "d92b5981-a8bb-44f1-8d32-de9ba95766e9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 13 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-13",
+            "parent_collection": "all-phone-cases"
+          }
+        },
+        "3d614e39-fbb2-4476-90dd-8ab513003c45": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 12 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-12",
+            "parent_collection": "all-phone-cases"
+          }
+        },
+        "a4a06ff2-7af9-44f6-82b3-517ef3ecc8ab": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3.png",
+            "coltitle": "iPhone 11 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-11",
+            "parent_collection": "all-phone-cases"
+          }
+        },
+        "00c10e96-2b4a-4307-931f-05fd4a94ee7d": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_4.png",
+            "coltitle": "Legacy iPhone",
+            "colurl": "shopify:\/\/collections\/legacy-cases",
+            "parent_collection": "all-phone-cases"
+          }
+        },
+        "db86030f-8be9-403b-ad5d-4f2aa963d661": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_5.png",
+            "coltitle": "Samsung Galaxy",
+            "colurl": "shopify:\/\/collections\/samsung-galaxy-leather-cases",
+            "parent_collection": "galaxy-series"
+          }
+        },
+        "064c01e8-c289-42fa-be5e-e0ea1e6e0fbe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Group_3434507.png",
+            "coltitle": "iPad",
+            "colurl": "shopify:\/\/collections\/leather-ipad-covers",
+            "parent_collection": "ipad-series"
+          }
+        },
+        "be1fdd0e-c84b-4575-80bc-235a7ba20aa2": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_6.png",
+            "coltitle": "Airpod",
+            "colurl": "shopify:\/\/collections\/airpods-all",
+            "parent_collection": "airpods-series"
+          }
+        },
+        "b480ad53-8dc8-4224-b9bc-608aebe38238": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_7_b5596ec2-aff7-4487-9487-f8b008fae51d.png",
+            "coltitle": "Apple Watch",
+            "colurl": "shopify:\/\/collections\/leather-apple-watch-bands",
+            "parent_collection": "leather-apple-watch-bands"
+          }
+        },
+        "2ea81737-952f-4176-a9a8-f633b54eb673": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_8.png",
+            "coltitle": "Accessories",
+            "colurl": "shopify:\/\/collections\/leather-accessories",
+            "parent_collection": "leather-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "5785f2f0-1604-4147-b1bd-0db21421d70b",
+        "d92b5981-a8bb-44f1-8d32-de9ba95766e9",
+        "3d614e39-fbb2-4476-90dd-8ab513003c45",
+        "a4a06ff2-7af9-44f6-82b3-517ef3ecc8ab",
+        "00c10e96-2b4a-4307-931f-05fd4a94ee7d",
+        "db86030f-8be9-403b-ad5d-4f2aa963d661",
+        "064c01e8-c289-42fa-be5e-e0ea1e6e0fbe",
+        "be1fdd0e-c84b-4575-80bc-235a7ba20aa2",
+        "b480ad53-8dc8-4224-b9bc-608aebe38238",
+        "2ea81737-952f-4176-a9a8-f633b54eb673"
+      ],
+      "settings": {
+        "quick-view": "Quick View",
+        "product_breadcrumb": true,
+        "show_collection_description": false,
+        "show_collection_image": true,
+        "color_scheme": "background-1",
+        "products_per_page": 18,
+        "columns_desktop": 3,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "f812b891-ad03-41b4-84b1-ff2d471bb489": {
+      "type": "summer-sale",
+      "settings": {
+        "summerimg": "shopify:\/\/shop_images\/newsumer.png",
+        "summerimgmob": "shopify:\/\/shop_images\/Oxa10163.jpg",
+        "heading": "Personalized with Carving",
+        "subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam aliquet sem, nec placerat augue efficitur nec.",
+        "btntxt": "Get Yours",
+        "btnlink": ""
+      }
+    },
+    "328ebb7a-12ba-4f3f-9ef9-f244ac407b16": {
+      "type": "collection_logos",
+      "blocks": {
+        "c5d04390-2439-4cc6-bb71-7bf26b04fe52": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_9.png",
+            "star": "Fast Delivery",
+            "label": "Your cargo will reach you in a short time without any problems."
+          }
+        },
+        "62e1baed-6c6c-4297-94de-9069444ea12c": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_10.png",
+            "star": "5 star Reviews",
+            "label": "Stylish and flashy models that customers are satisfied with."
+          }
+        },
+        "d950095d-ffa7-4995-8c30-69ad693dfdf2": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_11.png",
+            "star": "Secure Payments",
+            "label": "No problem during the payment"
+          }
+        },
+        "bd348934-b7e3-4591-a23a-7d874e09dc76": {
+          "type": "logos",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_12.png",
+            "star": "14-Day Returns",
+            "label": "Refund guarantee in case of any defect in the product."
+          }
+        }
+      },
+      "block_order": [
+        "c5d04390-2439-4cc6-bb71-7bf26b04fe52",
+        "62e1baed-6c6c-4297-94de-9069444ea12c",
+        "d950095d-ffa7-4995-8c30-69ad693dfdf2",
+        "bd348934-b7e3-4591-a23a-7d874e09dc76"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": ""
+      }
+    },
+    "bb6fb575-bb13-4784-9d30-dda7a9c36a03": {
+      "type": "coll_image_text",
+      "settings": {
+        "headingmain": "Featured accessories",
+        "img": "shopify:\/\/shop_images\/OXA_MAYIS_2496_01_1.png",
+        "rightimg": "firstsection",
+        "heading": "Airpod Case",
+        "desc": "Stylish, beautiful and customizable airpod case models",
+        "linktxt": "Shop Now >",
+        "btnlink": "shopify:\/\/collections\/airpods-all"
+      }
+    },
+    "eef86c13-b555-48c3-a254-a1ae74727942": {
+      "type": "coll_image_text",
+      "settings": {
+        "headingmain": "",
+        "img": "shopify:\/\/shop_images\/Mask_group_2e20f3da-c8ca-45ea-b8e6-7ebe1813f050.png",
+        "rightimg": "secondsection",
+        "heading": "Airtag Ring",
+        "desc": "Watch your back with beautiful airtag models",
+        "linktxt": "Shop Now >",
+        "btnlink": "shopify:\/\/collections\/apple-airtags"
+      }
+    },
+    "496eaa4e-0b4c-4e9e-bbde-b4bb536f62da": {
+      "type": "collection_about",
+      "settings": {
+        "heading": "More Info About<span class=\"gray\"> iPhone 14 <\/span>Leather Case",
+        "subheading": ""
+      }
+    },
+    "1653976866b09b0891": {
+      "type": "newsletter-form",
+      "settings": {
+        "heading": "Keep Yourself Up to date with our new offers",
+        "text": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "f812b891-ad03-41b4-84b1-ff2d471bb489",
+    "328ebb7a-12ba-4f3f-9ef9-f244ac407b16",
+    "bb6fb575-bb13-4784-9d30-dda7a9c36a03",
+    "eef86c13-b555-48c3-a254-a1ae74727942",
+    "496eaa4e-0b4c-4e9e-bbde-b4bb536f62da",
+    "1653976866b09b0891"
+  ]
+}
