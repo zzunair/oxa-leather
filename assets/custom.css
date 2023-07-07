@@ -7755,6 +7755,10 @@ div#shopify-section-blog-insta h2 {
 /* .template-product .product__info-wrapper.grid__item .product-form__buttons {
     margin-bottom: 8px
 } */
+#promo-widget + div#container {
+    padding-top: 8px;
+    padding-bottom: 0;
+}
 
 .card__information a.full-unstyled-link h3 {
     font-size: 16px;
