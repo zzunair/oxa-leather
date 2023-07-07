@@ -7752,9 +7752,9 @@ div#shopify-section-blog-insta h2 {
     flex-direction: column
 }
 
-.template-product .product__info-wrapper.grid__item .product-form__buttons {
+/* .template-product .product__info-wrapper.grid__item .product-form__buttons {
     margin-bottom: 8px
-}
+} */
 
 .card__information a.full-unstyled-link h3 {
     font-size: 16px;
