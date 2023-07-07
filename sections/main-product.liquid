@@ -578,8 +578,9 @@
             </div>
             <div class="price_for_mob">{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}</div>
             <!--End of Yotpo Star Rating on Product Page-->
-<!--             </div> -->
+
             <div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
+            </div>
           {%- when 'price' -%}
             <div class="no-js-hidden product-page-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
@@ -824,6 +825,21 @@
                       {{ form | payment_button }}
                     {%- endif -%}
                   </div>
+                    {% if product.sku %}
+                      <div
+                      id="amzn-buy-now"
+                      data-site-id="r5f9540uh4"
+                      data-widget-id="w-zE3c4FIuZlItXd507OdI70"
+                      data-sku="{{product.sku}}"
+                      ></div>
+                    {% else %}
+                      <div
+                      id="amzn-buy-now"
+                      data-site-id="r5f9540uh4"
+                      data-widget-id="w-zE3c4FIuZlItXd507OdI70"
+                      data-sku="{{product.selected_or_first_available_variant.sku}}"
+                      ></div>
+                    {% endif %}
                 {%- endform -%}
             
               </product-form>
@@ -873,6 +889,7 @@
                 </template>
               </pickup-availability>
             </div>
+               
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
           {%- when 'rating' -%}
