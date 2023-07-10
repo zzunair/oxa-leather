@@ -1,6 +1,22 @@
 <!doctype html>
 <html class="no-js for-font" lang="{{ request.locale.iso_code }}">
   <head>
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
+    {%- endif -%}
+    {% if page_description %}{%- comment smartseo_integration_begin_meta_data -%}<meta name="description" content="{{ page_description | escape }}">{%- endcomment smartseo_integration_end_meta_data -%}{% endif %}
+
+  
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+     
+
+    {% render 'meta-tags' %}
+    
+    {% unless template contains 'cart' %}
+      <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/preload.js"></script>
+    {% endunless %}
+
 <link rel='preconnect dns-prefetch' href='https://triplewhale-pixel.web.app/' crossorigin />
 <link rel='preconnect dns-prefetch' href='https://api.config-security.com/' crossorigin />
 <script>
@@ -20,21 +36,7 @@
        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
        })(window,document,'script','dataLayer','GTM-W6CWKJR');</script>
     <!-- End Google Tag Manager -->
-
-    {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
-    {%- endif -%}
-    {% if page_description %}{%- comment smartseo_integration_begin_meta_data -%}<meta name="description" content="{{ page_description | escape }}">{%- endcomment smartseo_integration_end_meta_data -%}{% endif %}
-
-  
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-     
-
-    {% render 'meta-tags' %}
     
-    {% unless template contains 'cart' %}
-      <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/preload.js"></script>
-    {% endunless %}
     <!-- Start VWO Async SmartCode -->
     <script type="text/javascript" id="vwoCode">
       window._vwo_code=window._vwo_code || (function() {
