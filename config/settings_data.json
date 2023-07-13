@@ -699,7 +699,7 @@
       },
       "1386531382474587334": {
         "type": "shopify:\/\/apps\/bundle-builder\/blocks\/bb-cart-integration\/78802baf-205d-4d1d-908c-fae911f24e36",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "hide_accelerated_checkout": false,
           "placement": "above",
