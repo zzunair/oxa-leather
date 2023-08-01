@@ -758,6 +758,24 @@
                 
             
             {%- endunless -%}
+
+
+{% if product.metafields.custom.upgrades!=blank %}
+    <div class="products-type">
+     <div class="titlemeta form__label">Upgrades</div>
+      <div class="slect-acessories menuitemshow appendhere" style="display:none;" varr="{{ product.selected_or_first_available_variant.id }}"></div>
+           <div class="addons main-product"  data-id="{{ product.selected_or_first_available_variant.id }}"></div>
+        {% for ingredient in product.metafields.custom.upgrades.value %}
+         <div class="addons"  data-id="{{ ingredient.selected_or_first_available_variant.id }}">
+        <input name="id" value="{{ ingredient.selected_or_first_available_variant.id }}" type="checkbox" class="addons-upgrades">
+        <p data-price="{{ ingredient.price | money_without_currency }}">{{ ingredient.title }}</p>
+        <!-- <div class="varrint-price" data-price="{{ ingredient.price | money_without_currency }}"><span>(+{{ ingredient.price | money_with_currency | remove:'USD'}})</span></div> -->
+</div>
+    {% endfor %}
+    </div>
+{% endif %}
+
+
              <select name="id" style="display:none;" id="data">
         {% for variant in product.variants %}
         {% if variant.available %}
