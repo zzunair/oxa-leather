@@ -745,9 +745,15 @@
           "observeTargets": ""
         }
       },
+      "3824936769257688723": {
+        "type": "shopify:\/\/apps\/sami-product-labels-badges\/blocks\/app-embed-block\/b9b44663-5d51-4be1-8104-faedd68da8c5",
+        "disabled": false,
+        "settings": {
+        }
+      },
       "10714188220973388145": {
         "type": "shopify:\/\/apps\/bss-product-labels-badges\/blocks\/bss-pl\/91bfe765-b604-49a1-805e-3599fa600b24",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
