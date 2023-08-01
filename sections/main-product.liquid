@@ -760,7 +760,7 @@
             {%- endunless -%}
 
 
-{% if product.metafields.custom.upgrades!=blank %}
+{% comment %} {% if product.metafields.custom.upgrades!=blank %}
     <div class="products-type">
      <div class="titlemeta form__label">Upgrades</div>
       <div class="slect-acessories menuitemshow appendhere" style="display:none;" varr="{{ product.selected_or_first_available_variant.id }}"></div>
@@ -773,7 +773,7 @@
 </div>
     {% endfor %}
     </div>
-{% endif %}
+{% endif %} {% endcomment %}
 
 
              <select name="id" style="display:none;" id="data">
