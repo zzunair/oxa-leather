@@ -347,7 +347,10 @@
       (() => {const previewKey = 'docapp-discount-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-discount-inst-test')}));}})();
     </script>
     {% comment %}     {% render 'new-breadcrumb' %} {% endcomment %}
-  </head>
+  
+                      {% include 'bss-product-labels-configs' %}
+                        </head>
+                 
 
   <body class="gradient for-font {{ template }} cust-{{ template.name }}  {% if template == 'product' %} template-product {% elsif template == 'index' %} index {% else template == 'cart' %}cart--page{% endif %}{% if template == "collection" %} {{ collection.handle }}{% endif %}">
     <noscript
@@ -740,5 +743,5 @@ $('.monogram_check').each(function(){
       <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/deferload.js" defer></script>
       <a href="https://rapidler.com/" style="display: none;">Rapidler Shopify Speed Optimization Agency</a>
     {% endunless %}
-  </body>
+  {% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}</body>
 </html>
