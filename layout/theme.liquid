@@ -613,12 +613,7 @@ $('.monogram_check').each(function(){
     }
 })
 
-    </script>
 
-
-
-      <script>
-      
             $(document).on('click','.mega-menus nav.nav_menu_custom ul.mega-list-menu a:first-child',function(){
                 var parent = $(this).attr('href');
                 localStorage.setItem('parentlink',parent);
@@ -748,5 +743,6 @@ $('.monogram_check').each(function(){
       <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/deferload.js" defer></script>
       <a href="https://rapidler.com/" style="display: none;">Rapidler Shopify Speed Optimization Agency</a>
     {% endunless %}
-  {% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}</body>
+  {% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}
+</body>
 </html>
