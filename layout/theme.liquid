@@ -615,6 +615,66 @@ $('.monogram_check').each(function(){
 
     </script>
 
+
+<script>
+   
+$.get("https://ipinfo.io", function(response) {
+    if (response.country === "US") {
+      $(".free-shipping-label").show();
+    }
+  }, "jsonp");
+
+$(document).ready(function() {
+      $('.product-form__input input[checked]').each(function() {
+        $(this).click();
+      });
+  });
+</script>
+ {% if product.metafields.custom.upgrades.value != blank %}
+<script>
+$(document).on("click",'.product-form__submit',function(e) {
+
+    e.preventDefault();
+
+    var mf = [];
+    var st = $(this).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
+    $('.addons.main-product').attr('data-id', st);
+
+    $(".addons").each(function () {
+        var checkbox = $(this).find('input[type="checkbox"]');
+        var isChecked = checkbox.is(":checked");
+
+        if (isChecked) {
+            var var1 = $(this).attr('data-id');
+            mf.push({
+                id: var1,
+                quantity: 1
+            });
+        } else if ($(this).hasClass('main-product')) {
+            var var1 = $(this).attr('data-id');
+            mf.push({
+                id: var1,
+                quantity: 1
+            });
+        }
+
+    });
+console.log(mf)
+    $.ajax({
+        type: 'POST',
+        url: '/cart/add.js',
+        data: { items: mf },
+        dataType: 'json',
+        success: function (cart) {
+            console.log('success');
+            cart_drawer.$data.cart_items = cart.items;
+            cart_drawer.$data.cart_open = true;
+        }
+    });
+});
+
+</script>
+{% endif %}
       <script>
       
             $(document).on('click','.mega-menus nav.nav_menu_custom ul.mega-list-menu a:first-child',function(){
@@ -736,6 +796,8 @@ $('.monogram_check').each(function(){
         },200)
       </script>
     {% endcomment %}
+
+
 
     {% render 'content-footer' %}
     {% render 'preorder-now' %}
