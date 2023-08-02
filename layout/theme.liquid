@@ -814,7 +814,6 @@ $(document).ready(function() {
 $(document).on("click",'.product-form__submit',function(e) {
     e.preventDefault();
     var mf = [];
-    var totalPrice =$(this).parents('body').find('.price-item--last').attr('data-price');
     var st = $(this).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
     $('.addons.main-product').attr('data-id', st);
     $(".addons").each(function () {
@@ -826,8 +825,6 @@ $(document).on("click",'.product-form__submit',function(e) {
                 id: var1,
                 quantity: 1
             });
-           totalPrice = parseFloat(totalPrice) + parseFloat(pri1);
-           $(this).parents('body').find('.price-item--last').attr('data-price',totalPrice);
         } else if ($(this).hasClass('main-product')) {
             var var1 = $(this).attr('data-id');
             var pri1 = $(this).attr('data-price');
