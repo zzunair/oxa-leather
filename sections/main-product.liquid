@@ -585,7 +585,11 @@
             <div class="no-js-hidden product-page-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
 
-
+  {% assign plus1=block.settings.domestic_price %}
+               {% assign price1=product.price | money_without_currency %}
+            {% if price1 >=  plus1 %}
+              <div class="free-shipping-label" style="display: none;">+ Free Shipping!</div>
+            {% endif %}
 
             </div>
             {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
@@ -756,7 +760,20 @@
             {%- endunless -%}
 
 
-
+{% if product.metafields.custom.upgrades!=blank %}
+    <div class="products-type">
+     <div class="titlemeta form__label">Upgrades</div>
+      <div class="slect-acessories menuitemshow appendhere" style="display:none;" varr="{{ product.selected_or_first_available_variant.id }}"></div>
+           <div class="addons main-product"  data-id="{{ product.selected_or_first_available_variant.id }}"></div>
+        {% for ingredient in product.metafields.custom.upgrades.value %}
+         <div class="addons"  data-id="{{ ingredient.selected_or_first_available_variant.id }}">
+        <input name="id" value="{{ ingredient.selected_or_first_available_variant.id }}" type="checkbox" class="addons-upgrades">
+        <p data-price="{{ ingredient.price | money_without_currency }}">{{ ingredient.title }}</p>
+        <!-- <div class="varrint-price" data-price="{{ ingredient.price | money_without_currency }}"><span>(+{{ ingredient.price | money_with_currency | remove:'USD'}})</span></div> -->
+</div>
+    {% endfor %}
+    </div>
+{% endif %}
 
 
              <select name="id" style="display:none;" id="data">
