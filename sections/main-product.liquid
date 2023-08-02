@@ -766,8 +766,8 @@
       <div class="slect-acessories menuitemshow appendhere" style="display:none;" varr="{{ product.selected_or_first_available_variant.id }}"></div>
            <div class="addons main-product"  data-id="{{ product.selected_or_first_available_variant.id }}"></div>
         {% for ingredient in product.metafields.custom.upgrades.value %}
-         <div class="addons"  data-id="{{ ingredient.selected_or_first_available_variant.id }}" data-prices="{{ ingredient.price | money_without_currency }}" data-symbols="{{ cart.currency.symbol }}">
-        <input name="id" value="{{ ingredient.selected_or_first_available_variant.id }}" type="checkbox" class="addons-upgrades">
+         <div class="addons"  data-id="{{ ingredient.selected_or_first_available_variant.id }}">
+        <input name="id" value="{{ ingredient.selected_or_first_available_variant.id }}" type="checkbox" class="addons-upgrades" data-prices="{{ ingredient.price | money_without_currency }}" data-symbols="{{ cart.currency.symbol }}">
         <p data-price="{{ ingredient.price | money_without_currency }}" data-symbol="{{ cart.currency.symbol }}">{{ ingredient.title }} ( + {{ ingredient.price | money }}) 
 </p>
         <!-- <div class="varrint-price" data-price="{{ ingredient.price | money_without_currency }}"><span>(+{{ ingredient.price | money_with_currency | remove:'USD'}})</span></div> -->
