@@ -873,6 +873,10 @@ var price1 = parseFloat($(this).attr('data-prices'));
       
     }
   });
+
+$('.product-form__input label').click(function(){
+    $('.addons-upgrades').prop('checked', false);
+})
 </script>
 {% endif %}
 
