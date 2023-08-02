@@ -861,29 +861,16 @@ console.log(mf)
       var result = price1 + tot;  
       var totalprice= symbol1 + result;
       $('span.price-item span').text(totalprice);  
-      $('span.price-item').attr('data-price',result);
     } else {
-var price1 = parseFloat($(this).attr('data-prices'));
-            var symbol1 = $(this).attr('data-symbols');
-            var tot = parseFloat($('span.price-item').attr('data-price'));
-            var result = tot - price1;
-            var totalprice = symbol1 + result.toFixed(2);
-            $('span.price-item span').text(totalprice);
-            $('span.price-item').attr('data-price', result);
+      var price1 = parseFloat($(this).attr('data-prices'));
+      var symbol1 = $(this).attr('data-symbols');  
+      var tot = parseFloat($('span.price-item').attr('data-price'));
+       
+      var totalprice= symbol1 + tot;
+      $('span.price-item span').text(totalprice);  
       
     }
   });
-
-$('.product-form__input label').click(function(){
-    $('.addons-upgrades').prop('checked', false);
-    var price1 = parseFloat($('.addons-upgrades').attr('data-prices'));
-            var symbol1 = $(this).attr('data-symbols');
-            var tot = parseFloat($('span.price-item').attr('data-price'));
-            var result = tot - price1;
-            var totalprice = symbol1 + result.toFixed(2);
-            $('span.price-item span').text(totalprice);
-            $('span.price-item').attr('data-price', result);
-})
 </script>
 {% endif %}
 
