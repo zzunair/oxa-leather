@@ -812,9 +812,7 @@ $(document).ready(function() {
  {% if product.metafields.custom.upgrades.value != blank %}
 <script>
 $(document).on("click",'.product-form__submit',function(e) {
-if (!$('.addons').length) {
-    return false; // Stop execution if .addons class not found
-  }
+
     e.preventDefault();
     var mf = [];
     var st = $(this).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
