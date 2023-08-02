@@ -867,7 +867,7 @@ var price1 = parseFloat($(this).attr('data-prices'));
             var symbol1 = $(this).attr('data-symbols');
             var tot = parseFloat($('span.price-item').attr('data-price'));
             var result = tot - price1;
-            var totalprice = symbol1 + result;
+            var totalprice = symbol1 + result.toFixed(2);
             $('span.price-item span').text(totalprice);
             $('span.price-item').attr('data-price', result);
       
