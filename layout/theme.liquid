@@ -752,7 +752,7 @@ $(document).ready(function() {
   });
 </script>
 {% for product in collection.products %}
- {% if product.metafields.my_custom_fields.my_field %}
+ {% if product.metafields.custom.upgrades!=blank %}
 <script>
 $(document).on("click",'.product-form__submit',function(e) {
 
