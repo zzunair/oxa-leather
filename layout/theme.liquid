@@ -811,7 +811,7 @@ $(document).ready(function() {
 </script>
  {% if product.metafields.custom.upgrades.value != blank %}
 <script>
-if ($('.add-product-metafield').length) {
+
 $(document).on("click",'.product-form__submit',function(e) {
 
     e.preventDefault();
@@ -850,7 +850,7 @@ console.log(mf)
         }
     });
 });
-}
+
 </script>
 <script>
     $('.addons-upgrades').on('change', function() {
