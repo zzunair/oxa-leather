@@ -768,7 +768,7 @@
         {% for ingredient in product.metafields.custom.upgrades.value %}
          <div class="addons"  data-id="{{ ingredient.selected_or_first_available_variant.id }}">
         <input name="id" value="{{ ingredient.selected_or_first_available_variant.id }}" type="checkbox" class="addons-upgrades">
-        <p data-price="{{ ingredient.price | money_without_currency }}">{{ ingredient.title }} ( + {{ ingredient.price | money }}) {{ shop.currency }}
+        <p data-price="{{ ingredient.price | money_without_currency }}">{{ ingredient.title }} ( + {{ ingredient.price | money }}) {{ shop.currencysymbol}}
 </p>
         <!-- <div class="varrint-price" data-price="{{ ingredient.price | money_without_currency }}"><span>(+{{ ingredient.price | money_with_currency | remove:'USD'}})</span></div> -->
 </div>
