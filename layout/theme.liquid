@@ -751,8 +751,7 @@ $(document).ready(function() {
       });
   });
 </script>
-{% for product in collection.products %}
- {% if product.metafields.custom.upgrades!=blank %}
+
 <script>
 $(document).on("click",'.product-form__submit',function(e) {
 
@@ -796,8 +795,7 @@ console.log(mf)
 });
 
 </script>
-{% endif %}
-{% endfor %}
+
     {% render 'content-footer' %}
     {% render 'preorder-now' %}
     {% unless template contains 'cart' %}
