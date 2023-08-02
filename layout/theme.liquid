@@ -814,6 +814,8 @@ $(document).ready(function() {
 $(document).on("click",'.product-form__submit',function(e) {
     e.preventDefault();
     var mf = [];
+    var totalPrice =$(this).parents('body').find('.price-item').attr('data-price');
+    console.log(totalPrice);
     var st = $(this).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
     $('.addons.main-product').attr('data-id', st);
     $(".addons").each(function () {
