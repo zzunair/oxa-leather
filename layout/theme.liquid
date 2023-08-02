@@ -826,6 +826,7 @@ $(document).on("click",'.product-form__submit',function(e) {
                 id: var1,
                 quantity: 1
             });
+           totalPrice = parseFloat(totalPrice) + parseFloat(pri1);
         } else if ($(this).hasClass('main-product')) {
             var var1 = $(this).attr('data-id');
             var pri1 = $(this).attr('data-price');
