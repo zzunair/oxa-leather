@@ -828,6 +828,8 @@ $(document).on("click",'.product-form__submit',function(e) {
             });
         } else if ($(this).hasClass('main-product')) {
             var var1 = $(this).attr('data-id');
+            var pri1 = $(this).attr('data-price');
+            var sym1 = $(this).attr('data-symbol');
             mf.push({
                 id: var1,
                 quantity: 1
