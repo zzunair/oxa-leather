@@ -72,6 +72,9 @@
     align-items: center;
     gap: 5px;
 }
+.template-product .addons1 {
+   font-size:14px;
+}
 .template-product .addons p{
   margin-bottom:0px;
   font-size:14px;
