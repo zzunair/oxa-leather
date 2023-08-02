@@ -49,3 +49,40 @@
 }
 
 /******/
+.template-product .free-shipping-label{
+    font-family: "Manrope 800";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -.01em;
+    color: #191919;
+}
+
+.template-product .product-page-price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.template-product .select:has(.select__select[name="options[Leather Color]"]) {
+    display: none;
+}
+.template-product .addons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.template-product .addons p{
+  margin-bottom:0px;
+}
+.template-product .titlemeta.form__label {
+    font-style: normal;
+    font-weight: 700;
+    color: #000;
+}
+.template-product .three_icons.three_icons_mobile.three_icons_desktop {
+    display: unset;
+}
+.template-product.product .for_background{
+  padding-bottom:20px;
+}
