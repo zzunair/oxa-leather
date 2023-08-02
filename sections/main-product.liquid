@@ -759,7 +759,7 @@
             
             {%- endunless -%}
 
-
+<div class="add-product-metafield">
 {% if product.metafields.custom.upgrades!=blank %}
     <div class="products-type">
      <div class="titlemeta form__label addons1">Upgrades</div>
@@ -775,7 +775,7 @@
     {% endfor %}
     </div>
 {% endif %}
-
+</div>
 
              <select name="id" style="display:none;" id="data">
         {% for variant in product.variants %}
