@@ -803,11 +803,11 @@ $.get("https://ipinfo.io", function(response) {
       $(".free-shipping-label").show();
     }
   }, "jsonp");
-// $(document).ready(function() {
-//       $('.product-form__input input[checked]').each(function() {
-//         $(this).click();
-//       });
-//   });
+$(document).ready(function() {
+      $('.product-form__input input[checked]').each(function() {
+        $(this).click();
+      });
+  });
 </script>
  {% if product.metafields.custom.upgrades.value != blank %}
 <script>
