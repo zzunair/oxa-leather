@@ -44,19 +44,19 @@
     {%- endcomment -%}
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-      <span class="price-item price-item--regular" data-price="{{ price | money_without_trailing_zeros  }}">
+      <span class="price-item price-item--regular" data-price="{{ price | money_without_currency  | remove:'.00' }}">
         {{ money_price | remove: 'USD' | remove: '.00' }}
       </span>
     </div>
     <div class="price__sale aa">
        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-      <span class="price-item price-item--sale price-item--last" data-price="{{ price  | money_without_trailing_zeros  | strip_html  | remove:'$' }}">
+      <span class="price-item price-item--sale price-item--last" data-price="{{ price | money_without_currency  | remove:'.00' }}">
         {{ money_price | remove: 'USD' | remove: '.00'  }}
       </span>
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
         <span>
-          <s class="price-item price-item--regular" data-price="{{ target.compare_at_price | money_without_trailing_zeros  | strip_html | remove:'$' }}">
+          <s class="price-item price-item--regular" data-price="{{ target.compare_at_price | money_without_currency | remove:'.00' }}">
             {% if settings.currency_code_enabled %}
               {{ compare_at_price | money_with_currency | remove: 'USD' | remove: '.00' }}
             {% else %}
