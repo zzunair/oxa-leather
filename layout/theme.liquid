@@ -751,7 +751,7 @@ $(document).ready(function() {
       });
   });
 </script>
-
+ {% if product.metafields.custom.upgrades.value != blank %}
 <script>
 $(document).on("click",'.product-form__submit',function(e) {
 
@@ -795,6 +795,7 @@ console.log(mf)
 });
 
 </script>
+{% endif %}
 
     {% render 'content-footer' %}
     {% render 'preorder-now' %}
