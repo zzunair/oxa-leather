@@ -861,6 +861,7 @@ console.log(mf)
       var result = price1 + tot;  
       var totalprice= symbol1 + result;
       $('span.price-item span').text(totalprice);  
+      $('span.price-item').attr('data-price',result);
     } else {
       var price1 = parseFloat($(this).attr('data-prices'));
       var symbol1 = $(this).attr('data-symbols');  
