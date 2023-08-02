@@ -851,7 +851,7 @@ console.log(mf)
 });
 </script>
 
-<!-- <script>
+<script>
     $('.addons-upgrades').on('change', function() {
     if ($(this).prop('checked')) {
       
@@ -863,16 +863,17 @@ console.log(mf)
       $('span.price-item span').text(totalprice);  
       $('span.price-item').attr('data-price',result);
     } else {
-      var price1 = parseFloat($(this).attr('data-prices'));
-      var symbol1 = $(this).attr('data-symbols');  
-      var tot = parseFloat($('span.price-item').attr('data-price'));
-       
-      var totalprice= symbol1 + tot;
-      $('span.price-item span').text(totalprice);  
+var price1 = parseFloat($(this).attr('data-prices'));
+            var symbol1 = $(this).attr('data-symbols');
+            var tot = parseFloat($('span.price-item').attr('data-price'));
+            var result = tot - price1;
+            var totalprice = symbol1 + result;
+            $('span.price-item span').text(totalprice);
+            $('span.price-item').attr('data-price', result);
       
     }
   });
-</script> -->
+</script>
 {% endif %}
 
 
