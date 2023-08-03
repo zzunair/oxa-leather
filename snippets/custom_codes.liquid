@@ -531,7 +531,7 @@
      
      
       $(document).on("click","a.pop-up-open",function(){     
-        var color = $(".product-form__input input[name=Color]:checked").val();
+        var color = $(".product-form__input input[name*=Color]:checked").val();
         alert(color)
         var monoimgg = $(".thumbnail-list li[alt*='monogram'][data-color='"+color+"']").attr('vrrnt');
         alert(monoimgg);
