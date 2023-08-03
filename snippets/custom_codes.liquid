@@ -921,45 +921,110 @@
         }
       }
       
-         $(".main--products .modal-dialog .popup-right .add-to-cart button").click(function(){        
-       		var ID = $(this).attr("data-id");
-           	var parent_product = jQuery('[data-type="add-to-cart-form"] [name="id"]').val();
-            var sku_product = meta.product.variants.find(x => x.id == parent_product).sku;
-         	var name =  $(this).parents(".popup-right").find(".name-initial input").val();
-            $(this).parents(".popup-right").find(".error").remove();
-            if(name.trim() == ""){
-			  $(this).parents(".popup-right").find(".name-initial input").css("border-color", "red");
-              $(this).parents(".popup-right").find(".name-initial input").after(`<p class="error">This is required.</p>`);
-              return  false;
-            }
-        	var fnt =  $(this).parents(".popup-right").find(".righticon").parent().text();
-                  $.ajax({
-                    type: 'POST',
-                    url: '/cart/add.js',
-                    dataType: 'json',
-                    data:{
-                      items:[{
-                        id:ID,
-                        quantity: 1,
-                        properties:{"Font":fnt,"Text":name,"SKU":sku_product}
-                      },{
-                        id: parent_product,
-                        quantity: 1,
-                        properties:{"_tags": window.GPOConfigs.product.tags.join(',')}
-                      }]
-                    },
-                    success: function (data) {
+     //     $(".main--products .modal-dialog .popup-right .add-to-cart button").click(function(){        
+     //   		var ID = $(this).attr("data-id");
+     //       	var parent_product = jQuery('[data-type="add-to-cart-form"] [name="id"]').val();
+     //        var sku_product = meta.product.variants.find(x => x.id == parent_product).sku;
+     //     	var name =  $(this).parents(".popup-right").find(".name-initial input").val();
+     //        $(this).parents(".popup-right").find(".error").remove();
+     //        if(name.trim() == ""){
+			  // $(this).parents(".popup-right").find(".name-initial input").css("border-color", "red");
+     //          $(this).parents(".popup-right").find(".name-initial input").after(`<p class="error">This is required.</p>`);
+     //          return  false;
+     //        }
+     //    	var fnt =  $(this).parents(".popup-right").find(".righticon").parent().text();
+     //              $.ajax({
+     //                type: 'POST',
+     //                url: '/cart/add.js',
+     //                dataType: 'json',
+     //                data:{
+     //                  items:[{
+     //                    id:ID,
+     //                    quantity: 1,
+     //                    properties:{"Font":fnt,"Text":name,"SKU":sku_product}
+     //                  },{
+     //                    id: parent_product,
+     //                    quantity: 1,
+     //                    properties:{"_tags": window.GPOConfigs.product.tags.join(',')}
+     //                  }]
+     //                },
+     //                success: function (data) {
                       
-                      jQuery.getJSON("/cart.js", function(cart) { 
-                        $("#overlay").css("display","none");                        
-                        jQuery("#exampleModalToggle").modal("hide")
-                        cart_drawer.$data.cart_items = cart.items;
-                      	cart_drawer.$data.cart_open = true;
+     //                  jQuery.getJSON("/cart.js", function(cart) { 
+     //                    $("#overlay").css("display","none");                        
+     //                    jQuery("#exampleModalToggle").modal("hide")
+     //                    cart_drawer.$data.cart_items = cart.items;
+     //                  	cart_drawer.$data.cart_open = true;
 
-                      });
-                    }
-                  });
-       });
+     //                  });
+     //                }
+     //              });
+     //   });
+
+$(".main--products .modal-dialog .popup-right .add-to-cart button").click(function () {
+  var ID = $(this).attr("data-id");
+  var parent_product = jQuery('[data-type="add-to-cart-form"] [name="id"]').val();
+  var sku_product = meta.product.variants.find((x) => x.id == parent_product).sku;
+  var name = $(this).parents(".popup-right").find(".name-initial input").val();
+  $(this).parents(".popup-right").find(".error").remove();
+  if (name.trim() == "") {
+    $(this)
+      .parents(".popup-right")
+      .find(".name-initial input")
+      .css("border-color", "red");
+    $(this)
+      .parents(".popup-right")
+      .find(".name-initial input")
+      .after(`<p class="error">This is required.</p>`);
+    return false;
+  }
+
+  var fnt = $(this).parents(".popup-right").find(".righticon").parent().text();
+
+  // Merging the additional code
+  var mf = [];
+  $(".addons").each(function () {
+    var checkbox = $(this).find('input[type="checkbox"]');
+    var isChecked = checkbox.is(":checked");
+    if (isChecked) {
+      var var1 = $(this).attr("data-id");
+      mf.push({
+        id: var1,
+        quantity: 1,
+      });
+    }
+  });
+
+  $.ajax({
+    type: "POST",
+    url: "/cart/add.js",
+    dataType: "json",
+    data: {
+      items: [
+        {
+          id: ID,
+          quantity: 1,
+          properties: { "Font": fnt, "Text": name, "SKU": sku_product },
+        },
+        {
+          id: parent_product,
+          quantity: 1,
+          properties: { "_tags": window.GPOConfigs.product.tags.join(",") },
+        },
+        // Adding the mf array as an item
+        ...mf,
+      ],
+    },
+    success: function (data) {
+      jQuery.getJSON("/cart.js", function (cart) {
+        $("#overlay").css("display", "none");
+        jQuery("#exampleModalToggle").modal("hide");
+        cart_drawer.$data.cart_items = cart.items;
+        cart_drawer.$data.cart_open = true;
+      });
+    },
+  });
+});
 
        $(document).on("click",".custommodal .modal-dialog .popup-right .add-to-cart button",function(){        
        		var ID = $(this).attr("data-id");
