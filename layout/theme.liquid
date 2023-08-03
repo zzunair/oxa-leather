@@ -813,85 +813,85 @@ $(document).ready(function() {
  {% if product.metafields.custom.upgrades.value != blank %}
 <script>
 
-// $(document).on("click",'.product-form__submit',function(e) {
+$(document).on("click",'.product-form__submit',function(e) {
 
-//     e.preventDefault();
-//     var mf = [];
-//     var st = $(this).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
-//     $('.addons.main-product').attr('data-id', st);
-//     $(".addons").each(function () {
-//         var checkbox = $(this).find('input[type="checkbox"]');
-//         var isChecked = checkbox.is(":checked");
-//         if (isChecked) {
-//             var var1 = $(this).attr('data-id');
-//             mf.push({
-//                 id: var1,
-//                 quantity: 1
-//             });
-//         } else if ($(this).hasClass('main-product')) {
-//             var var1 = $(this).attr('data-id');
-//             var pri1 = $(this).attr('data-price');
-//             var sym1 = $(this).attr('data-symbol');
-//             mf.push({
-//                 id: var1,
-//                 quantity: 1
-//             });
-//         }
-//     });
-// console.log(mf)
-//     $.ajax({
-//         type: 'POST',
-//         url: '/cart/add.js',
-//         data: { items: mf },
-//         dataType: 'json',
-//         success: function (cart) {
-//             console.log('success');
-//             cart_drawer.$data.cart_items = cart.items;
-//             cart_drawer.$data.cart_open = true;
-//         }
-//     });
-// });
-
-function upgrades(button) {
-    // You can use the 'button' parameter if you need to access the clicked button
-    console.log('Button clicked!');
-
-    // Your existing code starts here
+    e.preventDefault();
     var mf = [];
-    var st = $(button).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
+    var st = $(this).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
     $('.addons.main-product').attr('data-id', st);
     $(".addons").each(function () {
-      var checkbox = $(this).find('input[type="checkbox"]');
-      var isChecked = checkbox.is(":checked");
-      if (isChecked) {
-        var var1 = $(this).attr('data-id');
-        mf.push({
-          id: var1,
-          quantity: 1
-        });
-      } else if ($(this).hasClass('main-product')) {
-        var var1 = $(this).attr('data-id');
-        var pri1 = $(this).attr('data-price');
-        var sym1 = $(this).attr('data-symbol');
-        mf.push({
-          id: var1,
-          quantity: 1
-        });
-      }
+        var checkbox = $(this).find('input[type="checkbox"]');
+        var isChecked = checkbox.is(":checked");
+        if (isChecked) {
+            var var1 = $(this).attr('data-id');
+            mf.push({
+                id: var1,
+                quantity: 1
+            });
+        } else if ($(this).hasClass('main-product')) {
+            var var1 = $(this).attr('data-id');
+            var pri1 = $(this).attr('data-price');
+            var sym1 = $(this).attr('data-symbol');
+            mf.push({
+                id: var1,
+                quantity: 1
+            });
+        }
     });
-    console.log(mf);
+console.log(mf)
     $.ajax({
-      type: 'POST',
-      url: '/cart/add.js',
-      data: { items: mf },
-      dataType: 'json',
-      success: function (cart) {
-        console.log('success');
-        cart_drawer.$data.cart_items = cart.items;
-        cart_drawer.$data.cart_open = true;
-      }
+        type: 'POST',
+        url: '/cart/add.js',
+        data: { items: mf },
+        dataType: 'json',
+        success: function (cart) {
+            console.log('success');
+            cart_drawer.$data.cart_items = cart.items;
+            cart_drawer.$data.cart_open = true;
+        }
     });
-  }
+});
+
+// function upgrades(button) {
+//     // You can use the 'button' parameter if you need to access the clicked button
+//     console.log('Button clicked!');
+
+//     // Your existing code starts here
+//     var mf = [];
+//     var st = $(button).parents('form[data-type="add-to-cart-form"]').find('.vrntid').val();
+//     $('.addons.main-product').attr('data-id', st);
+//     $(".addons").each(function () {
+//       var checkbox = $(this).find('input[type="checkbox"]');
+//       var isChecked = checkbox.is(":checked");
+//       if (isChecked) {
+//         var var1 = $(this).attr('data-id');
+//         mf.push({
+//           id: var1,
+//           quantity: 1
+//         });
+//       } else if ($(this).hasClass('main-product')) {
+//         var var1 = $(this).attr('data-id');
+//         var pri1 = $(this).attr('data-price');
+//         var sym1 = $(this).attr('data-symbol');
+//         mf.push({
+//           id: var1,
+//           quantity: 1
+//         });
+//       }
+//     });
+//     console.log(mf);
+//     $.ajax({
+//       type: 'POST',
+//       url: '/cart/add.js',
+//       data: { items: mf },
+//       dataType: 'json',
+//       success: function (cart) {
+//         console.log('success');
+//         cart_drawer.$data.cart_items = cart.items;
+//         cart_drawer.$data.cart_open = true;
+//       }
+//     });
+//   }
 
 </script>
 <script>
