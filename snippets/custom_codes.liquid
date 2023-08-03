@@ -931,7 +931,7 @@
 			  $(this).parents(".popup-right").find(".name-initial input").css("border-color", "red");
               $(this).parents(".popup-right").find(".name-initial input").after(`<p class="error">This is required.</p>`);
               return  false;
-            }
+            }upgrades(this);
         	var fnt =  $(this).parents(".popup-right").find(".righticon").parent().text();
                   $.ajax({
                     type: 'POST',
@@ -958,7 +958,6 @@
                       });
                     }
                   });
-upgrades(this);
        });
 
        $(document).on("click",".custommodal .modal-dialog .popup-right .add-to-cart button",function(){        
