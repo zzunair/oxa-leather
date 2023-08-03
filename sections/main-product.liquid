@@ -330,7 +330,7 @@
  
  
 
-<div class="product__title product__title_moboile">
+<div class="product__title product__title_mobile">
               <div class="pro-title-heading aa" >
             {% if product.metafields.custom.product_modal.value != blank %}<p class="prometatitle">{{ product.title }}</p>{% comment %}<p>{{ product.metafields.custom.device_series.value }}</p>{% endcomment %}{% else %}{{ product.title | escape }}{% endif %}</div>
               <!--Yotpo Star Rating on Product Page-->
@@ -848,7 +848,7 @@
                       name="add"
                       class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
- {% if product.metafields.custom.upgrades.value != blank %}onclick="upgrades(this)"{% endif %}
+ {% comment %}{% if product.metafields.custom.upgrades.value != blank %}onclick="upgrades(this)"{% endif %}{% endcomment %}
                     >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
