@@ -933,34 +933,32 @@
               return  false;
             }
         	var fnt =  $(this).parents(".popup-right").find(".righticon").parent().text();
-                  // $.ajax({
-                  //   type: 'POST',
-                  //   url: '/cart/add.js',
-                  //   dataType: 'json',
-                  //   data:{
-                  //     items:[{
-                  //       id:ID,
-                  //       quantity: 1,
-                  //       properties:{"Font":fnt,"Text":name,"SKU":sku_product}
-                  //     },{
-                  //       id: parent_product,
-                  //       quantity: 1,
-                  //       properties:{"_tags": window.GPOConfigs.product.tags.join(',')}
-                  //     }]
-                  //   },
-                  //   success: function (data) {
+                  $.ajax({
+                    type: 'POST',
+                    url: '/cart/add.js',
+                    dataType: 'json',
+                    data:{
+                      items:[{
+                        id:ID,
+                        quantity: 1,
+                        properties:{"Font":fnt,"Text":name,"SKU":sku_product}
+                      },{
+                        id: parent_product,
+                        quantity: 1,
+                        properties:{"_tags": window.GPOConfigs.product.tags.join(',')}
+                      }]
+                    },
+                    success: function (data) {
                       
-                  //     jQuery.getJSON("/cart.js", function(cart) { 
-                  //       $("#overlay").css("display","none");                        
-                  //       jQuery("#exampleModalToggle").modal("hide")
-                  //       cart_drawer.$data.cart_items = cart.items;
-                  //     	cart_drawer.$data.cart_open = true;
+                      jQuery.getJSON("/cart.js", function(cart) { 
+                        $("#overlay").css("display","none");                        
+                        jQuery("#exampleModalToggle").modal("hide")
+                        cart_drawer.$data.cart_items = cart.items;
+                      	cart_drawer.$data.cart_open = true;
 
-                  //     });
-                  //   }
-                  // });
-  upgrades1(ID, parent_product, sku_product, name, fnt);
-
+                      });
+                    }
+                  });
        });
 
        $(document).on("click",".custommodal .modal-dialog .popup-right .add-to-cart button",function(){        
