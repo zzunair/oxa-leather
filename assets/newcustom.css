@@ -115,6 +115,10 @@ body .header a.header__heading-link{
   order:2;
   text-align: center !important;
 }
+body .header{
+  display:grid !important;
+  grid-template-columns: 25% 50% 25%;
+}
 }
 @media (min-width:768px){
 .product__title_mobile {
