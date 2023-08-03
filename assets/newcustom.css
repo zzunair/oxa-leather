@@ -103,6 +103,9 @@
 .product__title.product__title_mobile p.prometatitle{
   margin-bottom:0.4rem;
 }
+body header.header .header__icons{
+  width:auto;
+}
 }
 @media (min-width:768px){
 .product__title_mobile {
