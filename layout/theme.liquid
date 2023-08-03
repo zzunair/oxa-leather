@@ -895,7 +895,7 @@ console.log(mf)
 
 </script>
 <script>
-    $('.addons-upgrades').on('change', function() {
+    $('.addons-upgrades1').on('change', function() {
     if ($(this).prop('checked')) {
       var price1 = parseFloat($(this).attr('data-prices'));
       var symbol1 = $(this).attr('data-symbols');
@@ -914,7 +914,7 @@ var price1 = parseFloat($(this).attr('data-prices'));
             $('span.price-item').attr('data-price', result);
     }
   });
-$('.product-form__input label').click(function(){
+$('.product-form__input label1').click(function(){
     $('.addons-upgrades').prop('checked', false);
     var price1 = parseFloat($('.addons-upgrades').attr('data-prices'));
             var symbol1 = $('.addons-upgrades').attr('data-symbols');
