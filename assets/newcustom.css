@@ -111,6 +111,9 @@ body .header header-drawer{
   margin-left:0px;  
   order:1;
 }
+body .header a.header__heading-link{
+  order:2;
+}
 }
 @media (min-width:768px){
 .product__title_mobile {
