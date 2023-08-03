@@ -113,7 +113,7 @@ body .header header-drawer{
 }
 body .header a.header__heading-link{
   order:2;
-  text-align: center;
+  text-align: center !important;
 }
 }
 @media (min-width:768px){
