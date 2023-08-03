@@ -94,8 +94,11 @@
 .breadcrumb-collection, .product__title_desktop {
     display: none;
 }
-.product__title.product__title_moboile {
+.product__title.product__title_mobile {
     padding: 10px 0px;
+}
+.product__title.product__title_mobile .series_review .yotpo.bottomLine.yotpo-small{
+  padding-left:0px;
 }
 }
 @media (min-width:768px){
