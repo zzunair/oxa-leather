@@ -91,7 +91,7 @@
   padding-bottom:20px;
 }
 @media (max-width:767px){
-.breadcrumb-collection, .product__title_desktop {
+.breadcrumb-collection, .product__title_desktop .pro-title-heading, .product__title_desktop .series_review {
     display: none;
 }
 .product__title.product__title_mobile {
