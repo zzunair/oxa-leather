@@ -119,6 +119,9 @@ body .header{
   display:grid !important;
   grid-template-columns: 25% 50% 25%;
 }
+body .header__icon span{
+  justify-content:start;
+}
 }
 @media (min-width:768px){
 .product__title_mobile {
