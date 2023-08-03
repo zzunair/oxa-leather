@@ -105,9 +105,11 @@
 }
 body header.header .header__icons{
   width:auto;
+  order: 3;
 }
 body .header header-drawer{
   margin-left:0px;  
+  order:1;
 }
 }
 @media (min-width:768px){
