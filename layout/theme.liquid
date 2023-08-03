@@ -851,6 +851,7 @@ $(document).ready(function() {
 //         }
 //     });
 // });
+
 function upgrades(button) {
     // You can use the 'button' parameter if you need to access the clicked button
     console.log('Button clicked!');
@@ -891,6 +892,57 @@ function upgrades(button) {
       }
     });
   }
+
+function upgrades1(ID, parent_product, sku_product, name, fnt) {
+  var mf = [];
+  var st = ID;
+  $('.addons.main-product').attr('data-id', st);
+
+  $(".addons").each(function() {
+    var checkbox = $(this).find('input[type="checkbox"]');
+    var isChecked = checkbox.is(":checked");
+
+    if (isChecked) {
+      var var1 = $(this).attr('data-id');
+      mf.push({
+        id: var1,
+        quantity: 1
+      });
+    } else if ($(this).hasClass('main-product')) {
+      var var1 = $(this).attr('data-id');
+      var pri1 = $(this).attr('data-price');
+      var sym1 = $(this).attr('data-symbol');
+      mf.push({
+        id: var1,
+        quantity: 1
+      });
+    }
+  });
+
+  console.log(mf);
+
+  $.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    dataType: 'json',
+    data: {
+      items: [{
+        id: ID,
+        quantity: 1,
+        properties: {"Font": fnt, "Text": name, "SKU": sku_product}
+      }, {
+        id: parent_product,
+        quantity: 1,
+        properties: {"_tags": window.GPOConfigs.product.tags.join(',')}
+      }].concat(mf)
+    },
+    success: function (cart) {
+      console.log('success');
+      cart_drawer.$data.cart_items = cart.items;
+      cart_drawer.$data.cart_open = true;
+    }
+  });
+}
 </script>
 <script>
     $('.addons-upgrades').on('change', function() {
