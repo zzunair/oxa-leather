@@ -91,7 +91,12 @@
   padding-bottom:20px;
 }
 @media (max-width:767px){
-.breadcrumb-collection {
+.breadcrumb-collection, .product__title_desktop {
+    display: none;
+}
+}
+@media (min-width:768px){
+.product__title_mobile {
     display: none;
 }
 }
