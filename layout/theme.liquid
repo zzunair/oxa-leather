@@ -532,6 +532,7 @@ $(document).on('click','.monogram_check input[type="checkbox"]', function () {
             doc = parser.parseFromString(msg, "text/html");
             var remainder = doc.querySelector('[varid="'+item+'"]').innerHTML;
             var monoimgg = doc.querySelector('img.hideimagesvar[data-color="'+color+'"][alt*="monogram"]').getAttribute("src");
+            console.log(monoimgg);
             $('.custommodal .modal-content.mono-radius').html(remainder);
             var mono_top = $('.custommodal .main-img-monogram_pop').data("top");
             var mono_left = $('.custommodal .main-img-monogram_pop').data("left");
