@@ -119,8 +119,8 @@ body .header{
   display:grid !important;
   grid-template-columns: 25% 50% 25%;
 }
-body .header__icon span{
-  justify-content:start;
+body header-drawer .header__icon span{
+  justify-content:start !important;
 }
 }
 @media (min-width:768px){
