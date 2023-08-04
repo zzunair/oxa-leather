@@ -126,9 +126,9 @@
                   {% assign selected_color = beatles[index] %} 
                 {% assign var_imgg = '' %}
                   {% for variant in card_product.variants %}
-                    {% if variant.option1 contains selected_color %}
+                    {% if variant.option1 contains selected_color %}{% endif %}
                       {% assign var_imgg = variant.image %}
-                    {% endif %}
+                    
                   {% endfor %}
                 
               {% endif %}
