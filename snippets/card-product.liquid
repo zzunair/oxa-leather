@@ -219,7 +219,7 @@
                       {%- if var_imgg.width >= 1066 -%}{{ var_imgg | image_url: width: 1066 }} 1066w,{%- endif -%}
                       {{ var_imgg | image_url }} {{ var_imgg.width }}w 
                     "
-                 
+                 {{ var_imgg.width }}
 
   {% comment %}  srcset="
                       {%- if variant.image.width >= 165 -%}{{ variant.image | image_url: width: 360 }} 360w,{%- endif -%}
