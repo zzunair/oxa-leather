@@ -125,15 +125,12 @@
                {% assign beatles = vall | split: "," %}
                   {% assign selected_color = beatles[index] %} 
 
-{% assign selected_color1 = beatles[0] %}
 
                 {% assign var_imgg = '' %}
                   {% for variant in card_product.variants %}
                     {% if variant.option1 contains selected_color %}
                       {% assign var_imgg = variant.image %}
 
-  {% elsif  variant.option1 contains selected_color1 %}
-      {% assign var_imgg = variant.image %}
 
                     {% endif %}
                   {% endfor %}
@@ -354,7 +351,7 @@
                 {% elsif forloop.index0 < 5 %}
                   <div
                     ure="{{ card_product.url }}"
-                    class="text swatches-pro {{ beatles[index] }} {% if selected_color == value %}active-swatch{% elsif selected_color1 == value  %}active-swatch{% endif %}"
+                    class="text swatches-pro {{ beatles[index] }} {% if selected_color == value %}active-swatch{% endif %}"
                     var-id="{{ value_variants[0].id }}"
                     data-img="{{ value_variants[0].image | img_url:'master'}}"
                     data-imghover="{{ second_img_swatch | img_url:'master'}}"
