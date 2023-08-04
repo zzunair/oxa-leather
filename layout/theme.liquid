@@ -809,13 +809,13 @@ $(document).ready(function() {
       });
  });
 
-setTimeout(function() { 
+{% comment %} setTimeout(function() { 
 $('.color__swatches').each(function() {
       if (!$(this).children().hasClass('active-swatch')) {
         $(this).children().first().click();
       }
     });
-},4500);
+},4500); {% endcomment %}
 </script>
 
  {% if product.metafields.custom.upgrades.value != blank %}
