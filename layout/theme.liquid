@@ -807,12 +807,14 @@ $(document).ready(function() {
       $('.product-form__input input[checked]').each(function() {
         $(this).click();
       });
- 
+
+setTimeout(function() { 
 $('.color__swatches').each(function() {
       if (!$(this).children().hasClass('active-swatch')) {
         $(this).children().first().click();
       }
     });
+},1000);
  });
 </script>
 
