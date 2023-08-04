@@ -128,11 +128,14 @@
 
                 {% assign var_imgg = '' %}
                   {% for variant in card_product.variants %}
-                    {% if variant.option1 contains selected_color %}
+                  {% comment %}  
+                  {% if variant.option1 contains selected_color %}
                       {% assign var_imgg = variant.image %}
 
 
                     {% endif %}
+                  {% endcomment %}
+                     {% assign var_imgg = variant.image %}
                   {% endfor %}
                 
               {% endif %}
