@@ -357,7 +357,7 @@
                 {% else %}
                   <div
                     ure="{{ card_product.url }}"
-                    class="more-swatches text swatches-pro {{ selected_color  }} {% if selected_color == value %}active-swatch{% endif %}"
+                    class="more-swatches text swatches-pro tst {% if selected_color == value %}active-swatch{% endif %}"
                     var-id="{{ value_variants[0].id }}"
                     data-img="{{ value_variants[0].image | img_url:'master'}}"
                     data-imghover="{{ second_img_swatch | img_url:'master'}}"
