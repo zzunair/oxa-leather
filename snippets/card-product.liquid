@@ -124,10 +124,15 @@
                 {% endfor %}
                {% assign beatles = vall | split: "," %}
                   {% assign selected_color = beatles[index] %} 
+
+{% assign selected_color1 = beatles[0] %}
+
                 {% assign var_imgg = '' %}
                   {% for variant in card_product.variants %}
                     {% if variant.option1 contains selected_color %}
                       {% assign var_imgg = variant.image %}
+  {% elsif  variant.option1 contains selected_color1 %}
+      {% assign var_imgg = variant.image %}
                     {% endif %}
                   {% endfor %}
                 
