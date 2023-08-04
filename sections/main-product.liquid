@@ -591,7 +591,13 @@
             </div>
             </div>
             </div>
-            <div class="price_for_mob">{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}</div>
+            <div class="price_for_mob">{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}{% assign plus1=block.settings.domestic_price %}
+               {% assign price1=product.price | money_without_currency %}
+               {% if price1 >=  plus1 %}
+                 <div class="free-shipping-label" style="display: none;">+ Free Shipping!</div>
+               {% endif %}
+            </div>
+
             <!--End of Yotpo Star Rating on Product Page-->
 
             <div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
