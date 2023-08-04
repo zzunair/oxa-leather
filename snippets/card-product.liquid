@@ -159,7 +159,7 @@
               </div>
               <div class="media media--transparent media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-
+{{ selected_v }}
                 {% if selected_v != blank %}
                   {% assign featured_media = selected_v.featured_media | default: variable_featured_media %}
                   <img 
