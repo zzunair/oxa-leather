@@ -122,6 +122,12 @@ body .header{
 body header-drawer .header__icon span{
   justify-content:start !important;
 }
+body.template-product .price_for_mob {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 }
 @media (min-width:768px){
 .product__title_mobile {
