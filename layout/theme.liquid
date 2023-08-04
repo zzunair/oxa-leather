@@ -807,7 +807,13 @@ $(document).ready(function() {
       $('.product-form__input input[checked]').each(function() {
         $(this).click();
       });
-  });
+ 
+$('.color__swatches').each(function() {
+      if (!$(this).children().hasClass('active-swatch')) {
+        $(this).children().first().click();
+      }
+    });
+ });
 </script>
 
  {% if product.metafields.custom.upgrades.value != blank %}
