@@ -204,13 +204,13 @@
                           width="{{ featured_media.width }}"
                           height="{{ featured_media.height }}"
                         >
-                      {% else %}
+                      {% else %}  {{ var_imgg }}
                       {% if var_imgg  %}
                       <img 
                     class="imges bbb"
                     proure="{{ card_product.url }}"
                     varientid=""
-                  {{ var_imgg }}
+                 
                     srcset="
                       {%- if var_imgg.width >= 165 -%}{{ var_imgg | image_url: width: 360 }} 360w,{%- endif -%}
                       {%- if var_imgg.width >= 533 -%}{{ var_imgg | image_url: width: 533 }} 533w,{%- endif -%}
