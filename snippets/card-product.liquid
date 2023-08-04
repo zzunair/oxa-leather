@@ -89,9 +89,9 @@
 
 {% assign selected_v = '' %}
 {% for variant in card_product.variants %}
-  {% if variant.metafields.my_fields.is_selected %}{% endif %}
+  {% if variant.metafields.my_fields.is_selected %}
     {% assign selected_v = variant %}
-  
+  {% endif %}
 {% endfor %}
 
 {%- if card_product and card_product != empty -%}
