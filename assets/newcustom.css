@@ -91,10 +91,10 @@
   padding-bottom:20px;
 }
 @media (max-width:767px){
-body.template-product .price_desktop {
+/* body.template-product .price_desktop {
     display: flex!important;
     position: unset !important;
-}
+} */
 .breadcrumb-collection, .product__title_desktop .pro-title-heading, .product__title_desktop .series_review {
     display: none;
 }
@@ -136,5 +136,11 @@ body.template-product .price_for_mob {
 @media (min-width:768px){
 .product__title_mobile {
     display: none;
+}
+}
+@media (max-width:991px){
+body.template-product .price_desktop {
+    display: flex!important;
+    position: unset !important;
 }
 }
