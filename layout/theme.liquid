@@ -904,12 +904,12 @@ console.log(mf)
 </script>
 <script>
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  document.querySelector('variant-radios').dispatchEvent(new Event('change'));
-});
-     $(document).on('change', '.addons-upgrades',function() {
-   document.querySelector('variant-radios').dispatchEvent(new Event('change'));
-       return true
+// document.addEventListener("DOMContentLoaded", (event) => {
+//   document.querySelector('variant-radios').dispatchEvent(new Event('change'));
+// });
+//      $(document).on('change', '.addons-upgrades',function() {
+//    document.querySelector('variant-radios').dispatchEvent(new Event('change'));
+//        return true
 //     if ($(this).prop('checked')) {
 //      var $this = $(this)
 //       var price1 = $this.attr('data-prices');
@@ -936,7 +936,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 //             $(this).parents('.other_section_color').find('span.price-item').attr('data-price', result1.toFixed(2));
 //     }
    
-  });
+//   });
 
 $('.product-form__input label1').click(function(){
   
