@@ -148,3 +148,7 @@ body.template-product .price_desktop .price__container{
   margin-bottom:0px;  
 }
 }
+
+body.template-product .price_desktop{
+    flex-wrap: wrap;
+}
