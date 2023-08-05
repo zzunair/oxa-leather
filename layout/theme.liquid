@@ -904,39 +904,39 @@ console.log(mf)
 </script>
 <script>
 
-// document.addEventListener("DOMContentLoaded", (event) => {
-//   document.querySelector('variant-radios').dispatchEvent(new Event('change'));
-// });
-//      $(document).on('change', '.addons-upgrades',function() {
-//    document.querySelector('variant-radios').dispatchEvent(new Event('change'));
-//        return true
-//     if ($(this).prop('checked')) {
-//      var $this = $(this)
-//       var price1 = $this.attr('data-prices');
-//   alert(price1);
-//       var symbol1 = $this.attr('data-symbols');
+document.addEventListener("DOMContentLoaded", (event) => {
+  document.querySelector('variant-radios').dispatchEvent(new Event('change'));
+});
+     $(document).on('change', '.addons-upgrades',function() {
+   document.querySelector('variant-radios').dispatchEvent(new Event('change'));
+       return true
+    if ($(this).prop('checked')) {
+     var $this = $(this)
+      var price1 = $this.attr('data-prices');
+  alert(price1);
+      var symbol1 = $this.attr('data-symbols');
   
-//     var tot = $this.parents('.other_section_color').find('.price__sale.aa span.price-item.price-item--sale.price-item--last').attr('data-price-1');  
+    var tot = $this.parents('.other_section_color').find('.price__sale.aa span.price-item.price-item--sale.price-item--last').attr('data-price-1');  
         
-//        alert(tot);
-//       var result = parseFloat(price1) + parseFloat(tot);
-//       alert(result);
-//       var totalprice= symbol1 + result.toFixed(2);
-//      $this.parents('.other_section_color').find('span.price-item span').text(totalprice);
-//       $this.parents('.other_section_color').find('span.price-item').attr('data-price',result.toFixed(2));
+       alert(tot);
+      var result = parseFloat(price1) + parseFloat(tot);
+      alert(result);
+      var totalprice= symbol1 + result.toFixed(2);
+     $this.parents('.other_section_color').find('span.price-item span').text(totalprice);
+      $this.parents('.other_section_color').find('span.price-item').attr('data-price',result.toFixed(2));
 
-//        }
-// else {
-// var price2 = parseFloat($(this).attr('data-prices'));
-//             var symbol2 = $(this).attr('data-symbols');
-//             var tot1 = parseFloat($(this).parents('.other_section_color').find('.price__sale.aa span.price-item.price-item--sale.price-item--last').attr('data-price'));
-//             var result1 = tot1 - price2;
-//             var totalprice1 = symbol2 + result1.toFixed(2);
-//             $(this).parents('.other_section_color').find('span.price-item span').text(totalprice1);
-//             $(this).parents('.other_section_color').find('span.price-item').attr('data-price', result1.toFixed(2));
-//     }
+       }
+else {
+var price2 = parseFloat($(this).attr('data-prices'));
+            var symbol2 = $(this).attr('data-symbols');
+            var tot1 = parseFloat($(this).parents('.other_section_color').find('.price__sale.aa span.price-item.price-item--sale.price-item--last').attr('data-price'));
+            var result1 = tot1 - price2;
+            var totalprice1 = symbol2 + result1.toFixed(2);
+            $(this).parents('.other_section_color').find('span.price-item span').text(totalprice1);
+            $(this).parents('.other_section_color').find('span.price-item').attr('data-price', result1.toFixed(2));
+    }
    
-//   });
+  });
 
 $('.product-form__input label1').click(function(){
   
