@@ -846,6 +846,23 @@ class VariantSelects extends HTMLElement {
 
         if (price) price.classList.remove('visibility-hidden');
         this.toggleAddButton(!this.currentVariant.available, window.variantStrings.soldOut);
+    
+
+        if(slf.currentVariant){
+            var totalPrice = 0;
+            jQuery(".addons-upgrades:checked").each(function () {
+                var price = parseFloat(jQuery(this).data("prices"));
+                if (!isNaN(price)) {
+                    totalPrice += price;
+                }
+            });
+            if(jQuery(".addons-upgrades:checked").length){
+              totalPrice = ((slf.currentVariant.price + (totalPrice * 100))/100).toFixed(2);
+              var symbol1 = $('.addons-upgrades').attr('data-symbols');
+              $('.addons-upgrades').parents('.other_section_color').find('span.price-item span').text(symbol1+totalPrice);
+            }
+        }
+        
       });
   }
 
