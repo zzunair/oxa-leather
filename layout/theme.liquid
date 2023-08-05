@@ -954,6 +954,14 @@ $.get("https://ipinfo.io", function(response) {
     }
   }, "jsonp");
 })
+
+$(document).on('change', '.product-form__input label[data-color*=color]',function() {
+$.get("https://ipinfo.io", function(response) {
+    if (response.country === "US") {
+      $(".free-shipping-label").show();
+    }
+  }, "jsonp");
+})
 </script>
 
     {% render 'content-footer' %}
