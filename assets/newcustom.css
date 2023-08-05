@@ -141,6 +141,7 @@ body.template-product .price_for_mob {
 @media (max-width:991px){
 body.template-product .price_desktop {
     display: flex!important;
+    flex-wrap: wrap;
     position: unset !important;
 }
 }
