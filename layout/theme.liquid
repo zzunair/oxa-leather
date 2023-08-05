@@ -947,7 +947,8 @@ $('.product-form__input label1').click(function(){
 </script>
 {% endif %}
 <script>
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", (event) => {
+//$(document).ready(function(){
 $.get("https://ipinfo.io", function(response) {
     if (response.country === "US") {
       $(".free-shipping-label").show();
