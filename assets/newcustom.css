@@ -58,7 +58,7 @@
     letter-spacing: -.01em;
     color: #191919;
     padding-bottom: 3px;
-    display:none;
+    /* display:none; */
 }
 
 .template-product .product-page-price{

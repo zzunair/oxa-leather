@@ -612,7 +612,7 @@
   {% assign plus1=block.settings.domestic_price %}
                {% assign price1=product.price | money_without_currency %}
             {% if price1 >=  plus1 %}
-              <div class="free-shipping-label">+ Free Shipping!</div>
+              <div class="free-shipping-label" style="display:none">+ Free Shipping!</div>
             {% endif %}
 
             </div>
