@@ -929,7 +929,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 else {
 var price2 = parseFloat($(this).attr('data-prices'));
             var symbol2 = $(this).attr('data-symbols');
-            var tot1 = parseFloat($(this).parents('.other_section_color').find('.price__sale.aa span.price-item.price-item--sale.price-item--last').attr('data-price'));
+            var tot1 = parseFloat($(this).parents('.other_section_color').find('.price__sale.aa span.price-item.price-item--sale.price-item--last').attr('data-price-1'));
             var result1 = tot1 - price2;
             var totalprice1 = symbol2 + result1.toFixed(2);
             $(this).parents('.other_section_color').find('span.price-item span').text(totalprice1);
