@@ -798,11 +798,6 @@ console.log(mf)
     {% endcomment %}
 
 <script>
-$.get("https://ipinfo.io", function(response) {
-    if (response.country === "US") {
-      $(".free-shipping-label").show();
-    }
-  }, "jsonp");
 $(document).ready(function() {
       $('.product-form__input input[checked]').each(function() {
         $(this).click();
