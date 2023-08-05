@@ -606,7 +606,7 @@
             <div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
             </div>
           {%- when 'price' -%}
-            <div class="no-js-hidden product-page-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+            <div class="price_desktop no-js-hidden product-page-price" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
 
   {% assign plus1=block.settings.domestic_price %}
