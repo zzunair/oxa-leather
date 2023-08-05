@@ -947,13 +947,16 @@ $('.product-form__input label1').click(function(){
 </script>
 {% endif %}
 <script>
-
+$(document).ready(function(){
 $.get("https://ipinfo.io", function(response) {
     if (response.country === "US") {
       $(".free-shipping-label").show();
     }
+    else{
+       $(".free-shipping-label").hide();
+    }
   }, "jsonp");
-
+})
 
 // $(document).on('click', '.product-form__input label[data-color*="color"]',function() {
 // $.get("https://ipinfo.io", function(response) {
