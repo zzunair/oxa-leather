@@ -947,11 +947,13 @@ $('.product-form__input label1').click(function(){
 </script>
 {% endif %}
 <script>
+$(document).ready(function(){
 $.get("https://ipinfo.io", function(response) {
     if (response.country === "US") {
       $(".free-shipping-label").show();
     }
   }, "jsonp");
+  })
 </script>
 
     {% render 'content-footer' %}
