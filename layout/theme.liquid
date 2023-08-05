@@ -903,7 +903,12 @@ console.log(mf)
 
 </script>
 <script>
-    $('.addons-upgrades1').on('change', function() {
+document.addEventListener("DOMContentLoaded", (event) => {
+  document.querySelector('variant-radios').dispatchEvent(new Event('change'));
+});
+     $(document).on('change', '.addons-upgrades',function() {
+   document.querySelector('variant-radios').dispatchEvent(new Event('change'));
+       return true;
     if ($(this).prop('checked')) {
       var price1 = parseFloat($(this).attr('data-prices'));
       var symbol1 = $(this).attr('data-symbols');
