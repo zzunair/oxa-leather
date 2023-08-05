@@ -144,4 +144,7 @@ body.template-product .price_desktop {
     flex-wrap: wrap;
     position: unset !important;
 }
+body.template-product .price_desktop .price__container{
+  margin-bottom:0px;  
+}
 }
