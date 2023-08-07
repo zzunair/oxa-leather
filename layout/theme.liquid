@@ -3,17 +3,6 @@
   <head>
 
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-489208709"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-489208709');
-</script>
-
-
     
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
@@ -29,6 +18,16 @@
     {% unless template contains 'cart' %}
       <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/preload.js"></script>
     {% endunless %}
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-489208709"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-489208709');
+</script>
 
 <link rel='preconnect dns-prefetch' href='https://triplewhale-pixel.web.app/' crossorigin />
 <link rel='preconnect dns-prefetch' href='https://api.config-security.com/' crossorigin />
@@ -963,5 +962,7 @@ $.get("https://ipinfo.io", function(response) {
       <script src="https://rapidlercdn.com/6426631c44f2512c1cbbd64f/deferload.js" defer></script>
       <a href="https://rapidler.com/" style="display: none;">Rapidler Shopify Speed Optimization Agency</a>
     {% endunless %}
-  {% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}</body>
+  {% if content_for_header contains 'product_label' %}{% include 'bss-product-label-js' %}{% include 'bss-label-style-css' %}{% include 'bss-product-label-fonts' %}{% endif %}
+  
+  </body>
 </html>
