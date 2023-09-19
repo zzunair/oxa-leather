@@ -154,9 +154,9 @@
         "heading": "Shop iPhone Cases",
         "image": "shopify:\/\/shop_images\/banner2_1.jpg",
         "m-image": "shopify:\/\/shop_images\/mobile_banner_d84be337-2910-47ae-a564-e39709c9222a.jpg",
-        "image-heading": "iPhone 14 Series",
+        "image-heading": "iPhone 15 Series",
         "btn-text": "SHOP NOW",
-        "btn-url": "shopify:\/\/collections\/case-for-iphone-14"
+        "btn-url": "shopify:\/\/collections\/case-for-iphone-15-series"
       }
     },
     "c5ae0244-b762-40f6-b80d-dd61584d2c0c": {
@@ -359,7 +359,6 @@
     },
     "1652166873f253677f": {
       "type": "refrence",
-      "disabled": true,
       "blocks": {
         "f20d5a40-6de5-4928-819c-21a71bf18e4a": {
           "type": "logos",
@@ -396,6 +395,7 @@
         "65fa5c6b-383b-4c14-8ef3-90a58bd29a5f",
         "0fdf803b-646e-4be7-99cf-c231bf4c0b68"
       ],
+      "disabled": true,
       "settings": {
         "heading": "AS SEEN ON",
         "subheading": ""
@@ -403,7 +403,6 @@
     },
     "31f28649-564f-4af5-b316-8fbc6d09025f": {
       "type": "blacksection",
-      "disabled": true,
       "blocks": {
         "56dc3902-7206-421e-a38d-8bd4188a5db8": {
           "type": "line",
@@ -432,6 +431,7 @@
         "88595d9c-0b3a-4cd1-9415-b19f79b1a848",
         "86fd1594-fca5-4d6a-9b6c-ebeee59e2f03"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Unique Leather Designs",
         "desc": "Adding extra quality and style to long-lasting products like smartphones, tablets, iPods, laptops, and more is our goal. The cases and products we make are all handcrafted from high quality, 100 percent full grain genuine leather, and they are done with both precision and elegance.  Providing a standard of excellence is our commitment, and we understand that it's a lifestyle and a conscious choice for our customers.",
@@ -443,7 +443,6 @@
     },
     "0ad550dc-de7d-4c60-803e-a2546fd7fdcb": {
       "type": "black_banner_bottom",
-      "disabled": true,
       "blocks": {
         "df13ee76-398c-41cf-aaf1-1cfc494787cc": {
           "type": "banimg",
@@ -476,6 +475,7 @@
         "c7d820f0-dca4-4c67-b207-1d8a9fe08112",
         "eb968fb3-23b4-40ed-ba3d-70e527b782ac"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading2": "Rated #1 leather accessory",

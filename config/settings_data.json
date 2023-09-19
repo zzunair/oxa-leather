@@ -679,12 +679,6 @@
         "settings": {
         }
       },
-      "6406956604159796213": {
-        "type": "shopify:\/\/apps\/smartseo\/blocks\/smartseo\/7b0a6064-ca2e-4392-9a1d-8c43c942357b",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "4804304946286255945": {
         "type": "shopify:\/\/apps\/avada-eu-gdpr-cookie-consent\/blocks\/app-embed\/deacc407-65bc-4a4e-84d9-f90e9e492cf3",
         "disabled": false,
@@ -697,63 +691,9 @@
         "settings": {
         }
       },
-      "1386531382474587334": {
-        "type": "shopify:\/\/apps\/bundle-builder\/blocks\/bb-cart-integration\/78802baf-205d-4d1d-908c-fae911f24e36",
-        "disabled": false,
-        "settings": {
-          "hide_accelerated_checkout": false,
-          "placement": "above",
-          "hide_empty_line_items": false,
-          "font_size": 16,
-          "font_color": "#000000",
-          "button_color": "#ffffff",
-          "button_background": "#000000",
-          "button_radius": 0,
-          "border_color": "#000000",
-          "background": "",
-          "heading": "Your cart contains {count} bundle",
-          "heading_plural": "Your cart contains {count} bundles",
-          "view_text": "View Details",
-          "modal_title": "Your bundle summary",
-          "modal_font_color": "#000000",
-          "modal_background": "#FFFFFF",
-          "modal_border_color": "#C4C4C4",
-          "modal_item_background": "",
-          "modal_item_content_background": "#F1F1F1",
-          "modal_item_product_background": "#FFFFFF",
-          "custom_css": ""
-        }
-      },
-      "14044569291296200651": {
-        "type": "shopify:\/\/apps\/bundle-builder\/blocks\/bb-cart-integration-custom\/78802baf-205d-4d1d-908c-fae911f24e36",
-        "disabled": false,
-        "settings": {
-          "theme_override": "",
-          "page_cartItemBox": "",
-          "page_cartItem": "",
-          "page_cartSubtotal": "",
-          "page_cartOriginalTotal": "",
-          "page_checkoutButton": "",
-          "drawer_cartItemBox": "",
-          "drawer_cartItem": "",
-          "drawer_cartSubtotal": "",
-          "drawer_cartOriginalTotal": "",
-          "drawer_checkoutButton": "",
-          "cartItemPrice": "",
-          "cartItemLinePrice": "",
-          "cartItemQuantity": "",
-          "observeTargets": ""
-        }
-      },
       "3824936769257688723": {
         "type": "shopify:\/\/apps\/sami-product-labels-badges\/blocks\/app-embed-block\/b9b44663-5d51-4be1-8104-faedd68da8c5",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "10714188220973388145": {
-        "type": "shopify:\/\/apps\/bss-product-labels-badges\/blocks\/bss-pl\/91bfe765-b604-49a1-805e-3599fa600b24",
-        "disabled": true,
         "settings": {
         }
       }
