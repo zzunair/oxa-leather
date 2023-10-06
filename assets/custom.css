@@ -9478,8 +9478,8 @@ a.breadcrumbs__link {
 }
 }
 
-@media (min-width:992px){
-.thumbnail-slider .thumbnail-list li {
+@media (min-width:993px){
+.template-product .thumbnail-list li {
     display: block !important;
 }
 }
