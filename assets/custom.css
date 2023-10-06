@@ -9479,7 +9479,7 @@ a.breadcrumbs__link {
 }
 
 @media (min-width:992px){
-.thumbnail-list li {
+.template-product .thumbnail-slider .thumbnail-list li {
     display: block !important;
 }
 }
