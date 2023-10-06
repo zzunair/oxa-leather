@@ -9469,7 +9469,7 @@ a.breadcrumbs__link {
     padding-left: 4px;
 }
 
-@media (max-width:992px){
+@media (max-width:991px){
 .template-product .product__media-list.slider--mobile li {
     display: block !important;
 }
