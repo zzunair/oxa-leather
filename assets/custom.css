@@ -9477,3 +9477,9 @@ a.breadcrumbs__link {
     display: flex !important;
 }
 }
+
+@media (min-width:992px){
+.thumbnail-list li {
+    display: block !important;
+}
+}
