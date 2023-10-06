@@ -9468,3 +9468,12 @@ body.product ol.breadcrumbs__list {
 a.breadcrumbs__link {
     padding-left: 4px;
 }
+
+@media (max-width:992px){
+.template-product .product__media-list.slider--mobile li {
+    display: block !important;
+}
+.template-product .mobile_GalleryThumbnails_dots li.active-dot{
+    display: flex !important;
+}
+}
