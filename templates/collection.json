@@ -11,6 +11,15 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "5533c43e-7a31-459e-b9c9-0e1c8e7070f9": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Frame_3_aaed08d6-c64a-4830-9308-616311871c3a.png",
+            "coltitle": "iPhone 15 Series",
+            "colurl": "shopify:\/\/collections\/case-for-iphone-15-series",
+            "parent_collection": ""
+          }
+        },
         "5785f2f0-1604-4147-b1bd-0db21421d70b": {
           "type": "logo",
           "settings": {
@@ -103,6 +112,7 @@
         }
       },
       "block_order": [
+        "5533c43e-7a31-459e-b9c9-0e1c8e7070f9",
         "5785f2f0-1604-4147-b1bd-0db21421d70b",
         "d92b5981-a8bb-44f1-8d32-de9ba95766e9",
         "3d614e39-fbb2-4476-90dd-8ab513003c45",
